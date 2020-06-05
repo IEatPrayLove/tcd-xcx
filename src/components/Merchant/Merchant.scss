@@ -1,0 +1,141 @@
+@import "../../styles/base.scss";
+.merchantContainer {
+  padding: 22px 30px;
+  box-shadow: 0 5px 20px 0 rgba(172,172,172,0.23);
+  border-radius: 10px;
+  margin: 0 30px 20px;
+}
+.header {
+  .merchantPic {
+    width:84px;
+    height:84px;
+    border-radius:6px;
+    margin-right: 30px;
+  }
+  .merchantInfo {
+    line-height: 1;
+    .merchantName {
+      font-size: 30px;
+      color: #333333;
+      font-weight: bold;
+      width: 330px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+
+    }
+    .label {
+      font-size: 18px;
+      padding: 6px 8px;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+    .yellow {
+      background: linear-gradient(-90deg, rgba(250, 157, 38, 1), rgba(252, 178, 81, 1));
+      color: #fff;
+    }
+    .red {
+      background: linear-gradient(-90deg, rgba(255, 98, 61, 1), rgba(255, 133, 104, 1));
+      color: #fff;
+    }
+    .green {
+      background: linear-gradient(-90deg, rgba(94, 173, 31, 1), rgba(114, 187, 56, 1));
+      color: #fff;
+    }
+    .earn {
+      font-size: 20px;
+      color: #fff;
+      margin-right: 18px;
+      border-radius: 4px;
+      background-color: #FF623D;
+      padding: 8px;
+    }
+    .delivery {
+      font-size: 20px;
+      color: #666666;
+    }
+  }
+}
+.merchantDiscount {
+  line-height: 1;
+  margin: 20px 0 18px;
+  text {
+    font-size: 20px;
+    padding: 7px;
+    border-radius:4px;
+    color: #666;
+  }
+  .bg {
+    background-color: #FF623D;
+    color: #ffffff;
+  }
+  .bgYellow {
+    background: linear-gradient(0deg, rgba(254, 143, 88, 1), rgba(252, 178, 81, 1));
+    color: #ffffff;
+  }
+  .bd {
+    // border: 1px solid #FF623D;
+    box-sizing: border-box;
+    // color: #FF623D;
+    margin-left: 10px;
+  }
+  .last{
+    margin-right: 28px;
+  }
+  .discount {
+    font-size: 20px;
+    color: #666666;
+  }
+}
+.goods {
+  position: relative;
+  line-height: 1;
+  width: 33.3%;
+  .pictureSection {
+    width:100%;
+    height:150px;
+    position: relative;
+    text-align: center;
+  }
+  image {
+    width: 200px;
+    height: 100%;
+    border-radius:4px;
+  }
+  .goodsName {
+    text-align: center;
+    width:80%;
+    font-size: 20px;
+    color: #666666;
+    margin-top: 10px;
+  }
+  .price {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px 0 12px;
+    background:linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.6));
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
+.merchantCat {
+  margin-top: 20px;
+  line-height: 1;
+  text {
+    font-size: 20px;
+    color: #FF623D;
+    padding: 7px 9px;
+    border-radius:4px;
+    background: #FFDDD5;
+    margin-right: 10px;
+  }
+}
+.brandTag {
+  margin-right: 16px;
+  max-width: 140px;
+  border-right: 1px solid #666666;
+  padding-right: 10px;
+}

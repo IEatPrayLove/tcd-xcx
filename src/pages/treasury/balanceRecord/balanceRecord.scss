@@ -1,0 +1,148 @@
+.pageHeader{
+  z-index: 999;
+  position: relative;
+}
+.statistics{
+  padding: 20px 30px;
+  background: #F6F6F6;
+  view{
+    font-size: 30px;
+    color: #333333;
+    width:340px;
+    height:130px;
+    background: #ffffff;
+    border-radius:8px;
+    padding: 16px 30px 20px;
+    box-sizing: border-box;
+    .title{
+      font-size: 26px;
+      color: #FEFEFE;
+      padding-left: 18px;
+      border-left: 4px solid #ffffff;
+    }
+    .total{
+      font-size: 40px;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+  }
+  view:first-child{
+    background:linear-gradient(90deg,rgba(252,178,81,1),rgba(255,100,61,1));
+    box-shadow:0 5px 9px 0 rgba(255,103,56,0.3);
+  }
+  view:last-child{
+    background:linear-gradient(90deg,rgba(61,184,248,1),rgba(105,151,255,1));
+    box-shadow:0px 5px 9px 0px rgba(105,139,254,0.3);
+  }
+}
+.categoryWarp{
+  padding: 20px 30px 1px;
+  background: #F7F8FA;
+  position: relative;
+}
+.filterDate{
+  font-size: 24px;
+  color: #333333;
+  padding: 12px 20px;
+  display: inline-block;
+  background:rgba(255,255,255,1);
+  border:1px solid rgba(220,220,220,1);
+  border-radius:30px;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #F59F2E;
+    border-bottom: none;
+    transition: all 500ms ease 0s;/*all是所有属性都将获得动画效果  1秒玩完成动画 ease(逐渐变慢)*/
+    margin-bottom: 4px;
+    margin-left: 4px;
+  }
+}
+.categoryBottom{
+  margin: 20px 0 30px 20px;
+  font-size: 24px;
+  color: #666666;
+  .income{
+    padding-right: 30px;
+  }
+}
+.allCategory{
+  font-size: 24px;
+  color: #999999;
+  &:before{
+    content: '';
+    display: block;
+    background: #D2D2D2;
+    height: 25px;
+    width: 2px;
+    margin-right: 40px
+  }
+  .title{
+    padding-right: 10px;
+  }
+}
+.filterActive{
+  &:after{
+    transform: rotate(180deg)
+  }
+}
+.categoryPanel{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  padding: 40px 30px;
+  .item{
+    font-size: 22px;
+    color: #666666;
+    padding: 16px 60px;
+    border-radius: 30px;
+    background: #E8E8E8;
+    margin-bottom: 40px;
+  }
+  .active{
+    background: #FF643D;
+    color: #ffffff;
+  }
+}
+.categoryMask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);;
+  z-index: 998;
+}
+.recordItem{
+  padding: 50px 40px 0 30px;
+  .title{
+    font-size: 26px;
+    color: #333333;
+  }
+  .state{
+    font-size: 22px;
+    color: #4883F7;
+  }
+  .date{
+    font-size: 24px;
+    color: #999999;
+  }
+  .expenditure{
+    font-size: 34px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .income{
+    font-size: 30px;
+    color: #F35A0E;
+    font-weight: bold;
+  }
+  .recordRight{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DCDCDC;
+  }
+}

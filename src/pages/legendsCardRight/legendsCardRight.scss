@@ -1,0 +1,103 @@
+@mixin fontGradient(){
+  background:linear-gradient(262deg,rgba(179,149,98,1) 0%, rgba(229,206,163,1) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.pageWarp{
+  background: url(#{$STATIC_IMG_URL}/legendsRight_bg.png) no-repeat;
+  background-size: 100% auto;
+  padding: 1px 30px;
+}
+.legendsCardPrivilege{
+  font-size: 48px;
+  color: #F3D79C;
+  font-weight: bold;
+  .title{
+    margin: 80px 0 70px;
+    text{
+      padding: 0 24px;
+      @include fontGradient();
+    }
+    &:before,
+    &:after{
+      content:'';
+      display: block;
+      height: 3px;
+      width: 70px;
+      background: #E5CEA3;
+      border-radius: 2px;
+    }
+  }
+}
+.privilegeWarp{
+  padding: 0 30px;
+  .item{
+    height: 175px;
+    width: 175px;
+    border-radius:20px;
+    border:3px solid #CFA972;
+    padding: 18px 0;
+    box-sizing: border-box;
+    margin-bottom: 55px;
+    .privilegeInfo{
+      text-align: center;
+      width: 100px;
+      font-size: 20px;
+      color: #F3D79C;
+      @include fontGradient();
+    }
+  }
+}
+.brandProduct{
+  .title{
+    font-size: 48px;
+    color: #F3D79C;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text{
+      padding: 0 24px;
+      @include fontGradient();
+    }
+    &:before,
+    &:after{
+      content:'';
+      display: block;
+      height: 3px;
+      width: 70px;
+      background: #E5CEA3;
+      border-radius: 2px;
+    }
+  }
+}
+.brandItem{
+  flex: 0 0 25%;
+  margin-bottom: 40px;
+  .at-badge__num{
+    top: -6Px;
+    right: 10PX;
+  }
+  image{
+    height: 126px;
+    width: 126px;
+    margin-bottom: 4px;
+  }
+  .name{
+    font-size: 22px;
+    font-weight: bold;
+    @include fontGradient();
+  }
+  .discount{
+    font-size: 20px;
+    @include fontGradient();
+  }
+}
+.allBrandBtn{
+  height:80px;
+  background:rgba(255,255,255,0.1);
+  border-radius:10px;
+  font-size: 28px;
+  color: #CFB586;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 34px;
+}

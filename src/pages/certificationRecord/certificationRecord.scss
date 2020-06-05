@@ -1,0 +1,107 @@
+page {
+  height: 100%;
+  background-color: #F2F2F2;
+}
+.attestationTab {
+  .at-tabs__item {
+    font-weight: bold;
+    font-size:30px;
+    margin: 0 40px;
+    padding: 40px 0;
+  }
+
+  //.at-tabs__item:first-child {
+  //  text-align: left;
+  //}
+  //
+  //.at-tabs__item:last-child {
+  //  text-align: right;
+  //}
+
+  .at-tabs__item--active {
+    color: #FF643D;
+  }
+
+  .at-tabs__item-underline {
+    height: 6px;
+    background-color: #FF643D;
+  }
+
+  .attestationList {
+    //background-color: #F2F2F2;
+    padding: 20px 30px;
+    .attestationItem {
+      background-color: #fff;
+      border-radius:10px;
+      margin-bottom: 40px;
+      .attestationItemTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        border-bottom: 2px solid #eee;
+        .itemTitleTime {
+          font-size:30px;
+        }
+        .itemTitleStatus_ing {
+          color: #F95D1F;
+          font-size:24px;
+        }
+        .itemTitleStatus_ed {
+          color: #3699FF;
+          font-size:24px;
+        }
+      }
+      .attestationItemBody {
+        padding: 30px;
+        position: relative;
+        .attestationStatusImg {
+          position: absolute;
+          top: 30px;
+          right: 15px;
+          image {
+            width: 174px;
+            height: 138px;
+          }
+        }
+        .attestationItemInfo {
+          display: flex;
+          line-height: 1;
+          margin-bottom: 30px;
+          .itemInfoCircle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #FF643D;
+            margin: 18px 15px 0 0;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .attestationItemInfoLevel {
+            width: 74px;
+            height: 26px;
+          }
+        }
+        .userName{
+          margin-bottom: 30px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-all;
+          white-space: nowrap;
+          width: 500px;
+        }
+        .failedResult{
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}
+.loadBlock {
+  text-align: center;
+  font-size: 26px;
+  color: #666;
+  .at-activity-indicator {
+    justify-content: center;
+  }
+}

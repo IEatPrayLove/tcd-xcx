@@ -1,0 +1,52 @@
+.container{
+  padding-top: 200px;
+}
+.title{
+  font-size: 36px;
+  font-weight: bold;
+  color: #FF643D;
+  margin-top: 40px;
+}
+.lotteryTime{
+  font-size: 24px;
+  color: #666666;
+  margin: 30px 0 40px;
+  .time{
+    //@include baseBg(auto, 36px, '../../images/icon/time_red_bg.png');
+    margin: 40px 0 30px;
+    padding: 0 10px;
+    //line-height: 36px;
+    //&:after{
+    //  content: '天';
+    //  font-size: 20px;
+    //  color: #FF643D;
+    //}
+    font-size: 28px;
+    color: #FF643D;
+    font-weight: bold;
+  }
+}
+.resultMsg{
+  font-size: 24px;
+  color: #666666;
+  margin-bottom: 60px;
+}
+.invitePartner{
+  height: 80px;
+  width: 260px;
+  border-radius:40px;
+  font-size: 28px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 80px;
+  background: #FF6336;
+  margin: 0 20px;
+  &:before{
+    border: none;
+  }
+}
+.viewOther{
+  margin-top: 30px;
+  font-size: 24px;
+  color: #666666;
+}

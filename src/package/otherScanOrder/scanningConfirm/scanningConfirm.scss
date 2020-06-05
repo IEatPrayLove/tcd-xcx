@@ -1,0 +1,536 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+page {
+  background: #F7F7F7;
+}
+.orderBox {
+  margin: 0 30px;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #F7F7F7;
+  overflow: hidden;
+  .at-modal__container {
+    top: 0;
+  }
+  .orderHeader {
+    height: 130px;
+    background-color: #FBAB48;
+    display: flex;
+    justify-content: center;
+    .orderHeaderItem {
+      padding: 25px 0;
+      width: 90px;
+      text-align: center;
+      .orderItemImg {
+        width: 46px;
+        height: 46px;
+        display: block;
+        margin: 0 auto;
+      }
+      .orderItemWord {
+        font-size: 22px;
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+    .orderItemAgo {
+      opacity: .5;
+    }
+    .orderHeaderLine {
+      width: 66px;
+      height: 1px;
+      background-color: rgba(255, 255, 255, .4);
+      margin: 48px 5px 0;
+    }
+  }
+  .orderTableInfo {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 35px 30px;
+    font-size: 26px;
+    color: #666;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    .orderTableNum {
+      text:last-child {
+        margin-left: 30px;
+      }
+    }
+    .orderTablePerson {
+      font-weight: 400;
+    }
+  }
+  .orderCancelBox {
+    margin: 20px 0;
+    padding: 40px 30px 30px;
+    background-color: #fff;
+    .orderCancelTitle {
+      font-size: 26px;
+      color: #666;
+      font-weight: bold;
+    }
+    .orderCancelWord {
+      font-size: 24px;
+      color: #BEBEBE;
+      line-height: 35px;
+    }
+    .marginT {
+      margin-top: 20px;
+    }
+    .paddingB {
+      padding-bottom: 25px;
+      border-bottom: 1px dashed #F1F1F1;
+    }
+    .orderCancelFooter {
+      padding-top: 30px;
+      font-size: 26px;
+      display: flex;
+      justify-content: space-between;
+      .cancelFooterTitle {
+        color: #BEBEBE;
+      }
+      .cancelFooterStatus {
+        color: #FBAB48;
+      }
+    }
+  }
+  .orderInfo {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    .orderInfoList {
+      border-bottom: 1px solid #F1F1F1;
+      .orderListItem {
+        display: flex;
+        padding: 20px 0;
+        &:last-child {
+          margin-bottom: 20px;
+        }
+        .orderInfoImg {
+          flex-shrink: 0;
+          width: 120px;
+          height: 120px;
+          border-radius: 11px;
+          overflow: hidden;
+          image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .orderInfoName {
+          display: flex;
+          margin-left: 20px;
+          position: relative;
+          width: 100%;
+          .orderDishName {
+            font-size: 26px;
+            color: #666;
+            // width: 240px
+          }
+          .orderDishSpecs {
+            font-size: 24px;
+            color: #BEBEBE;
+            margin-top: 30px;
+          }
+          .orderDishPay {
+            display: flex;
+            .orderDishPayItem {
+              font-size: 20px;
+              color: #666;
+              width: 90px;
+              text-align: right;
+              text {
+                font-size: 26px;
+              }
+              &:last-child {
+                margin-left: 65px;
+              }
+            }
+            .hadMemberPrice{
+              text-decoration:line-through #f00;
+            }
+          }
+          .orderDishPayPositionCenter {
+            bottom: 50px;
+          }
+          .orderDishPayPositionBottom {
+            bottom: 20px;
+          }
+        }
+      }
+    }
+    .orderInfoItem {
+      border-bottom: 1px solid #F1F1F1;
+      padding: 35px 0;
+      display: flex;
+      justify-content: space-between;
+      &:last-child {
+        border-bottom: none;
+      }
+      .orderFavourable {
+        .orderActive {
+          color: #EC911F;
+          margin: 0 11px 0 5px;
+          padding: 4px 6px;
+          background-color: rgba(251, 171, 72, .2);
+          border-radius: 2px;
+          font-size: 19px;
+        }
+        .orderActiveTip {
+          color: #BEBEBE;
+          font-size: 19px;
+        }
+        .orderCouponTitle {
+          font-size: 26px;
+          color: #666;
+          font-weight: bold;
+        }
+      }
+      .orderReduce {
+        color: #FF544B;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        text {
+          font-size: 20px;
+        }
+        .orderArrow {
+          width: 13px;
+          height: 22px;
+          margin-left: 20px;
+        }
+        .orderPacketBox {
+          background-color: #FF544B;
+          display: flex;
+          padding: 4px 12px;
+          border-radius: 12px;
+          .orderPacketImg {
+            width: 14px;
+            height: 17px;
+          }
+          .orderPacketWord {
+            font-size: 18px;
+            color: #fff;
+            margin-left: 7px;
+          }
+        }
+        .orderCutMoney {
+          font-size: 24px;
+          color: #666;
+        }
+        .orderPayMoney {
+          font-size: 26px;
+          color: #FF544B;
+          font-weight: bold;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .orderRemarks {
+    padding: 50px 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+    color: #666;
+    .orderRemarksRight {
+      display: flex;
+      align-items: center;
+
+    }
+    .orderArrow {
+      width: 13px;
+      height: 22px;
+      margin-left: 10px;
+    }
+    .remark {
+      padding: 0 20px;
+    }
+  }
+  .orderTimeBox {
+    padding: 0 30px;
+    background-color: #fff;
+    .orderTimeItem {
+      padding: 35px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 26px;
+      border-bottom: 1px solid #F1F1F1;
+      color: #666;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .orderCancel {
+    width: 280px;
+    height: 88px;
+    line-height: 88px;
+    border: 2px solid #F1F1F1;
+    font-size: 26px;
+    color: #BEBEBE;
+    border-radius: 44px;
+    margin: 33px auto 65px;
+    text-align: center;
+  }
+  .orderPay {
+    background-color: #FBAB48;
+    color: #fff;
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+    margin: 80px 0 20px;
+    text {
+      vertical-align: middle;
+      &:first-child {
+        font-size: 26px;
+      }
+      &:last-child {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.table {
+  margin: 30px 0 18px;
+  line-height: 1;
+  .title {
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    .icon {
+      height: 29px;
+      width: 33px;
+      background: url(#{$STATIC_ICON_URL}/icon/bell.png) no-repeat;
+      background-size: 100% 100%;
+      margin-right: 16px;
+    }
+  }
+  .info {
+    margin-top: 24px;
+    padding: 36px 30px;
+    background: #FFFFff;
+    font-size: 26px;
+    color: #666666;
+    text:first-child {
+      font-weight: bold;
+    }
+  }
+}
+
+.at-float-layout .layout-body {
+  padding: 0;
+}
+/******使用红包弹层页面******/
+.package-wrap {
+  min-height: 90px;
+  max-height: 50vh;
+  .list-wrap {
+    height: 500px;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .item {
+      margin-top: 20px;
+      background: #fff;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.hover {
+        background: rgba(255, 255, 255, 0.6);
+      }
+      .left {
+        position: relative;
+        width: 170px;
+        height: 160px;
+        background: linear-gradient(-90deg, rgba(253, 66, 56, 1), rgba(255, 108, 100, 1));
+        color: #ffffff;
+        //&:before {
+        //  content: "";
+        //  position: absolute;
+        //  left: -3px;
+        //  bottom: 0;
+        //  width: 100%;
+        //  height: 100%;
+        //  //background: radial-gradient(30% 30% at left, transparent 0%, transparent 90%, #FF6C64 30%, #FF6C64 100%);
+        //  background: radial-gradient(30% 30% at left, transparent 20%, transparent 90%, #FF6C64 90%, #FF6C64 100%);
+        //  background-position: 0 0;
+        //  background-size: 7px 7px;
+        //  background-repeat: no-repeat repeat;
+        //}
+        .rmb, .description {
+          font-size: 24px;
+        }
+        .description {
+          margin-top: 10px;
+        }
+        .money {
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+      .right {
+        height: 160px;
+        box-shadow: 0px 6px 12px 0px rgba(236, 236, 236, 0.66);
+        border-radius: 0 8px 8px 0;
+        padding: 20px 20px 30px;
+        box-sizing: border-box;
+        .title {
+          color: #333333;
+          font-size: 26px;
+        }
+        .date {
+          color: #999999;
+          font-size: 22px;
+          //margin-top: 10px;
+        }
+        .limit {
+          margin-top: 20px;
+          color: #CCCCCC;
+          font-size: 20px;
+        }
+      }
+      .checkd {
+        font-size: 40px;
+        color: #FD4238;
+      }
+    }
+  }
+
+}
+.modal-header {
+  height: 90px;
+  background: #FFFFFF;
+  padding: 0 20px;
+  border-bottom: 1px solid #E5E5E5;
+  .title {
+    color: #333333;
+    font-size: 30px;
+    text-align: center;
+  }
+  .title-btn {
+    &:after {
+      border: 0;
+    }
+    width: 120px;
+    height: 50px;
+    margin: 0;
+    line-height: 48px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 26px;
+    &.cancel {
+      border: 1px solid #FCB251;
+      color: #FCB251;
+      background: #FFF;
+      &.hover {
+        background: rgba(250, 250, 250, 0.5);
+        border: 1px solid #EEEEEE;
+      }
+    }
+    &.confirm {
+      background: #FCB251;
+      color: #FFFFff;
+      &.hover {
+        background: rgba(252, 178, 81, 0.5);
+      }
+      &.disabled {
+        background: #CCCCCC;
+        color: #999999;
+      }
+    }
+  }
+}
+.disabled-ticket {
+  position: relative;
+  width: 170px;
+  height: 160px;
+  background: #CCCCCC;
+  color: #ffffff;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(30% 30% at left, transparent 20%, transparent 90%, #CCCCCC 90%, #CCCCCC 100%);
+    background-position: 0 0;
+    background-size: 7px 7px;
+    background-repeat: no-repeat repeat;
+    //background: radial-gradient(30% 30% at left, transparent 20%, transparent 90%, #CCCCCC 90%, #CCCCCC 100%);
+  }
+}
+.disabled-title {
+  text-align: center;
+  margin: 30px 0;
+  .text {
+    margin: 0 20px;
+    color: #666666;
+    font-size: 22px;
+  }
+  &:before, &:after {
+    display: inline-block;
+    content: "";
+    flex: 1;
+    height: 1px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+}
+
+.fee-wrap {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-bottom: 1px solid #EEEEEE;
+  .item {
+    padding: 10px 0;
+    .name {
+      color: #999999;
+      font-size: 26px;
+    }
+    .price {
+      font-size: 30px;
+      color: #333333;
+      font-weight: bold;
+    }
+    .price-sub {
+      font-size: 26px;
+      color: #333333;
+    }
+    .rmb {
+      font-size: 22px;
+      color: #666666;
+    }
+    &.ticket-wrap {
+      .can-use-ticket {
+        .ticket {
+          margin-right: 10px;
+          font-size: 26px;
+          color: #CCCCCC;
+          &.num {
+            display: inline-block;
+            padding: 2px 15px;
+            background: #FF623D;
+            color: #FFFFFF;
+            font-size: 20px;
+            border-radius: 4px;
+          }
+          &.used {
+            color: #FF623D;
+          }
+        }
+      }
+      &.hover {
+        background: rgba(250, 250, 250, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+@import '../../styles/base';
+.goodsItem{
+  margin: 0 40px 30px 30px;
+}
+.imgWarp{
+  padding: 6px 0;
+  box-sizing: border-box;
+  width:300px;
+  height:220px;
+  margin-right: 20px;
+}
+.imgContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+.goodsImg{
+  //width:297px;
+  //height:220px;
+  width: 100%;
+  height: 100%;
+  border-radius:12px;
+}
+.goodsSaleState{
+  position: absolute;
+  left: -42px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 62px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  transform: rotate(-45deg);
+  top: 15px;
+  &.red {
+    border-bottom: 50px solid #FF623D;
+  }
+  &.green {
+    border-bottom: 50px solid #17D29F;
+  }
+  &.yellow {
+    border-bottom: 50px solid #FCB251;
+  }
+  &.gray {
+    border-bottom: 50px solid #999999;
+  }
+}
+.goodsEndTime{
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text{
+    display: inline-block;
+    font-size:20px;
+    color:#ffffff;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 4px;
+  }
+  text:first-child{
+    border-radius:10px 0 0 0;
+    background:rgba(251,171,72,1);
+  }
+  text:last-child{
+    background: #FF623D;
+  }
+}
+.goodsName{
+  font-size: 28px;
+  color:#333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.disAndSale{
+  font-size: 22px;
+  color: #999999;
+  .line{
+    padding: 0 10px;
+  }
+}
+.goodsPrice{
+  line-height: 1;
+  &>text:nth-of-type(1){
+    font-size: 22px;
+    color: #FF623D
+  }
+  &>text:nth-of-type(2){
+    font-weight: bold;
+    font-size: 40px;
+    color: #FF623D
+  }
+  &>text:nth-of-type(3){
+    font-size: 20px;
+    color: #999999;
+    text-decoration:line-through;
+    padding: 0 0 0 10px;
+  }
+}
+.tc{
+  position: relative;
+  border-radius:5px;
+  height: 34px;
+  padding: 0 8px;
+  background: #333333;
+  margin-left: 10px;
+  .money{
+    font-size: 20px;
+    color: #DBC194;
+  }
+  .triangle{
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #333333;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+}
+.memberPrice {
+  text:first-child {
+    width:64px;
+    height:28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    border-radius: 4px;
+    border: 1px solid #333333;
+  }
+  text:nth-of-type(2) {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 6px;
+    &:before {
+      content: '￥';
+      font-size: 22px;
+    }
+  }
+}
+.takeOutTag {
+  display: inline-block;
+  color: #FFFFFF;
+  background: #FB649D;
+  font-size: 20px;
+  border-radius:4px;
+  padding: 5px;
+  vertical-align: bottom;
+  margin-right: 4px;
+}
+.goodsInfo{
+  height: 220px;
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+.tagsWrap {
+  margin-top: 10px;
+  .goods-tag {
+    position: relative;
+    width: 72px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    border-radius: 4px;
+    margin-right: 4px;
+    &.red {
+      color: #FF623D;
+      background: rgba(255, 98, 61, 0.2);
+    }
+    &.yellow {
+      color: #FBAB48;
+      background: rgba(251, 171, 72, 0.2);
+    }
+    &.green {
+      color: #18D29F;
+      background: rgba(24, 210, 159, 0.2);
+    }
+    &.tagColor0 {
+      color: #FF623D;
+      background: rgba(255, 98, 61, 0.2);
+    }
+    &.tagColor1 {
+      color: #18D29F;
+      background: rgba(24, 210, 159, 0.2);
+    }
+    &.tagColor2 {
+      color: #FBAB48;
+      background: rgba(251, 171, 72, 0.2);
+    }
+    &.tagColor3 {
+      color: #71b4ff;
+      background: rgba(113,180,255, 0.2);
+    }
+    &.tagColor4 {
+      color: #fb649d;
+      background: rgba(251,100,157, 0.2);
+    }
+    &.tagColor5 {
+      color: #ffd569;
+      background: rgba(255,213,105, 0.2);
+    }
+  }
+}

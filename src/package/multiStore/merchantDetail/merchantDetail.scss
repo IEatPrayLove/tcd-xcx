@@ -1,0 +1,283 @@
+@import '../../../styles/shopRight';
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+page {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+.detailSection {
+  .header {
+    padding: 18px 18px 32px;
+    background-color: #FF623D;
+    line-height: 1;
+    font-size: 26px;
+    color: #FFFFFF;
+    image {
+      width:100px;
+      height:100px;
+      border-radius:8px;
+      margin-right: 22px;
+    }
+    .merchantName {
+      font-weight: bold;
+    }
+  }
+  .info {
+    padding: 8px 0 4px;
+  }
+  .businessSection {
+    padding: 28px 0 28px;
+    margin: 0 30px;
+    border-bottom: 1px solid #E5E5E5;
+    .title {
+      font-size: 24px;
+      color: #999999;
+      margin-left: 12px;
+      white-space: nowrap;
+    }
+    .businessTime {
+      margin-left: 10px;
+      font-size: 24px;
+      color: #333333;
+    }
+    .service {
+      margin-top: 10px;
+      text {
+        font-size: 18px;
+        color: #999999;
+        padding: 8px 6px;
+        border-radius: 4px;
+        border: 1px solid #999999;
+        margin-right: 10px;
+      }
+    }
+  }
+  .addressSection {
+    padding: 20px 30px 28px;
+    .address {
+      font-size: 24px;
+      color: #333333;
+      border-right: 1px solid #E5E5E5;
+      padding: 0 90px 0 12px;
+      margin-right: 20px;
+      &:before {
+        content: '门店地址：';
+        color: #999999;
+      }
+    }
+  }
+  .picSection {
+    padding: 0 30px 30px;
+    position: relative;
+    line-height: 1;
+    .container {
+      width: 33.3%;
+      text-align: center;
+    }
+    image {
+      width:220px;
+      height:163px;
+      border-radius:6px;
+    }
+    .thumbnail {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      background:rgba(44,44,44,0.6);
+      border-radius:20px;
+      font-size: 22px;
+      color: #ffffff;
+      padding: 10px 14px;
+    }
+  }
+}
+.merchantBox {
+    color: #333;
+    font-weight: 400;
+    //line-height: 1;
+    .merchantBanner {
+        width: 100%;
+        position: relative;
+        image {
+            width: 100%;
+            height: 240px;
+            display: block;
+        }
+        .shareBox {
+            padding: 12px 10px 12px 17px;
+            border-radius: 25px 0 0 25px;
+            color: #fff;
+            background-color: #FF623D;
+            font-size: 24px;
+            position: absolute;
+            top: 11px;
+            right: 0;
+            box-shadow: 0 4px 3px 0 rgba(255, 98, 61, 0.2);
+        }
+    }
+    .merchantInfo {
+        padding: 70px 30px 0;
+        background-color: #fff;
+        .merchantInfoTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .merchantName {
+                font-size: 26px;
+                font-weight: bold;
+            }
+            .merchantTotal {
+                text {
+                    color: #FBAB48;
+                    font-size: 24px;
+                    margin-right: 20px;
+                }
+                image {
+                    width: 15px;
+                    height: 25px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .merchantDistance {
+            font-size: 24px;
+            margin: 25px 0 5px;
+        }
+        .merchantInfoList {
+            padding: 0 30px;
+            @mixin flexRow{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @mixin icon($w, $h, $bg){
+                content:'';
+                width:$w;
+                height:$h;
+                background-image: url($bg);
+                background-size: cover;
+            }
+            .merchantInfoItem {
+                border-bottom: 1px solid #E5E5E5;
+                padding: 30px 0;
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+            .merchantAddress{
+                @include flexRow;
+                &::before{
+                    margin-right: 20px;
+                    @include icon(23px, 27px, '#{$STATIC_ICON_URL}/icon/icon_addr_gray.png');
+                }
+                .title{
+                    font-size: 24px;
+                    color:#999999;
+                }
+                .address{
+                    font-size: 24px;
+                    color:#333333;
+                    margin-right: 50px;
+                }
+                .phoneIcon{
+                    width: 22px;
+                    height: 30px;
+                }
+            }
+            .openTime{
+                &::before{
+                    margin-right: 20px;
+                    @include icon(25px, 28px, '#{$STATIC_ICON_URL}/icon/icon_service_gray.png');
+                }
+                .title{
+                    font-size: 24px;
+                    color:#999999;
+                }
+                .time{
+                    font-size: 24px;
+                    color:#333333;
+                    max-width:450px;
+                }
+            }
+        }
+    }
+    .buyTCD {
+      padding: 22px 30px;
+      color: #AA630C;
+      font-size: 24px;
+      background: #FED8A9;
+    }
+    .merchantFunctionBox {
+        margin-top: 20px;
+        padding: 30px;
+        background-color: #fff;
+        .functionTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .functionName {
+                font-size: 26px;
+                font-weight: bold;
+                color: #333333;
+                .member {
+                  margin-left: 10px;
+                  line-height: 1;
+                  font-size: 20px;
+                  color: #FF623D;
+                  padding: 2px 6px;
+                  border: 1px solid #FF623D;
+                }
+            }
+            .functionDes {
+                width: 124px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 6px;
+                font-size: 24px;
+                color: #fff;
+                background-color: #FF623D;
+            }
+        }
+        .functionDetail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            font-size: 22px;
+            .functionWord {
+                color: #FF623D;
+            }
+            .functionSale {
+                color: #666;
+            }
+            .functionFull {
+                display: flex;
+                font-size: 18px;
+                text {
+                    padding: 5px;
+                    color: #FF623D;
+                    border: 1px solid #FF623D;
+                    border-radius: 2px;
+                    margin-right: 8px;
+                }
+              .label {
+                background-color: #FF623D;
+                color: #FFFFFF;
+              }
+            }
+        }
+    }
+    .recommendTitle {
+        margin-top: 20px;
+        padding: 30px;
+        display: flex;
+        font-size: 30px;
+        color: #754D1E;
+        image {
+            width: 33px;
+            height: 30px;
+            margin-right: 15px;
+        }
+    }
+}

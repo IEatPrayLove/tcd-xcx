@@ -1,0 +1,10 @@
+// 服务器 静态图片前缀
+$STATIC_IMG_URL:'http://resource.canyingdongli.com/island-zhuancan';
+
+@mixin baseBg($w, $h, $bg){
+  display: inline-block;
+  width: $w;
+  height: $h;
+  background: url($bg) no-repeat;
+  background-size: 100% 100%;
+}

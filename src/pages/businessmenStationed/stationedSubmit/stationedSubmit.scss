@@ -1,0 +1,46 @@
+.submitBox {
+  text-align: center;
+  .submitImg {
+    display: block;
+    width: 189px;
+    height: 146px;
+    margin: 170px auto 0;
+  }
+  .submitTitle {
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+    padding: 55px 0 60px;
+  }
+  .submitWord {
+    font-size: 28px;
+    color: #666;
+    line-height: 42px;
+  }
+  .submitBtnGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    Button {
+      margin: 0;
+    }
+    .submitBtnGhost {
+      width: 270px;
+      height: 90px;
+      line-height: 90px;
+      border-radius: 45px;
+      border: 2px solid #FF643D;
+      color: #FF643D;
+      margin-right: 40px;
+      box-sizing: border-box;
+    }
+    .submitBtn {
+      width: 270px;
+      height: 90px;
+      line-height: 90px;
+      border-radius: 45px;
+      background-color: #FF643D;
+      color: #fff;
+    }
+  }
+}

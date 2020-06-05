@@ -1,0 +1,38 @@
+//数据样式
+.recordItem{
+    padding: 50px 40px 0 30px;
+    .title{
+      font-size: 26px;
+      color: #333333;
+    }
+    .state{
+      font-size: 22px;
+      color: #4883F7;
+    }
+    .date{
+      font-size: 24px;
+      color: #999999;
+    }
+    .expenditure{
+      font-size: 34px;
+      color: #333333;
+      font-weight: bold;
+    }
+    .income{
+      font-size: 30px;
+      color: #F35A0E;
+      font-weight: bold;
+    }
+    .recordRight{
+      padding-bottom: 30px;
+      border-bottom: 1px solid #DCDCDC;
+    }
+  }
+
+.title{
+    font-size: 26px;
+    color: #FEFEFE;
+    padding-left: 18px;
+    border-left: 4px solid #ffffff;
+}
+  

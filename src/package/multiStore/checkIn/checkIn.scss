@@ -1,0 +1,201 @@
+page{
+    height: 100%;
+    overflow: hidden;
+}
+.checkHeader{
+    .checkDay{
+        font-size: 30px;
+        color:#ffffff;
+    }
+    .checkRule{
+        position: absolute;
+        font-size: 24px;
+        color:#ffffff;
+        padding: 10px 20px;
+        background: #FFC179;
+        border-radius:24px 0 0 24px;
+        right:0;
+        top:0;
+    }
+}
+.checkGift{
+    height: 372px;
+    width: 646px;
+}
+.container{
+    background:linear-gradient(0deg,rgba(255,98,61,1),rgba(251,171,72,1));
+    box-shadow:0px 6px 12px 0px rgba(255, 61, 101, 0.35);
+}
+.calendar{
+    .at-calendar__controller{
+        display: none;
+    }
+    .container-text{
+        color:#ffffff;
+    }
+    .flex__item--blur{
+        .container-text{
+            color:#ffbcb0
+        }
+    }
+    .header__flex-item{
+        color:#ffffff;
+    }
+    .at-calendar__header{
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    .extra-marks .mark{
+        font-size: 0;
+    }
+}
+.checkFooter{
+    height: 100%;
+    //background: ;
+}
+.checkIn{
+    background: url("../../images/check_continuous_bg.png") no-repeat;
+    background-size: cover;
+    margin: 0 40px;
+    padding: 0 42px;
+    height: 220px;
+    .checkContinuousImg{
+        height: 70px;
+        width: 74px;
+    }
+    .checkContinuousTitle{
+        font-size: 26px;
+        color:#333333;
+        margin-left: 24px;
+    }
+    .checkInBtn{
+        color:#FC5C44;
+        font-size: 24px;
+        padding: 20px 36px;
+        background:linear-gradient(0deg,rgba(253,199,118,1),rgba(255,234,159,1));
+        box-shadow:0px 5px 5px 0px rgba(195,195,195,0.3);
+        border-radius:33px;
+    }
+    .isSing{
+        font-size: 24px;
+        padding: 20px 36px;
+        color: #ffffff;
+        background: #D0D0D0;
+        border-radius:33px;
+    }
+}
+.redPackageModal{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    .rpContainer{
+        width:100%;
+        height: 600px;
+        background-image: url("../../images/red_backage.png");
+        background-size: cover;
+        position: relative;
+        .close{
+            height: 50px;
+            width:50px;
+            position: absolute;
+            bottom:0;
+        }
+        .title{
+            font-size: 20px;
+            color:#999999;
+            margin-top:200px;
+        }
+        .amount{
+            padding-top:20px;
+            font-size: 30px;
+            color:#FE3F60;
+            font-weight: bold;
+            &::after{
+                content:'元';
+                font-size: 26px;
+            }
+        }
+        .receiveBtn{
+            margin-top: 60px;
+            margin-bottom: 10px;
+            font-size: 26px;
+            line-height: 90px;
+            text-align: center;
+            width:250px;
+            height: 90px;
+        }
+        .notReceive{
+            color:#FFAEB6;
+            background-color: #ea1a3f;
+            border-radius: 45px;
+        }
+        .receive{
+            color: #8D3D00;
+            background-image: url("../../images/btn_bg.png");
+            background-size: cover;
+            margin-top:110px;
+        }
+        .mine{
+            font-size: 20px;
+            color:#FFAFB7;
+            display: inline-block;
+            margin-top: 14px;
+        }
+    }
+}
+.ruleModal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    .ruleContainer{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom:0;
+        left: 0;
+        margin: auto;
+        height: 564px;
+        width:586px;
+        background: #ffffff;
+        border-top: 5px solid red;
+        padding: 90px 38px 80px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        .close{
+            height: 50px;
+            width:50px;
+            position: absolute;
+            bottom:-60px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+}
+
+.ruleHeader{
+    position: absolute;
+    width: 185px;
+    height: 78px;
+    font-size: 26px;
+    color:#ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background: url("../../images/active_rule.png") no-repeat;
+    background-size: cover;
+    left: 50%;
+    top:-10px;
+    transform: translate(-50%, 0);
+}
+.rule{
+    font-size: 24px;
+    color:rgba(102, 102, 102, 1);
+    margin-bottom: 30px;
+}
+.checkFooter{
+    background: #ffd7a3;
+}

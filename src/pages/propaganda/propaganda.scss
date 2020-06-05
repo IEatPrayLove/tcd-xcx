@@ -1,0 +1,95 @@
+page{
+  min-height: 100%;
+  background: #F7F7F7;
+}
+.filterTabs{
+  .at-tabs__item{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .at-tabs__item--active{
+    .at-tabs__item-underline{
+      height: 4px;
+    }
+  }
+}
+.taskList{
+  background: #F7F7F7;
+  padding: 0 28px;
+  border-top: 1px solid transparent;
+  .at-load-more__tip{
+    color: #F59F2E
+  }
+  .taskItem{
+    background: #ffffff;
+    margin-top: 30px;
+  }
+  .taskHeader{
+    padding: 24px 32px 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    .time{
+      font-size: 30px;
+      color: #333333
+    }
+    .inProgress{
+      font-weight: bold;
+      font-size: 30px;
+      color: #F59F2E
+    }
+    .state{
+      font-size: 26px;
+      color: #188AEA;
+    }
+  }
+  .taskInfo{
+    padding: 24px 32px 20px 24px;
+    .taskLogo{
+      height: 120px;
+      width: 120px;
+      border-radius: 10px;
+      margin-right: 22px;
+    }
+    .taskMsg{
+      height: 120px;
+      text{
+        font-size: 24px;
+      }
+      text:first-child{
+        color: #222222;
+      }
+      text:nth-of-type(2){
+        color: #666666;
+      }
+      text:nth-of-type(3),
+      text:last-child{
+        color: #F14618
+      }
+    }
+  }
+  .operatingBtn{
+    padding: 0 32px 20px 24px;
+    .at-button{
+      height: 52px;
+      width: 140px;
+      font-size: 22px;
+      border-radius: 26px;
+      border: none;
+      line-height: 52px;
+      margin-left: 20px;
+    }
+    .orangeBtn{
+      background: #F59F2E;
+      color: #ffffff;
+    }
+    .grayBtn{
+      color: #666666;
+      border: 2px solid #666666;
+    }
+  }
+}
+.confirmModal{
+  .at-modal__content{
+    text-align: center;
+    min-height: 0;
+  }
+}

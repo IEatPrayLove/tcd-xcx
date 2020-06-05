@@ -1,0 +1,321 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+@mixin fontGradient(){
+  background:linear-gradient(262deg,rgba(179,149,98,1) 0%, rgba(229,206,163,1) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.pageWarp{
+  position: relative;
+  padding-bottom: 130px;
+}
+.dynamicWarp{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.userSwiper{
+  width: 660px;
+  height: 45px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.userItem{
+  .userImg{
+    height: 38px;
+    width: 38px;
+    margin-right: 8px;
+  }
+  .userInfo{
+    max-width: 250px;
+    font-size: 20px;
+    color: #666666;
+  }
+}
+.userItem:first-child{
+  margin-right: 70px;
+}
+.legendsCardInfo{
+  margin-top: 100px;
+  height: 256px;
+  .cardName{
+    font-size: 75px;
+    color: #F3D79C;
+    font-weight: bold;
+    @include fontGradient()
+  }
+  .cardPrivilege{
+    font-size: 34px;
+    color: #F3D79C;
+    @include fontGradient()
+  }
+  .openBonus{
+    font-size: 24px;
+    color: #251E1E;
+    font-weight: bold;
+    width:282px;
+    height:38px;
+    line-height: 38px;
+    text-align: center;
+    background:linear-gradient(262deg,rgba(229,206,163,1),rgba(179,149,98,1));
+    border-radius:20px;
+  }
+  .cardPrice{
+    text{
+      font-size: 48px;
+      color: #F3D79C;
+    }
+    text:first-child{
+      text-decoration:line-through;
+      font-weight: lighter;
+    }
+    text:last-child{
+      font-weight: bold;
+      @include fontGradient();
+    }
+  }
+}
+.cardRight{
+  margin-top: 100px;
+  height: 314px;
+  font-size: 50px;
+  color: #704A35;
+  font-weight: bold;
+  background: url(#{$STATIC_IMG_URL}/right_bg.png) no-repeat;
+  background-size: 100% 100%;
+  .add{
+    height: 34px;
+    line-height: 34px;
+  }
+}
+.legendsCardPrivilege{
+  font-size: 48px;
+  color: #F3D79C;
+  font-weight: bold;
+  .title{
+    margin: 80px 0 70px;
+    text{
+      padding: 0 24px;
+      @include fontGradient();
+    }
+    &:before,
+    &:after{
+      content:'';
+      display: block;
+      height: 3px;
+      width: 70px;
+      background: #E5CEA3;
+      border-radius: 2px;
+    }
+  }
+}
+.privilegeWarp{
+  padding: 0 30px;
+  .item{
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    border:3px solid #CFA972;
+    padding: 18px 0;
+    box-sizing: border-box;
+    margin-bottom: 55px;
+    .privilegeInfo{
+      text-align: center;
+      width: 100px;
+      font-size: 20px;
+      color: #F3D79C;
+      @include fontGradient();
+    }
+  }
+}
+.brandProduct{
+  .title{
+    font-size: 48px;
+    color: #F3D79C;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text{
+      padding: 0 24px;
+      @include fontGradient();
+    }
+    &:before,
+    &:after{
+      content:'';
+      display: block;
+      height: 3px;
+      width: 70px;
+      background: #E5CEA3;
+      border-radius: 2px;
+    }
+  }
+}
+.brandItem{
+  flex: 0 0 25%;
+  margin-bottom: 40px;
+  .at-badge__num{
+    top: -6Px;
+    right: 10PX;
+  }
+  image{
+    height: 126px;
+    width: 126px;
+    margin-bottom: 4px;
+  }
+  .name{
+    font-size: 22px;
+    font-weight: bold;
+    @include fontGradient();
+  }
+  .discount{
+    font-size: 20px;
+    @include fontGradient();
+  }
+}
+.pageBottom{
+  z-index: 999;
+  height: 130px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  .at-badge__num{
+    right: 50PX;
+    background-color: #DB2A2A;
+  }
+}
+.pageBottomLine {
+  width: 2px;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+.problem{
+  width: 130px;
+  height: 100%;
+  //border:1px solid #DCDCDC;
+  border-radius: 8px;
+  .text{
+    font-size: 20px;
+    color: #DBC194;
+    padding-top: 10px;
+  }
+}
+.nowOpen{
+  width: 460px;
+  height: 100px;
+  background: linear-gradient(262deg,rgba(179,149,98,1),rgba(220,195,150,1));
+  border-radius: 8px;
+  .price{
+    font-size: 38px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+  .des{
+    font-size: 26px;
+    color: #824D32;
+  }
+}
+
+.ruleModalMask {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .25);
+  line-height: 1;
+  font-weight: 400;
+  .ruleModalBox {
+    margin: 150px 30px 0;
+    background: url(#{$STATIC_ICON_URL}/icon/rules_bg2.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    .ruleModalTitle {
+      font-size: 28px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      padding: 23px 0 55px;
+    }
+    .ruleModalContent {
+      padding: 0 30px 35px;
+      .ruleRow {
+        display: flex;
+        justify-content: space-between;
+        .ruleRowCircle {
+          width: 29px;
+          height: 26px;
+          background: url(#{$STATIC_ICON_URL}/icon/rule_circle3.png) no-repeat;
+          background-size: 100% 100%;
+          margin-top: 8px;
+        }
+        .ruleRowCircle2 {
+          width: 29px;
+          height: 26px;
+          background: url(#{$STATIC_ICON_URL}/icon/rule_circle2.png) no-repeat;
+          background-size: 100% 100%;
+          margin-top: 8px;
+        }
+        .ruleRowWord {
+          width: 94%;
+          font-size: 24px;
+          color: #666;
+          line-height: 40px;
+        }
+        .ruleRowWordQuestion {
+          width: 94%;
+          font-size: 24px;
+          color: #333;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .ruleModalClose {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.marBS {
+  margin-bottom: 25px;
+}
+.marB {
+  margin-bottom: 40px;
+}
+.legendsImg{
+  width: 100%;
+}
+.development{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background: #ffffff;
+  text{
+    font-weight: bold;
+    font-size: 36px;
+  }
+  button{
+    &:after{
+      border: none;
+    }
+    border: 1px solid #FF6336;
+    font-size: 28px;
+    color: #FF6336;
+    background: #ffffff;
+    width: 200px;
+    text-align: center;
+    margin-top: 160px;
+  }
+}

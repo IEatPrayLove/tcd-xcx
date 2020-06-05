@@ -1,0 +1,469 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan/icon';
+.iconImg{
+  display: block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.imgCustomer {
+  background-image: url(#{$STATIC_ICON_URL}/customer.png);
+}
+
+.imgHome {
+  background-image: url(#{$STATIC_ICON_URL}/home.png);
+}
+
+.imgPhoneCircle {
+  background-image: url(#{$STATIC_ICON_URL}/phone_circle.png);
+}
+
+.imgMember {
+  background-image: url(#{$STATIC_ICON_URL}/member.png);
+}
+
+.imgBigV {
+  background-image: url(#{$STATIC_ICON_URL}/big_v.png);
+}
+
+.imgLabel {
+  background-image: url(#{$STATIC_ICON_URL}/label.png);
+}
+
+.imgDiamondCard {
+  background-image: url(#{$STATIC_ICON_URL}/diamond3.png);
+}
+
+.imgOrder {
+  background-image: url(#{$STATIC_ICON_URL}/order.png);
+}
+
+.imgTask {
+  background-image: url(#{$STATIC_ICON_URL}/task.png);
+}
+
+.imgOffer {
+  background-image: url(#{$STATIC_ICON_URL}/offer.png);
+}
+
+.imgSelected {
+  background-image: url(#{$STATIC_ICON_URL}/selected.png);
+}
+
+.imgNotSelected {
+  background-image: url(#{$STATIC_ICON_URL}/not_selected.png);
+}
+
+.imgCerCustomer{
+  background-image: url(#{$STATIC_ICON_URL}/cer_customer.png);
+}
+
+.imgCerPlatform {
+  background-image: url(#{$STATIC_ICON_URL}/cer_platform.png);
+}
+
+.imgCerVerify {
+  background-image: url(#{$STATIC_ICON_URL}/cer_verify.png);
+}
+
+.imgCerIng {
+  background-image: url(#{$STATIC_ICON_URL}/ing.png);
+}
+
+.imgTitleLeft {
+  background-image: url(#{$STATIC_ICON_URL}/title-left.png);
+}
+
+.imgTitleRight {
+  background-image: url(#{$STATIC_ICON_URL}/title-right.png);
+}
+
+.imgCheck {
+  background-image: url(#{$STATIC_ICON_URL}/checked-nomal.png);
+}
+
+.imgCheckActive {
+  background-image: url(#{$STATIC_ICON_URL}/checked-active.png);
+}
+
+.imgGroup {
+  background-image: url(#{$STATIC_ICON_URL}/group.png);
+}
+
+.imgCrown {
+  background-image: url(#{$STATIC_ICON_URL}/crown.png);
+}
+
+.imgSort {
+  background-image: url(#{$STATIC_ICON_URL}/sort.png);
+}
+
+.imgArrowDown {
+  background-image: url(#{$STATIC_ICON_URL}/arrow_down.png);
+}
+
+.imgFinish {
+  background-image: url(#{$STATIC_ICON_URL}/finish.png);
+}
+
+.imgArrow {
+  background-image: url(#{$STATIC_ICON_URL}/arrow.png);
+}
+
+.imgFail {
+  background-image: url(#{$STATIC_ICON_URL}/fail.png);
+}
+
+.imgAddr {
+  background-image: url(#{$STATIC_ICON_URL}/addr.png);
+}
+
+.imgTreasuryArrow {
+  background-image: url(#{$STATIC_ICON_URL}/treasury_arrow.png);
+}
+
+.imgExpenditure {
+  background-image: url(#{$STATIC_ICON_URL}/expenditure.png);
+}
+
+.imgIncome {
+  background-image: url(#{$STATIC_ICON_URL}/income.png);
+}
+
+.imgOmit {
+  background-image: url(#{$STATIC_ICON_URL}/omit.png);
+}
+
+.imgDoubleArrow {
+  background-image: url(#{$STATIC_ICON_URL}/double_arrow.png);
+}
+
+.imgPrivilege1 {
+  background-image: url(#{$STATIC_ICON_URL}/privilege1.png);
+}
+
+.imgPrivilege2 {
+  background-image: url(#{$STATIC_ICON_URL}/privilege2.png);
+}
+
+.imgPrivilege3 {
+  background-image: url(#{$STATIC_ICON_URL}/privilege3.png);
+}
+
+.imgPrivilege4 {
+  background-image: url(#{$STATIC_ICON_URL}/privilege4.png);
+}
+
+.imgPrivilege5 {
+  background-image: url(#{$STATIC_ICON_URL}/privilege5.png);
+}
+
+.imgPrivilege6 {
+  background-image: url(#{$STATIC_ICON_URL}/privilege6.png);
+}
+
+.imgHome {
+  background-image: url(#{$STATIC_ICON_URL}/card_home.png);
+}
+.imgProblem {
+  background-image: url(#{$STATIC_ICON_URL}/card_question.png);
+}
+.imgPayPacket {
+  background-image: url(#{$STATIC_ICON_URL}/unioncard_pocket.png);
+}
+.imgPayPacket2 {
+  background-image: url(#{$STATIC_ICON_URL}/pay_pocket2.png);
+}
+
+.imgPayWechat {
+  background-image: url(#{$STATIC_ICON_URL}/unioncard_wechat.png);
+}
+
+.imgDiamondCenter {
+  background-image: url(#{$STATIC_ICON_URL}/diamond_center.png);
+}
+
+.imgSharePartner {
+  background-image: url(#{$STATIC_ICON_URL}/sharePartner.png);
+}
+
+.imgSavePic {
+  background-image: url(#{$STATIC_ICON_URL}/savePic.png);
+}
+
+.imgCrown2 {
+  background-image: url(#{$STATIC_ICON_URL}/crown2.png);
+}
+
+.imgArrowBrown {
+  background-image: url(#{$STATIC_ICON_URL}/arrow_brown.png);
+}
+
+.imgBrownLine {
+  background-image: url(#{$STATIC_ICON_URL}/brown_line.png);
+}
+
+.imgLegendsPower1 {
+  background-image: url(#{$STATIC_ICON_URL}/power1.png);
+}
+
+.imgLegendsPower2 {
+  background-image: url(#{$STATIC_ICON_URL}/power2.png);
+}
+
+.imgLegendsPower3 {
+  background-image: url(#{$STATIC_ICON_URL}/power3.png);
+}
+
+.imgLegendsPower4 {
+  background-image: url(#{$STATIC_ICON_URL}/power4.png);
+}
+
+.imgDiamondBrown {
+  background-image: url(#{$STATIC_ICON_URL}/diamond_brown.png);
+}
+
+.imgCategory {
+  background-image: url(#{$STATIC_ICON_URL}/category.png);
+}
+
+.imgCategoryActive {
+  background-image: url(#{$STATIC_ICON_URL}/category_active.png);
+}
+
+.imgCategoryOrange {
+  background-image: url(#{$STATIC_ICON_URL}/category_orange.png);
+}
+
+.imgSortActive {
+  background-image: url(#{$STATIC_ICON_URL}/sort_active.png);
+}
+
+.imgApplySuccess {
+  background-image: url(#{$STATIC_ICON_URL}/apply_success.png);
+}
+
+.imgStar {
+  background-image: url(#{$STATIC_ICON_URL}/right_coupon_icon.png);
+}
+
+.imgAdd {
+  background-image: url(#{$STATIC_ICON_URL}/add.png);
+}
+
+.imgSubtract {
+  background-image: url(#{$STATIC_ICON_URL}/subtract.png);
+}
+
+.imgArrowOrange {
+  background-image: url(#{$STATIC_ICON_URL}/treasury_sponsor.png);
+}
+
+.imgIndex {
+  background-image: url(#{$STATIC_ICON_URL}/index_gd.png);
+}
+
+.imgAlready {
+  background-image: url(#{$STATIC_ICON_URL}/already.png);
+}
+
+.imgClose {
+  background-image: url(#{$STATIC_ICON_URL}/close.png);
+}
+
+.imgDown {
+  background-image: url(#{$STATIC_ICON_URL}/stationed_down.png);
+}
+
+.imgLegendsLogo {
+  background-image: url(#{$STATIC_ICON_URL}/legends_logo.png);
+}
+
+.imgLegendsLogo2 {
+  background-image: url(#{$STATIC_ICON_URL}/legends_logo2.png);
+}
+
+.imgLegendsLogo3 {
+  background-image: url(#{$STATIC_ICON_URL}/tcd_card.png);
+}
+
+.imgUsed2 {
+  background-image: url(#{$STATIC_ICON_URL}/userd2.png);
+}
+
+.imgHook {
+  background-image: url(#{$STATIC_ICON_URL}/hook.png);
+}
+
+.imgTcCard {
+  background-image: url(#{$STATIC_ICON_URL}/tc_card.png);
+}
+
+.imgRedPackage {
+  background-image: url(#{$STATIC_ICON_URL}/red_package.png);
+}
+
+.imgIndexBlack {
+  background-image: url(#{$STATIC_ICON_URL}/index_black.png);
+}
+
+.imgClient {
+  background-image: url(#{$STATIC_ICON_URL}/client.png);
+}
+
+.imgQuestion {
+  background-image: url(#{$STATIC_ICON_URL}/question.png);
+}
+
+.imgPartnerIcon {
+  background-image: url(#{$STATIC_ICON_URL}/partner_icon.png);
+}
+
+.imgPartnerUpgrade {
+  background-image: url(#{$STATIC_ICON_URL}/partner_upgrade.png);
+}
+
+.imgPartnerTeam {
+  background-image: url(#{$STATIC_ICON_URL}/team.png);
+}
+
+.imgPartnerReward {
+  background-image: url(#{$STATIC_ICON_URL}/reward.png);
+}
+
+.imgShareIcon {
+  background-image: url(#{$STATIC_ICON_URL}/share.png);
+}
+
+.imgPosterIcon {
+  background-image: url(#{$STATIC_ICON_URL}/poster.png);
+}
+
+.imgArrowDownGray {
+  background-image: url(#{$STATIC_ICON_URL}/arrow_down_gray.png);
+}
+
+.imgArrowUpGray {
+  background-image: url(#{$STATIC_ICON_URL}/arrow_up.png);
+}
+.imgFirstPart {
+  background-image: url(#{$STATIC_ICON_URL}/firstPart.png);
+}
+.imgSecPart{
+  background-image: url(#{$STATIC_ICON_URL}/secondPart.png);
+}
+
+.imgNewCoupon{
+  background-image: url(#{$STATIC_ICON_URL}/new_coupon.png);
+}
+
+.imgOldCoupon{
+  background-image: url(#{$STATIC_ICON_URL}/old_coupon.png);
+}
+
+.imgRightExclusive {
+  background-image: url(#{$STATIC_ICON_URL}/right_exclusive.png);
+}
+
+.imgNoOrder {
+  background-image: url(#{$STATIC_ICON_URL}/no_order.png);
+}
+
+.imgIndexLocation {
+  background-image: url(#{$STATIC_ICON_URL}/index_location.png);
+}
+
+.imgNext {
+  background-image: url(#{$STATIC_ICON_URL}/next.png);
+}
+
+.imgKnow {
+  background-image: url(#{$STATIC_ICON_URL}/know.png);
+}
+
+.imgBubbles_right {
+  background-image: url(#{$STATIC_ICON_URL}/bubbles_right.png);
+}
+
+.imgBubbles_left {
+  background-image: url(#{$STATIC_ICON_URL}/bubbles_left.png);
+}
+
+.imgBrownArrow {
+  background-image: url(#{$STATIC_ICON_URL}/brown_arrow.png);
+}
+
+.imgMemberPrice {
+  background-image: url(#{$STATIC_ICON_URL}/member_price.png);
+}
+
+.imgMemberPrice2 {
+  background-image: url(#{$STATIC_ICON_URL}/member_price2.png);
+}
+
+.imgServer {
+  background-image: url(#{$STATIC_ICON_URL}/icon_label.png);
+}
+
+.imgThumbnail {
+  background-image: url(#{$STATIC_ICON_URL}/thumbnail.png);
+}
+
+.imgArrowBottom {
+  background-image: url(#{$STATIC_ICON_URL}/arrow_bottom.png);
+}
+
+.imgOrderFinish {
+  background-image: url(#{$STATIC_ICON_URL}/orderFinish.png);
+}
+
+.imgOrderConfirm {
+  background-image: url(#{$STATIC_ICON_URL}/orderConfirm.png);
+}
+
+.imgStoredDiscount {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/discount.png);
+}
+
+.imgStoredUpgrade {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/upgrade.png);
+}
+
+.imgStoredBirthday {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/discount.png);
+}
+
+.imgStoredMemberPrice {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/memberPrice.png);
+}
+
+.imgStoredRechargeYes {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/hook_yes.png);
+}
+
+.imgStoredRechargeNo {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/hook_no.png);
+}
+
+.imgStoredView {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/view.png);
+}
+
+.imgStoredNotView {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/no_view.png);
+}
+
+.imgStoredPay {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/store_pay.png);
+}
+
+.imgChooseStoredCard {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/choose.png);
+}
+
+.imgNotChooseStoredCard {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/not_choose.png);
+}
+
+.imgQrCode {
+  background-image: url(#{$STATIC_IMG_URL}/storedMoney/qrCode.png);
+}

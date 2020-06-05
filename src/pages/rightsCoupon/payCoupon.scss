@@ -1,0 +1,184 @@
+page{
+  background: #F1F1F1;
+}
+.couponDetail{
+  margin: 20px 30px;
+  padding: 30px 40px 30px;
+  background: #ffffff;
+  border-radius:8px;
+  box-shadow:0 6px 12px 0 rgba(236,236,236,0.66);
+  .couponImg{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-right: 18px;
+  }
+  .couponName{
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .price{
+    color: #FF643D;
+    font-weight: bold;
+    font-size: 40px;
+    padding-right: 20px;
+    &:before{
+      content: '￥';
+      font-size: 30px;
+      font-weight: initial;
+    }
+  }
+  .originalPrice{
+    text-decoration:line-through;
+    font-size: 22px;
+    color: #999999;
+  }
+  .line{
+    margin-left: -40px;
+    margin-right: -40px;
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 30px;
+      border-radius: 100% 0 0 100%/50%;
+      background: #F5F5F5;
+    }
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 30px;
+      border-radius: 0 100% 100% 0/50%;
+      background: #F5F5F5;
+    }
+    text{
+      border-top: 1px dashed #CCCCCC;
+      width: 94%;
+    }
+  }
+  .maturity{
+    font-size: 22px;
+    color: #666666;
+  }
+}
+.buyInfo{
+  padding: 30px;
+  background: #ffffff;
+}
+.maxBuy{
+  font-size: 26px;
+  color: #999999;
+  &:before{
+    content: '购买数量';
+    color: #666666;
+  }
+}
+.Modified{
+  .amount{
+    font-size: 26px;
+    color: #333333;
+    padding: 0 14px;
+  }
+}
+.coupons{
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #DFDFDF;
+  .title{
+    font-size: 26px;
+    color: #666666;
+  }
+  .notUsed{
+    color: #CCCCCC;
+    font-size: 28px;
+  }
+}
+.couponPrice{
+  margin-top: 20px;
+  text-align: end;
+  text{
+    font-size: 22px;
+    color: #999999;
+  }
+  .payPrice{
+    font-size: 40px;
+    color: #FF623D;
+    font-weight: bold;
+    &:before{
+      content: '￥';
+      font-size: 22px;
+      font-weight: initial;
+    }
+  }
+}
+.buyWay{
+  margin-top: 15px;
+  padding: 0 30px;
+  background: #ffffff;
+  font-size: 26px;
+  color: #666666;
+  .way{
+    padding: 30px 0;
+  }
+}
+.useRule{
+  padding: 30px 30px 120px;
+  background: #ffffff;
+  line-height: 42px;
+  margin: 15px 0 0;
+  text:first-child{
+    font-size: 24px;
+    color: #FBAB48;
+  }
+  font-size: 24px;
+  color: #666666;
+}
+.payBtn{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FF643D;
+  height: 100px;
+  line-height: 100px;
+  font-size: 28px;
+  color: #FFFFFF;
+  border: none;
+}
+.banBalance{
+  color:rgba(102,102,102,0.5);
+}
+.cashOutModal {
+  padding: 95px 0 0;
+  .modalContent {
+    color: #666;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modalBtnGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    border-top: 1px solid #e5e5e5;
+    .modalBtn {
+      width: 50%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      font-size: 28px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    .modalBtnCancel {
+      color: #333;
+      border-right: 1px solid #e5e5e5;
+    }
+    .modalBtnConfirm {
+      color: #FF643D;
+    }
+  }
+}

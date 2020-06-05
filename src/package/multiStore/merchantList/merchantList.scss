@@ -1,0 +1,105 @@
+
+@mixin icon {
+    content:'';
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+page{
+    height: 100%;
+    background: #f7f7f7;
+}
+.MerItem{
+    padding: 30px 30px 22px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    .merName{
+        font-size: 28px;
+        color:#333333;
+        font-weight: bold;
+    }
+    .merAddress{
+        font-size: 24px;
+        color:#333333;
+        margin: 0 -30px;
+        padding: 20px 30px;
+        border-bottom: 1px solid #E5E5E5;
+        &::before{
+            @include  icon;
+            background-image:url("../../images/icon/icon_addr_gray.png");
+        }
+        .playPhone{
+            @include  icon;
+            background-image:url("../../images/icon/icon_phone.png");
+        }
+        .addInfo{
+            margin-right: 30px;
+        }
+    }
+    .merService{
+        padding-top: 20px;
+        font-size: 24px;
+        &::before{
+            @include  icon;
+            background-image:url("../../images/icon/icon_label.png");
+        }
+        &::after{
+            @include  icon;
+            background-image:url("../../images/icon/icon_arrow_right.png");
+        }
+        text:first-child{
+            color:#999999;
+        }
+        text:last-child{
+            flex:1;
+        }
+        text:not(:first-child){
+            color:#333333;
+            margin-right: 26px;
+            &::before{
+                content: '•';
+                color: #FBAB48;
+                margin-right: 6px;
+            }
+        }
+    }
+}
+.service-warp {
+    background: #FFFFFF;
+    min-height: 50vh;
+    max-height: 70vh;
+    overflow-y: auto;
+    .header {
+        border-bottom: 1px solid #E5E5E5;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+        color: #333333;
+    }
+    .service-list {
+        padding: 20px 15px;
+        overflow-y: auto;
+        .item {
+            margin-bottom: 20px;
+            .title {
+                font-size: 26px;
+                color: #333333;
+                margin-bottom: 15px;
+                &:before {
+                    content: "•";
+                    color: #FBAB48;
+                    font-size: 26px;
+                    margin-right: 10px;
+                }
+            }
+            .content {
+                font-size: 22px;
+                color: #999999;
+            }
+        }
+    }
+}
+

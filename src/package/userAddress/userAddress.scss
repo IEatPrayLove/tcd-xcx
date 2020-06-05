@@ -1,0 +1,123 @@
+
+
+.user-address-wrap {
+  height: 100vh;
+  background: #F5F5F5;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.address-list {
+  .item-wrap {
+    background: #ffffff;
+    padding: 0 20px;
+    &.hover {
+      background: rgba(250, 250, 250, 1);
+    }
+    &:last-child {
+      .item-in {
+        border-bottom: 0;
+      }
+    }
+    .item-in {
+      padding: 20px 0;
+      border-bottom: 1px solid #EEEEEE;
+      .name {
+        font-size: 28px;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      .address {
+        font-size: 24px;
+        color: #666666;
+        white-space: pre-wrap;
+        //margin-right: 30px;
+        line-height: 40px;
+        .def-tag {
+          display: inline-block;
+          font-size: 20px;
+          color: #FF623D;
+          padding: 0 10px;
+          background: rgba(251, 171, 72, 0.2);
+          border-radius: 4px;
+          margin-right: 10px;
+          line-height: 30px;
+
+        }
+      }
+    }
+  }
+  .noInRange {
+    .range {
+      padding: 24px 80px;
+      font-size: 28px;
+      color: #666666;
+    }
+    .item-wrap {
+      padding-left: 80px;
+    }
+    .address,
+    .name {
+      color: #999999 !important;
+    }
+  }
+}
+
+.check-icon {
+  margin-right: 20px;
+  &.hover {
+    background-color: rgba(204, 204, 204, 0.5);
+  }
+  &.active {
+    color: #FCB251;
+    &.hover {
+      background-color: rgba(252, 178, 81, 0.5); //#FCB251;
+    }
+  }
+}
+
+.edit {
+  //width: 65px;
+  //height:60px;
+  //padding: 0;
+  //background-color: transparent;
+  //background-repeat: no-repeat;
+  //background-image: url(../../images/icons/icon_edit.png);
+  //background-size: 35px 30px;
+  //background-position: center bottom;
+  &:after {
+    border: 0;
+  }
+  /* &.hover {
+       background-color: #f0f0f0;
+   }*/
+}
+
+.add-address {
+  width: 100%;
+  height: 96px;
+  line-height: 100px;
+  background: #ffffff;
+  border-radius: 0;
+  color: #666666;
+  font-size: 30px;
+  text-align: center;
+  &.add-address-hover {
+    background: #f0f0f0;
+  }
+  &:after {
+    border: 0;
+  }
+  .add-icon {
+    width: 44px;
+    height: 44px;
+    background: #FCB251;
+    border-radius: 22px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+  }
+}
+
+

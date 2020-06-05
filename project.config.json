@@ -1,0 +1,192 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "sweepTheDeck",
+	"description": "测试环境",
+	"appid": "wx4b788f7d5151d9b5",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": false,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.9.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "合伙人中心",
+					"pathName": "/pages/distributorIndex/distributorIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "门店详情",
+					"pathName": "package/multiStore/merchantDetail/merchantDetail",
+					"query": "id=1775&brandId=348",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店点餐页面",
+					"pathName": "package/multiStore/orderDishes/orderDishes",
+					"query": "id=1679",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "扫码点餐-选座",
+					"pathName": "package/multiStore/choosePerson/choosePerson",
+					"query": "merchantId=1690&tableId=28&brandId=311",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店列表",
+					"pathName": "package/multiStore/merchantList/merchantList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "品牌列表",
+					"pathName": "package/multiStore/brandList/brandList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "品牌详情",
+					"pathName": "package/multiStore/brandDetail/brandDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "package/multiStore/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分销悬赏",
+					"pathName": "package/distributor/productShare/productShare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分销列表",
+					"pathName": "package/distributor/productShare/productShare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单列表",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "肯德基(外卖点餐页)",
+					"pathName": "package/multiStore/orderDishes/orderDishes",
+					"query": "id=1795",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店详情（金街店）",
+					"pathName": "package/multiStore/merchantDetail/merchantDetail",
+					"query": "id=1819&brandId=362",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "金库",
+					"pathName": "pages/treasury/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "加入合伙人",
+					"pathName": "package/distributor/joinDistributor/joinDistributor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "pages/equityDetail/equityDetail",
+					"pathName": "pages/equityDetail/equityDetail",
+					"query": "orderSn=191231100720176523",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goodsDetails/goodsDetails",
+					"pathName": "pages/goodsDetails/goodsDetails",
+					"query": "dishId=9199&platFormId=393&merchantId=2512",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "package/multiStore/choosePerson/choosePerson",
+					"pathName": "package/multiStore/choosePerson/choosePerson",
+					"query": "merchantId=1690&tableId=28&brandId=311",
+					"scene": null
+				}
+			]
+		}
+	}
+}

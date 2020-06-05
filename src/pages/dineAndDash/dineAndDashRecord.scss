@@ -1,0 +1,140 @@
+page{
+  background: #F7F7F7;
+  .at-tabs{
+    box-shadow:0 5px 15px 0 rgba(172,172,172,0.15);
+  }
+  .at-tabs__item-underline{
+    height: 2Px;
+  }
+}
+.recordWarp{
+  margin: 0 30px;
+}
+.recordItem{
+  margin-top: 20px;
+  position: relative;
+  background: #ffffff;
+  .left{
+    width:200px;
+    height:200px;
+    image{
+      height: 100%;
+      width: 100%;
+      border-radius:8px 0 0 8px;
+    }
+    .label{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height:36px;
+      padding: 0 14px;
+      border-radius:8px 0 8px 0;
+      font-size: 20px;
+      text-align: center;
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+    .wait{
+      background:rgba(51,51,51,0.86);
+    }
+    .end{
+      background: #9E9E9E;
+    }
+    .invalid{
+      background: #9E9E9E;
+    }
+  }
+}
+.activityDetail{
+  padding: 20px;
+  .name{
+    font-size: 26px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+  }
+  .priceWarp{
+    display: inline-block;
+  }
+  .price{
+    text:first-child{
+      font-size: 24px;
+      color: #666666;
+    }
+    text:last-child{
+      font-size: 34px;
+      color: #FF623D;
+      font-weight: bold;
+      &:before{
+        content: '￥';
+        font-size: 22px;
+        font-weight: initial;
+      }
+    }
+  }
+  .lottery{
+    font-size: 24px;
+    color: #999999;
+  }
+  .operating{
+    position:absolute;
+    right: 16px;
+    top: 50%;
+    transform: translate(0, -50%);
+    .btn{
+      font-size: 22px;
+      color: #FF643D;
+      line-height: 48px;
+      text-align: center;
+      height:50px;
+      padding: 0 16px;
+      border:1px solid rgba(255,100,61,1);
+      border-radius:25px;
+      background: #ffffff;
+      &:after{
+        border: none;
+      }
+    }
+  }
+}
+.green{
+  color: #00C703;
+}
+.loading{
+  position: fixed;
+  left: 0;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+}
+
+.noStock {
+  position: relative;
+  padding: 60px;
+  background:rgba(255,255,255,1);
+  border-radius:10px;
+  image {
+    position: absolute;
+    height: 222px;
+    width: 228px;
+    top: -222px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  button {
+    width:371px;
+    height:76px;
+    background:rgba(255,100,61,1);
+    border-radius:38px;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    line-height: 76px;
+    margin-top: 40px;
+  }
+}

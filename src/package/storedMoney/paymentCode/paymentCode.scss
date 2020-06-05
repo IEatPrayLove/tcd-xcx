@@ -1,0 +1,79 @@
+page {
+  background: #FFC349;
+}
+.container {
+  margin: 60px 30px 30px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  line-height: 1;
+  padding: 1px 0 50px;
+  .number {
+    font-size: 26px;
+    color: #5C5C5C;
+    text-align: center;
+    margin: 66px 0 45px;
+  }
+  .titleBalance {
+    font-size: 24px;
+    color: #999999;
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+  .balance {
+    font-size: 60px;
+    color: #FF643D;
+    font-weight: bold;
+    text-align: center;
+  }
+  .qrCode {
+    width: 462px;
+    height: 462px;
+    margin: 20px auto;
+    display: block;
+  }
+  .otherPayment {
+    padding: 30px;
+    .title {
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #999999;
+    }
+    .weChat {
+      font-size: 24px;
+      color: #5C5C5C;
+    }
+  }
+}
+.rechargeBtn {
+  width: 690px;
+  height: 88px;
+  background:rgba(255,100,61,1);
+  border-radius:44px;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 88px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto 0;
+}
+.cuttingLine {
+  .line {
+    margin: 0 10px;
+    height: 1px;
+    border-top:1px dashed rgba(204,204,204,1);
+  }
+  &:before,
+  &:after{
+    content: '';
+    display: block;
+    height: 30px;
+    width: 15px;
+    background: #FFC349;
+  }
+  &:after{
+    border-radius: 15px 0 0 15px;
+  }
+  &:before{
+    border-radius: 0 15px 15px 0;
+  }
+}

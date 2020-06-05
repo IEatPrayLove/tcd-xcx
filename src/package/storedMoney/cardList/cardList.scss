@@ -1,0 +1,22 @@
+.cardItem {
+  font-size: 24px;
+  color: #643019;
+  padding: 20px 30px 35px;
+  margin: 30px 30px 0;
+  border-radius:10px;
+  //background-image: url(#{$STATIC_IMG_URL}/storedMoney/stored_card_bg.png);
+}
+.cardName {
+  font-weight: bold;
+}
+.getBtn {
+  width:370px;
+  height:88px;
+  background:rgba(255,100,61,1);
+  border-radius:44px;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 88px;
+  text-align: center;
+  margin: 90px auto 40px;
+}

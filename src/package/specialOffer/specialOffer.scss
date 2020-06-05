@@ -1,0 +1,71 @@
+page {
+  height: 100%;
+}
+.specialOfferBox {
+  height: 100%;
+  overflow: hidden;
+}
+.header{
+  background: #F6F6F6;
+  position: relative;
+  z-index: 100;
+  .search{
+    background: #ffffff;
+    padding: 15px 30px;
+    margin-bottom: 12px;
+    .at-search-bar{
+      &:after{
+        border: none
+      }
+    }
+    .searchInt{
+      margin-left: 20px;
+    }
+    .name{
+      font-size: 26px;
+      color: #333333;
+      max-width: 160px;
+    }
+  }
+  .at-tabs__item{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .at-tabs__item-underline{
+    height: 4px;
+  }
+}
+
+.recommendGoodsList {
+  .recommendGoodsItem {
+    margin-bottom: 40px;
+    height: 6px;
+    background-color: #f6f6f6;
+  }
+}
+
+.category{
+  position: absolute;
+  color: #333;
+  font-size: 24px;
+  left:0;
+  right:0;
+  z-index: 100;
+  .categoryWarp{
+    max-height: 500px;
+    padding: 20px 30px;
+    background-color: #fff;
+    view{
+      margin-bottom: 50px;
+    }
+  }
+}
+.categoryMask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background:rgba(27,27,27,0.3);
+}

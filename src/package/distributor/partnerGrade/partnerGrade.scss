@@ -1,0 +1,310 @@
+page{
+  background: #F7F7F7;
+}
+.index-header {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: #292C40;
+  padding: 40px 0 0 40px;
+  box-sizing: border-box;
+}
+
+.index-header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  right: 0;
+  left: 0;
+  bottom: -90px;
+  background: #292C40;
+  border-radius: 212% / 200%;
+  z-index: -1;
+}
+
+.level-header {
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+
+.name-area {
+  flex: 1;
+  color: #D9B784;
+  margin-left: 20px;
+}
+
+.name-area .name {
+  font-size: 32px;
+  max-width: 300px;
+}
+
+.level-tag-wrap {
+  margin-top: 12px;
+}
+
+.level-tag {
+  position: relative;
+  box-sizing: border-box;
+  background: #1C1F34;
+  min-width: 100px;
+  height: 44px;
+  padding: 8px 20px;
+  border-radius: 44px;
+  line-height: 22px;
+  align-items: center;
+}
+
+.level-tag:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  right: 40px;
+  border-left: 1px solid #BA9660;
+}
+
+.level-icon {
+  width: 56px;
+  height: 44px;
+}
+
+.level-name {
+  font-size: 22px;
+  color: #BA9660;
+  margin-left: 12px;
+}
+
+.line{
+  width:1px;
+  height:18px;
+  background:rgba(186,150,96,1);
+  margin: 0 18px;
+}
+
+.join-time {
+  font-size: 22px;
+  color: #D9B784;
+}
+
+.level-upgrade-btn {
+  display: inline-block;
+  /*width: 80px;*/
+  height: 76px;
+  line-height: 76px;
+  color: #FFFFFF;
+  font-size: 28px;
+  border-radius: 40px 0 0 40px;
+  padding: 0 20px;
+  background-color: #1C1F34;
+}
+
+.level-upgrade-btn:after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 28px;
+  margin-left: 10px;
+  background-image: url('#{$STATIC_IMG_URL}/distributor_level/icon_upgrade.png');
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.money-wrap {
+  position: relative;
+  /*height: 115px;*/
+  margin-left: 40px;
+  margin-right: 40px;
+  background: #F1E3C3;
+  border-radius: 16px;
+  margin-top: -64px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 8px 0px rgba(241, 227, 195, 0.5);
+}
+
+.money-item {
+  height: 88px;
+  background-position: left center;
+  background-size: 90px 88px;
+  padding-left: 100px;
+  background-repeat: no-repeat;
+}
+
+.money-item.earnings {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_earnings.png");
+}
+
+.money-item.redpack {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_redpack.png");
+}
+
+.money-item .title {
+  color: #BA9660;
+  font-size: 24px;
+}
+.money-value{
+  align-items: flex-end;
+}
+.money-item .money {
+  font-size: 40px;
+  color: #6A553D;
+  font-weight: bold;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.money-item .unit {
+  font-size: 24px;
+  color: #5E472F;
+  margin-right: 10px;
+}
+
+.btns-wrap {
+  margin-top: 32px;
+  padding: 0 40px 0 60px;
+}
+
+.money-btn {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #BA9660;
+  border-radius: 20px;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.money-btn.gray{
+  background: #cccccc;
+  color: #999999;
+}
+
+.rights-title {
+  position: relative;
+  font-size: 28px;
+  color: #BA9660;
+  text-align: center;
+  margin: 30px auto 20px;
+  width: 288px;
+}
+
+.rights-title:after, .rights-title:before {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  content: "◆";
+  font-size: 48px;
+  color: #BA9660;
+}
+
+.rights-title:after {
+  right: 0;
+}
+
+.rights-title:before {
+  left: 0;
+}
+
+.rights-title .icon-tag {
+  font-size: 40px;
+}
+
+.rights-banner {
+  position: relative;
+  display: block;
+  margin: 0 30px;
+  /*width: 100%;*/
+  height: 100px;
+  box-sizing: border-box;
+  background: url('#{$STATIC_IMG_URL}/distributor_level/rights.png') no-repeat center;
+  background-size: contain;
+}
+
+.upgrade-tips {
+  position: absolute;
+  background: #D84028;
+  /* width: 100px; */
+  text-align: center;
+  top: -20px;
+  right: 4px;
+  background-size: contain;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.upgrade-tips:before {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #D84028;
+}
+
+.function-wrap {
+  margin: 30px 40px 0;
+  background: #FFFFFF;
+  padding: 40px;
+  box-shadow: 0px 20px 20px 0px rgba(240, 240, 240, 0.4);
+  border-radius: 20px
+}
+
+.function-title {
+  position: relative;
+  font-size: 28px;
+  color: #13110F;
+}
+
+.function-title:before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 48%;
+  bottom: 0px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  /* transform: translate(0, -50%); */
+  border-left: 2px solid #D9B784;
+}
+
+.function-item-wrap{
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.function-item {
+  font-size: 24px;
+  color: #666666;
+  padding-top: 100px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 88px 88px;
+}
+.level-logo{
+  width: 26px;
+  height: 26px;
+}
+
+.function-item.icon1 {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_share_goods.png");
+}
+
+.function-item.icon2 {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_share_workbench.png");
+}
+
+.function-item.icon4 {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_recruit.png");
+}

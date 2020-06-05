@@ -1,0 +1,40 @@
+//
+page{
+  height: 100%;
+}
+.pageWarp{
+  @include baseBg(100%, 100%, "#{$STATIC_IMG_URL}/distributor_level/rights_explain_bg.png");
+}
+.rightsExplain{
+  height: 880px;
+  width: auto;
+  box-sizing: border-box;
+  margin: 280px 30px 0;
+  background:rgba(255,255,255,1);
+  box-shadow:0 15px 8px 0 rgba(254,102,83,0.4);
+  border-radius:8px;
+  padding: 30px 20px;
+}
+.upgrade-rights-item {
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.upgrade-rights-item:last-child {
+  margin-bottom: 0;
+}
+.rights-right {
+  flex: 1;
+}
+.upgrade-rights-title {
+  font-size: 26px;
+  color: #333333;
+}
+
+.upgrade-rights-content {
+  padding-left: 34px;
+  margin-top: 8px;
+  font-size: 22px;
+  color: #666666;
+  line-height: 40px;
+}

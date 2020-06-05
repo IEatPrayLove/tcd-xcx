@@ -1,0 +1,64 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+.search-header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 15px;
+    width:100%;
+    box-sizing: border-box;
+    background: #F7F7F7;
+    .input-wrap {
+        height: 80px;
+        line-height: 80px;
+        border-radius: 40px;
+        background: #ffffff;
+        padding: 0 30px;
+        .inputAddress {
+            color: #333333;
+            font-size: 28px;
+        }
+        .line {
+            display: inline-block;
+            color: #e7e7e7;
+            margin-right: 30px;
+            margin-left: 20px;
+        }
+        .search-btn {
+            border: 0 !important;
+            background: #ffffff;
+            line-height: normal;
+            padding: 0;
+            &.search-hover {
+                background: #F1F1F1;
+            }
+        }
+    }
+}
+
+.addressItem{
+    margin:0 60px 0 30px;
+    padding: 20px 0 20px 30px;
+    border-bottom: 1px solid #F1F1F1;
+    position: relative;
+    .nameTitle{
+        font-size: 30px;
+        color:#FBAB48;
+        margin-bottom: 10px;
+    }
+    .addressMsg{
+        font-size: 24px;
+        color:#999999;
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        right:0;
+        top:50%;
+        background: url(#{$STATIC_ICON_URL}/icon/icon_bevel.png);
+        height: 15px;
+        width: 15px;
+    }
+}
+.searchContainer{
+    margin-top: 110px;
+}

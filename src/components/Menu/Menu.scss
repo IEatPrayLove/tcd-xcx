@@ -1,0 +1,667 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+.menuHeader {
+    height: 100px;
+    font-size: 18px;
+    line-height: 1;
+    padding-left: 28px;
+    .label {
+      padding: 6px;
+      border-radius: 2px;
+      color: #ffffff;
+      background-color: #FF623D;
+      margin-right: 8px;
+    }
+    .activity {
+      padding: 6px;
+      border: 1px solid #FF623D;
+      box-sizing: border-box;
+      border-radius: 2px;
+      color: #FF623D;
+      margin-right: 8px;
+    }
+}
+
+
+.scrollViewLeft {
+    width: 230px;
+    .category {
+        font-size: 26px;
+        padding: 40px 30px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .specialCategory{
+        display: flex;
+        text-align: center;
+        font-size: 26px;
+        padding: 40px 20px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .catHot{
+        color:#FC5C44;
+        &::before{
+            content: '';
+            height: 34px;
+            width: 29px;
+            display: inline-block;
+            background: url(#{$STATIC_ICON_URL}/icon/icon_hot.png) no-repeat;
+            background-size: cover;
+            margin-right: 4px;
+        }
+    }
+    .catOffer{
+        color:#37D7A6;
+        &::before{
+            content: '';
+            height: 30px;
+            width: 29px;
+            display: inline-block;
+            background: url(#{$STATIC_ICON_URL}/icon/icon_offer.png) no-repeat;
+            background-size: cover;
+            margin-right: 4px;
+        }
+    }
+    .inactive {
+        color: #777777;
+        background: #F7F7F7;
+    }
+    .specialActive{
+        background: #ffffff;
+    }
+    .specialInactive{
+        background: #F7F7F7;
+    }
+    .active {
+        background: #ffffff;
+        color: #FCB251;
+    }
+}
+
+.scrollViewRight {
+    margin: 0 30px 0 20px;
+    .categoryTitle {
+        z-index: 9;
+        position: sticky;
+        top: 0;
+        margin-bottom: 30px;
+        padding-bottom: 6px;
+        font-size: 26px;
+        color: #333333;
+        padding-left: 10px;
+        padding-top: 10px;
+        background: #ffffff;
+        &::before {
+            content: '▎';
+            color: #FCB251
+        }
+    }
+    .goods {
+        margin-bottom: 70px;
+    }
+    .goodsImg {
+        height: 150px;
+        width: 150px;
+        border-radius: 4px;
+    }
+    .goodsInfo {
+        margin-left: 20px;
+        width: 0;
+    }
+    .goodsName {
+        font-size: 30px;
+        color: #333333;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .description,
+    .salesVolume {
+        font-size: 20px;
+        color: #999999;
+    }
+    .description {
+        margin: 10px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .priceInfo {
+        position: relative;
+        .price {
+            &::before {
+                content: '售价￥';
+                font-size: 22px;
+                color: #333333;
+            }
+            font-size: 20px;
+            color: #333333;
+        }
+        .oprice {
+            &::before {
+                content: '￥';
+                font-size: 22px;
+                color: #FF6C64;
+            }
+            font-size: 40px;
+            color: #FF6C64;
+        }
+        .originalPrice {
+            margin-left: 10px;
+            font-size: 20px;
+            color: #999999;
+            text-decoration: line-through;
+        }
+        .limit {
+            white-space: nowrap;
+            position: absolute;
+            font-size: 20px;
+            color: #FF6C64;
+        }
+        .discount {
+            padding-right: 10px;
+            &::before {
+                content: '';
+                margin-right: 6px;
+                display: inline-block;
+                background-image: url(#{$STATIC_ICON_URL}/icon/icon_discount.png);
+                background-size: cover;
+                height: 20px;
+                width: 20px;
+                vertical-align: -2px;
+            }
+        }
+    }
+    .memberPrice{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .memberPriceContext{
+            display: inline-block;
+            width:62px;
+            border:1px solid rgba(255,108,100,1);
+            border-radius:2px;
+            height:30px;
+            font-size:18px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(255,108,100,1);
+            line-height:30px;
+            text-align: center;
+        }
+        .memberPriceIcon{
+            width:13px;
+            height:17px;
+            font-size:22px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(255,108,100,1);
+        }
+        .memberPriceText{
+            width:59px;
+            height:32px;
+            font-size:40px;
+            font-family:Microsoft YaHei;
+            font-weight:bold;
+            color:rgba(255,108,100,1);
+            line-height:32px;
+        }
+    }
+}
+
+
+.chose-sku {
+    font-size: 24px;
+    color: #ffffff;
+    //width: 106px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: rgba(252, 178, 81, 1);
+    border-radius: 23px;
+    margin: 0;
+    padding: 0 20px;
+    &.hover {
+        background: rgba(252, 178, 81, 0.3);
+    }
+    &:after {
+        border: 0;
+    }
+}
+/***添加菜品按钮***/
+.part {
+    display: inline-block;
+    min-width: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #999999;
+}
+
+.btn {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    &:after {
+        border: 0;
+    }
+    &.add {
+        background: #FCB251;
+        &.hover {
+            background: rgba(252, 178, 81, 0.3) !important;
+        }
+    }
+    &.cut {
+        background: #E5E5E5;
+        &.hover {
+            background: #CCCCCC;
+        }
+    }
+}
+.sale-out {
+    font-size: 26px;
+    color:#999999;
+}
+.addAndSub{
+    display: flex;
+    justify-content: center;
+}
+/*****购物车******/
+.cartBar {
+    z-index: 998;
+    height: 90px;
+    box-sizing: border-box;
+    position: relative;
+    .carContainer{
+        background: #ACACAC;
+        height: 100%;
+    }
+    &:before {
+        content: "";
+        position: relative;
+        left: 30px;
+        top: -20px;
+        width: 110px;
+        height: 110px;
+        border-radius: 55px;
+        background-color: #ACACAC;
+    }
+    .car-icon {
+        position: absolute;
+        left: 35px;
+        top: -13px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: #FCB251;
+        background-position: 40% center;
+        background-repeat: no-repeat;
+        background-image: url(#{$STATIC_ICON_URL}/icon/icon_car.png);
+        background-size: 62px 54px;
+        &.hover {
+            background-color: rgba(252, 178, 81, 0.3);
+        }
+        .red-dot {
+            position: absolute;
+            right: 0;
+            top: -10px;
+            min-width: 32px;
+            height: 32px;
+            line-height: 32px;
+            background: rgba(255, 84, 75, 1);
+            border-radius: 16px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+    }
+    .fee-wap {
+        padding-left: 156px;
+        height: 100%;
+        .price {
+            color: #ffffff;
+            //height: 20px;
+            line-height: 26px;
+            .rmb {
+                font-size: 26px;
+                font-weight: bold
+            }
+            .num {
+                font-size: 44px;
+                font-weight: bold
+            }
+        }
+        .shipping {
+            color: #ffffff;
+            font-size: 20px;
+        }
+    }
+    .bill-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        background-color: #BBBBBB;
+        font-size: 28px;
+        color: #ffffff;
+        border-radius: 0;
+        &:after {
+            border: 0;
+        }
+        &.active {
+            background-color: #FCB251;
+            &.hover {
+                background: rgba(252, 178, 81, 0.3);
+            }
+        }
+        &.disabled {
+            background-color: #CCCCCC;
+        }
+    }
+    /*.bill-btn[disabled]:not([type])  {
+        background: #CCCCCC;
+    }*/
+}
+
+//自定义遮罩背景
+@mixin my-mask($zIndex:98) {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    //margin-bottom: taro-tabbar-height;
+    z-index: $zIndex;
+}
+.car-detail {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 997;
+    background: rgba(0, 0, 0, 0.5);
+    .car-detail-in {
+        position: absolute;
+        width: 100%;
+        bottom: 90px;
+        min-height: 100px;
+        max-height: 550px;
+        background-color: #ffffff;
+        padding-bottom: 30px;
+        //transform: translateY(50vh);
+        transition: all .2s cubic-bezier(.25, .5, .5, .9);
+        .scroll-car {
+            max-height: 370px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .header {
+            padding: 26px 20px;
+            background-color: #F7F7F7;
+            .title {
+                position: relative;
+                font-size: 28px;
+                color: #333333;
+                padding-left: 20px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 6px;
+                    height: 28px;
+                    background-color: #FCB251;
+                    border-radius: 3px;
+                    transform: translate(0, -50%);
+                }
+            }
+            .clear-btn {
+                font-size: 24px;
+                color: #999999;
+                background: url(#{$STATIC_ICON_URL}/icon/icon_del.png) no-repeat left center;
+                background-size: 31px 30px;
+                text-indent: 40px;
+                &.hover {
+                    color: #ccc;
+                }
+            }
+        }
+        .item {
+            padding: 30px 20px;
+            border-bottom: 1px solid #E5E5E5;
+            &:last-child {
+                border-bottom: 0;
+            }
+            .name {
+                width: 100%;
+                font-size: 28px;
+                color: #333333;
+                margin-right: 20px;
+            }
+            .description {
+                color: #999999;
+                font-size: 22px;
+            }
+            .price {
+                color: #FF6C64;
+                font-size: 30px;
+                margin-right: 50px;
+                .rmb {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+.sku-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+    .sku-inwrap {
+        background: #ffffff;
+        margin: 0 20px;
+        border-radius: 10px;
+        min-height: 50px;
+        max-height: 600px;
+        flex:1;
+        .header {
+            position: relative;
+            padding: 20px 0;
+            font-size: 30px;
+            color: #333333;
+            text-align: center;
+            .close-sku-panel {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                background: url(#{$STATIC_ICON_URL}/icon/icon_close.png) no-repeat center;
+                background-size: cover;
+                transform: translate(0, -50%);
+            }
+        }
+        .content-wrap {
+            .title {
+                font-size: 26px;
+                color: #333333;
+                margin-bottom: 10px;
+                padding: 0 20px;
+            }
+            .item-list {
+                flex-wrap: wrap;
+                padding-left: 20px;
+                .item {
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    height: 50px;
+                    line-height: 42px;
+                    box-sizing: border-box;
+                    margin: 0 20px 20px 0;
+                    padding: 0 15px;
+                    border: 1px solid #D2D2D2;
+                    border-radius: 8px;
+                    font-size: 26px;
+                    color: #999999;
+                    &:after {
+                        border: 0;
+                    }
+                    &.hover {
+                        background: rgba(250, 250, 250, 0.5);
+                    }
+                    &.active {
+                        border: 1px solid #FCB251;
+                        background: #FCB251;;
+                        color: #ffffff;
+                        &.hover {
+                            background: rgba(252, 178, 81, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            border-top: 1px solid #E5E5E5;
+            padding: 20px;
+            .price {
+                color: #FF544B;
+                font-weight: bold;
+                font-size: 44px;
+                .rmb {
+                    font-size: 26px;
+                }
+                .money {
+                    height: 20px;
+                    line-height: 28px;
+                }
+            }
+            .sku {
+                color: #999999;
+                font-size: 22px;
+            }
+            .add-car-btn {
+                height: 46px;
+                line-height: 44px;
+                background: #FCB251;
+                margin: 0;
+                padding: 0 20px;
+                font-size: 22px;
+                color: #ffffff;
+                text-align: center;
+                border-radius: 23px;
+                &:after {
+                    border: 0;
+                }
+                &.hover {
+                    background: rgba(252, 178, 81, 0.5);
+                }
+                &.disabled {
+                    background: #CCCCCC;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}
+
+.dishDetailMask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 999;
+    
+}
+.dishDetailBox {
+    width: 660px;
+    margin: 90px auto 0;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    .closeImg {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        opacity: .7;
+        //z-index: 1000;
+    }
+    .dishImg {
+        width: 660px;
+        height: 660px;
+        image {
+            width: 100%;
+            height: 100%
+        }
+    }
+    .dishInfoBox {
+        height: 210px;
+        padding: 30px;
+        box-sizing: border-box;
+        line-height: 1;
+        .dishInfoName {
+            font-size: 30px;
+            color: #333;
+        }
+        .dishInfoDes {
+            font-size: 20px;
+            color: #999;
+            margin-top: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .dishInfoFooter {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 13px;
+            .infoFooterLeft {
+                text {
+                    &:first-child {
+                        font-size: 22px;
+                        color: #FF6C64;
+                    }
+                    &:last-child {
+                        font-size: 20px;
+                        color: #999;
+                        text-decoration: line-through;
+                    }
+                    &:nth-child(2) {
+                        font-size: 40px;
+                        font-weight: bold;
+                        color: #FF6C64;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.minCount {
+  font-size: 20px;
+  color: #FF643D;
+  display: flex;
+  flex-direction: row;
+}

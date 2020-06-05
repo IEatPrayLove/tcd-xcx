@@ -1,0 +1,102 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+page{
+  background: #FFC349;
+}
+.couponInfo{
+  width: 690px;
+  height: 264px;
+  padding: 110px 0 50px;
+  box-sizing: border-box;
+  background: url(#{$STATIC_ICON_URL}/icon/coupon_bg.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 86px auto 0;
+  position: relative;
+  .logo{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: -60px;
+    transform: translate(-50%, 0);
+  }
+  .name{
+    font-size: 36px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .validDay{
+    font-size: 24px;
+    color: #666666;
+  }
+  .line{
+    margin-top: 12px;
+    width: 90%;
+    border:1px dashed rgba(204,204,204,1);
+  }
+}
+.buyDay{
+  margin-bottom: 10px;
+}
+.couponRule{
+  line-height: 40px;
+  padding: 50px 60px 50px;
+  font-size: 24px;
+  color: #ffffff;
+}
+.ruleTitle{
+  font-size: 26px;
+  font-weight: bold;
+  margin: 50px 0 20px;
+}
+.consumerCode{
+  width: 690px;
+  margin: -2px auto 0;
+  background: #ffffff;
+  .title{
+    font-size: 24px;
+    color: #999999;
+    padding-bottom: 20px;
+  }
+  .codeImg{
+    width:400px;
+    height:200px;
+    margin-bottom: 20px;
+  }
+  .code{
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    padding-bottom: 26px;
+  }
+  .copy{
+    width:100px;
+    height:46px;
+    border:1px solid rgba(255,101,61,1);
+    border-radius:23px;
+    font-size:22px;
+    color: #FF643D;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+}
+.noOrder{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background: #FFFFFF;
+  .weight{
+    font-size: 36px;
+    color: #333333;
+    font-weight: bold;
+    margin: 80px 0 440px;
+  }
+  .refresh{
+    font-size: 26px;
+    color: #999999;
+  }
+}

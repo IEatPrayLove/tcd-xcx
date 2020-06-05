@@ -1,0 +1,23 @@
+.nameIpt{
+  border-bottom: 1px solid #EEEEEE;
+  padding: 30px 0;
+  margin: 30px 30px 70px;
+}
+.nameIntPlace{
+  color: #999999;
+  font-size: 28px;
+}
+.saveBtn{
+  width: 630px;
+  height: 88px;
+  line-height: 88px;
+  text-align: center;
+  color: #FFFDFD;
+  font-size: 30px;
+  border-radius: 44px;
+  border: none;
+  background: #FF643D;
+  &:after{
+    border: none;
+  }
+}

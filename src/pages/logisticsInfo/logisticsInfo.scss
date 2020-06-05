@@ -1,0 +1,145 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+.logistics-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    //overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 30px 20px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    .item {
+        font-size: 26px;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .title {
+            color: #999999;
+        }
+        .name {
+            color: #333333;
+        }
+        .copy {
+            color: #FF623D;
+        }
+    }
+}
+
+.list-scroll {
+    .scroll-in {
+        //height: 100%;
+        background: #FFFFFF;
+        padding: 30px 0;
+        &.more-one {
+            .item {
+                &:before {
+                    position: absolute;
+                    left: 140px;
+                    top: 0;
+                    bottom: 0;
+                    content: "";
+                    width: 1px;
+                    border-left: 1px solid #F0F0F0;
+                }
+                &:after {
+                    position: absolute;
+                    left: 136px;
+                    top: 23px;
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 10px;
+                    background: #CCCCCC;
+                }
+                &:last-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+                &:first-child {
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        left: 120px;
+                        top: 0;
+                        width: 46px;
+                        height: 46px;
+                        background: url(#{$STATIC_ICON_URL}/icon/icon_first_node.png) no-repeat center;
+                        background-size: cover;
+                    }
+                }
+                &:last-child {
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        left: 120px;
+                        top: 0;
+                        width: 46px;
+                        height: 46px;
+                        background: url(#{$STATIC_ICON_URL}/icon/icon_last_node.png) no-repeat center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+
+        /* &.only-one {
+             .item {
+                 &:after {
+                     position: absolute;
+                     content: "";
+                     left: 120px;
+                     top: 0;
+                     width: 46px;
+                     height: 46px;
+                     background: url("../../images/icons/icon_last_node.png") no-repeat center;
+                     background-size: cover;
+                 }
+             }
+         }
+ */
+        .item {
+            position: relative;
+            padding-left: 30px;
+            padding-bottom: 50px;
+            padding-right: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:first-child, &:last-child {
+                .right {
+                    .title {
+                        color: #FBAB48;
+                    }
+                }
+            }
+            .time {
+                margin-right: 80px;
+                .date {
+                    font-size: 24px;
+                    color: #999999;
+                    //margin-bottom: 8px;
+                }
+                .hour {
+                    font-size: 20px;
+                    color: #BBBBBB;
+                }
+            }
+            .right {
+                min-height: 46px;
+                .title {
+                    color: #666666;
+                    font-size: 22px;
+                }
+                .content {
+                    font-size: 20px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}

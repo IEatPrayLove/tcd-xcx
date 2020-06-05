@@ -1,0 +1,53 @@
+.userInfoPage{
+  .at-list{
+    &:after{
+      border-color: transparent;
+    }
+  }
+  .at-list__item{
+    &:after{
+      border-color: #eeeeee;
+    }
+    .item-extra__image{
+      height: 82px;
+      width: 82px;
+    }
+    .item-extra__image-info{
+      border-radius: 50%;
+    }
+    .item-extra__icon-arrow{
+      color: #333333;
+      font-size: 36px;
+    }
+  }
+  .item-content__info-title{
+    font-size: 30px;
+    color: #333333;
+  }
+  .item-extra__info{
+    font-size: 28px;
+    color: #999999;
+  }
+  .exit{
+    .item-extra__info{
+      color: #3699FF
+    }
+  }
+  .saveBtn{
+    &:after{
+      border: none;
+    }
+    color: #FFFDFD;
+    font-size: 36px;
+    background: #FF643D;
+    border-radius: 50px;
+    width: 630px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .activeBtn{
+    background:rgba(255, 100, 61, 0.6);
+  }
+}

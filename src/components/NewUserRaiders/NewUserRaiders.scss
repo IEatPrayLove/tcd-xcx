@@ -1,0 +1,80 @@
+@import '../../styles/base.scss';
+.raiderDetail {
+  height: 100%;
+  .detailBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    .detailItem {
+      width: 100%;
+      height: 100%;
+      image {
+        width: 100%;
+      height: 100%;
+      }
+    }
+  }
+}
+.raidersBox {
+  position: relative;
+  background-color: #FCFBFB;
+  .raidersClose {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
+  .raiderHeader {
+    border-radius: 8px;
+    overflow: hidden;
+    image {
+      width: 100%;
+      height: 187px;
+      display: block;
+    }
+  }
+  .raidersList {
+    padding: 30px 50px 50px;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    .listTitle {
+      font-size: 24px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .listItem {
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 3px 13px 0 rgba(32, 27, 24, 0.08);
+      line-height: 1;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .itemLeft {
+        image {
+          width: 88px;
+          height: 88px;
+          display: block;
+        }
+      }
+      .itemRight {
+        margin-left: 30px;
+        padding: 15px 0;
+        .itemTitle {
+          font-size: 28px;
+        }
+        .itemTip {
+          font-size: 20px;
+          color: #999;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}

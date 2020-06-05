@@ -1,0 +1,121 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+.user-address-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.address-list {
+    .item-wrap {
+        background: #ffffff;
+        padding: 0 20px;
+        &:last-child {
+            .item-in {
+                border-bottom: 0;
+            }
+        }
+        .item-in {
+            padding: 20px 0;
+            border-bottom: 1px solid #EEEEEE;
+            .address {
+                font-size: 30px;
+                color: #333333;
+                margin-bottom: 10px;
+            }
+            .name {
+                font-size: 26px;
+                color: #666666;
+            }
+        }
+    }
+}
+
+.check-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    padding: 0;
+    margin-right: 20px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(#{$STATIC_ICON_URL}/icon/not_selected.png);
+    background-size: cover;
+    background-position: left center;
+    &.hover {
+        background-color: rgba(204, 204, 204, 0.5);
+    }
+    &.active {
+        background-image: url(#{$STATIC_ICON_URL}/icon/selected.png);
+        &.hover {
+            background-color: rgba(252, 178, 81, 0.5); //#FCB251;
+        }
+    }
+    &:after {
+        border: 0;
+    }
+}
+.edit {
+    width: 36px;
+    height: 30px;
+    padding: 0;
+    margin-right: 20px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(#{$STATIC_ICON_URL}/icon/icon_edit.png);
+    background-size: cover;
+    background-position: left center;
+    &:after {
+        border: 0;
+    }
+    &.hover {
+        background-color: #f0f0f0;
+    }
+}
+.delete {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(#{$STATIC_ICON_URL}/icon/icon_close.png);
+    background-size: cover;
+    background-position: left center;
+    &:after {
+        border: 0;
+    }
+    &.hover {
+        background-color: #f0f0f0;
+    }
+}
+
+.add-address {
+    width: 100%;
+    height: 96px;
+    line-height: 100px;
+    background: #ffffff;
+    border-radius: 0;
+    color: #666666;
+    font-size: 30px;
+    text-align: center;
+    &.add-address-hover {
+        background: #f0f0f0;
+    }
+    &:after {
+        border: 0;
+    }
+    .add-icon {
+        width: 44px;
+        height: 44px;
+        background: #FCB251;
+        border-radius: 22px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 20px;
+    }
+}
+.rangeTitle{
+    padding:24px 40px;
+    font-size:28px;
+    color:#666666;
+}

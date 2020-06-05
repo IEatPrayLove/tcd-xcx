@@ -1,0 +1,51 @@
+.page{
+  line-height: 1;
+  .logo{
+    width: 124px;
+    height: 124px;
+    margin-bottom: 16px;
+  }
+  .name{
+    font-size: 26px;
+    margin-top: 40px;
+    color: #999;
+  }
+  .income{
+    font-size: 60px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 35px;
+  }
+  .info{
+    font-size: 26px;
+    color: #999;
+    margin-top: 150px;
+    margin-left: 90px;
+    line-height: 1;
+    .infoItem {
+      margin-bottom: 60px;
+    }
+    .colorBlack {
+      color: #333;
+    }
+    .marB {
+      margin-bottom: 30px;
+    }
+    text:first-child{
+      white-space: nowrap;
+      padding-right: 35px;
+    }
+  }
+}
+
+.imgLogo{
+  width:100px;
+  height: 100px;
+  border-radius: 50%
+}
+.imgLogoContent{
+  margin-top: 40px;
+}
+.goodsName{
+  margin-right: 30px;
+}

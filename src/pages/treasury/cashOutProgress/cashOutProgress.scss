@@ -1,0 +1,196 @@
+.cashOutProgressBox {
+  padding: 70px 60px 0;
+  position: relative;
+  .cashTip {
+    font-size: 26px;
+    color: #999;
+    text-align: center;
+  }
+  .cashNum {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .wechatBox {
+    text-align: center;
+    line-height: 1;
+    margin-top: 70px;
+    .tipsTitle {
+      font-size: 26px;
+      color: #999;
+    }
+    .wechatNum {
+      font-size: 30px;
+      margin-top: 25px;
+      
+    }
+    .wechatImg {
+      width: 255px;
+      height: 255px;
+      margin-top: 20px;
+    }
+  }
+  .progressBox {
+    position: relative;
+    .progressTip {
+      font-size: 26px;
+      color: #999;
+      text-align: left;
+      margin: 60px 0 35px;
+    }
+  }
+  .cashOutProgressLine {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    border-right: 1px dashed #dcdcdc;
+    height: 170px;
+    z-index: -1;
+  }
+  .cashOutProgressItem {
+    display: flex;
+    padding-left: 150px;
+    .cashOutProgressIcon {
+      width: 40px;
+      height: 40px;
+      .cashOutProgressCircle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #FCB251;
+        margin: 15px auto 0;
+      }
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .cashOutProgressContent {
+      width: 80%;
+      // height: 80px;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .cashOutProgressTitle {
+        font-size: 30px
+      }
+      .cashOutProgressTip {
+        font-size: 24px;
+        color: #999;
+        margin-bottom: 35px;
+      }
+    }
+  }
+  .cashOutItemMar {
+    margin-top: 95px;
+  }
+  .cashOutProgressInfo {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #dcdcdc;
+    .cashOutInfoItem {
+      display: flex;
+      // justify-content: space-between;
+      font-size: 26px;
+      color: #999;
+      margin-bottom: 55px;
+      >text {
+        &:first-child {
+          margin-right: 35px;
+        }
+      }
+      .cashOutInfoItemWord {
+        color: #333;
+      }
+    }
+  }
+
+  .btnContainer {
+    display: flex
+  }
+  .cashOutProgressBtn {
+    width: 270px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 45px;
+    background-color: #FF643D;
+    color: #fff;
+    text-align: center
+  }
+  .addCustomerBtn {
+    width: 300px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 45px;
+    border:1px solid #FF643D;
+    color: #FF643D;
+    text-align: center;
+    background: #ffffff;
+    &:after {
+      border: none;
+    }
+    // &:before
+  }
+}
+.cashOutModal {
+  padding: 30px 0;
+}
+
+.modalTitle {
+  text-align: right;
+  padding: 0 30px;
+}
+
+.modalMoney {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 34px;
+  color: #333;
+}
+
+.modalBtnGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  .modalBtn {
+    width: 250px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 28px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    &:after {
+      border: none;
+    }
+  }
+  .modalBtnCancel {
+    color: #fff;
+    border-right: 1px solid #e5e5e5;
+    background-color: #FF643D;
+  }
+  .modalBtnConfirm {
+    color: #FF643D;
+  }
+}
+.copyWe {
+  width: 90px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  box-sizing: border-box;
+  border: 2px solid #DCDCDC;
+  font-size: 22px;
+  color: #999;
+  margin-left: 30px;
+  text-align: center;
+}
+.weImg {
+  width: 255px;
+  height: 255px;
+}

@@ -1,0 +1,282 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+.user-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.user-banner {
+    position: relative;
+    height: 351px;
+    background: url("../../images/user_bj.png") no-repeat center;
+    background-size: 100% 351px;
+    padding: 0 30px 0;
+    box-sizing: border-box;
+    .avatar-wrap {
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        background: #FDC47E;
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+        }
+    }
+    .right {
+        height: 140px;
+        margin-left: 30px;
+        .login-text {
+            color: #FFFFFF;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .slogan {
+            color: #FFFFFF;
+            font-size: 24px;
+        }
+    }
+    .name {
+        max-width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 10px;
+        .text {
+            display: inline-block;
+            height: 39px;
+            line-height: 30px;
+        }
+    }
+    .partner-icon {
+        width: 73px;
+        height: 39px;
+        display: inline-block;
+        background: url("../../images/icon_partner.png") no-repeat center;
+        background-size: cover;
+        margin-left: 12px;
+    }
+    .phone {
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(242, 152, 40, 1);
+        border-radius: 20px;
+        text-align: center;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+    .partner-wrap {
+        height: 90px;
+        border-radius: 0;
+        background: transparent;
+        margin: 20px 0 0;
+        padding: 0;
+        &:after {
+            border: none;
+        }
+        .text {
+            height: 40px;
+            line-height: 40px;
+            font-size: 30px;
+            color: #FFF;
+            font-weight: bold;
+        }
+        .btns {
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #FFF;
+            border-radius: 20px;
+            font-size: 24px;
+            color: #FBAB48;
+        }
+    }
+}
+
+.my-order {
+    position: relative;
+    height: 80px;
+    .my-order-inwrap {
+        position: absolute;
+        top: -148px;
+        left: 30px;
+        right: 30px;
+        //height: 220px;
+        background: #FFFFFF;
+        box-shadow: 0 5px 15px 0 rgba(172, 172, 172, 0.15);
+        border-radius: 8px;
+        .header {
+            padding: 20px;
+            border-bottom: 1px solid #F0F0F0;
+            margin-bottom: 10px;
+            .title {
+                font-size: 28px;
+                color: #333333;
+            }
+            .all {
+                font-size: 22px;
+                color: #999999;
+                .icon {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .oder-items {
+            .item {
+                /* height: 100px;*/
+                position: relative;
+                padding-bottom: 20px;
+                background-position: center 20px;
+                background-repeat: no-repeat;
+                .dot {
+                    position: absolute;
+                    right: 44px;
+                    top: 5px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    background: rgba(255, 98, 61, 1);
+                    border-radius: 50%;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+                &.btn1 {
+                    background-image: url("../../images/icons/icon_user1.png");
+                    background-size: 46px 38px;
+                }
+                &.btn2 {
+                    background-image: url("../../images/icons/icon_user2.png");
+                    background-size: 46px 38px;
+                }
+                &.btn3 {
+                    background-image: url("../../images/icons/icon_user3.png");
+                    background-size: 47px 38px;
+                }
+                &.btn4 {
+                    background-image: url("../../images/icons/icon_user4.png");
+                    background-size: 47px 42px;
+                }
+                &.btn5 {
+                    background-image: url("../../images/icons/icon_user5.png");
+                    background-size: 41px 39px;
+                }
+
+                .name {
+                    font-size: 24px;
+                    color: #666666;
+                    text-align: center;
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
+
+.ad-img-wrap {
+    height: 140px;
+    margin: 0 30px 20px;
+    box-sizing: border-box;
+    .ad-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+}
+
+.set-list {
+    background: #ffffff;
+    padding: 0;
+    .item {
+        padding: 0 30px;
+        .item-in {
+            border-bottom: 1px solid #F0F0F0;
+            padding: 10px 0;
+        }
+        background: #ffffff;
+        border-radius: 0;
+        &.item-hover {
+            background: #f0f0f0;
+        }
+        &:after {
+            border: 0;
+        }
+        &:last-child {
+            .item-in {
+                border-bottom: 0;
+            }
+        }
+        .title {
+            font-size: 28px;
+            color: #666666;
+            margin-left: 20px;
+            text-align: left;
+            position: relative;
+            .dot {
+                position: absolute;
+                left: 110px;
+                top: 20px;
+                width: 20px;
+                height: 20px;
+                background: rgba(255, 98, 61, 1);
+                border-radius: 50%;
+            }
+        }
+        .set-icon {
+            background-repeat: no-repeat;
+            &.coupon {
+                width: 37px;
+                height: 37px;
+                background-image: url("../../images/icons/icon_user_dis.png");
+                background-size: cover;
+                background-position: center;
+                //margin-top: 8px;
+            }
+            &.location {
+                width: 40px;
+                height: 37px;
+                background-image: url("../../images/icons/icon_user_location.png");
+                background-size: cover;
+                background-position: center;
+            }
+            &.msg {
+                width: 38px;
+                height: 37px;
+                background-image: url("../../images/icons/icon_user_msg.png");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        .arrow {
+            width: 30px;
+            height: 50px;
+            background: url(#{$STATIC_ICON_URL}/icon/icon_arrow.png) center no-repeat;
+            background-size: 15px 25px;
+        }
+    }
+}
+
+.login-out {
+    margin-top: 28px;
+    height: 80px;
+    line-height: 80px;
+    background: #ffffff;
+    border-radius: 0;
+    color: #FCB251;
+    font-size: 26px;
+    text-align: center;
+    &.login-out-hover {
+        background: #f0f0f0;
+    }
+    &:after {
+        border: 0;
+    }
+}
+
+.login-out[disabled]:not([type]) {
+    background: #CCCCCC;
+    color: #999999;
+}

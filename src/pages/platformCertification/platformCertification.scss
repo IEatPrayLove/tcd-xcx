@@ -1,0 +1,212 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+page{
+  background: #f2f2f2;
+}
+.title{
+  height: 114px;
+  padding: 0 30px;
+  background: #FFFFff;
+  &:before{
+    content: '';
+    display: block;
+    width:4px;
+    height:30px;
+    background:rgba(255,100,61,1);
+    border-radius:2px;
+    margin-right: 20px;
+  }
+  .state{
+    font-size: 30px;
+    color: #333333;
+  }
+}
+.certificationRecord{
+  font-size: 26px;
+  color: #FF643D;
+  padding-right: 35px;
+}
+
+.renderAuth{
+  white-space: nowrap;
+  height: 200px;
+  .channel{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    .warp{
+      margin-top: 10px;
+      height: 100%;
+      box-sizing: border-box;
+      image{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      text{
+        font-size: 26px;
+        color: #333333;
+      }
+    }
+    .active{
+      background: #ffffff;
+      box-shadow:0px -4px 4px 0px rgba(205,205,205,0.3);
+      border-radius:10px 10px 0 0;
+      &>image{
+        transform: scale(1.2);
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.talentInfo{
+  margin-bottom: 20px;
+  position: relative;
+  padding: 50px 30px 140px;
+  background: #ffffff;
+  line-height: 50px;
+  .item{
+    width: 50%;
+    text-align: start;
+    display: flex;
+    text:first-child{
+      font-size: 26px;
+      color: #999999;
+      flex-shrink: 0;
+    }
+    view{
+      font-size: 26px;
+      color: #333333;
+    }
+  }
+  .againBtn{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 30px;
+    width:194px;
+    height:70px;
+    border:1px solid rgba(153,153,153,1);
+    border-radius:35px;
+    font-size: 24px;
+    color: #999999;
+    background: #ffffff;
+    text-align: center;
+    line-height: 70px;
+    &:after{
+      border: none;
+    }
+  }
+}
+
+.noAuth{
+  padding: 0 30px;
+  background: #ffffff;
+  .item{
+    padding: 24px 0;
+    border-bottom: 1px solid #DFDFDF;
+    image{
+      height: 70px;
+      width: 70px;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    .channelName{
+      font-size: 26px;
+      color: #333333;
+    }
+    .immediately{
+      font-size: 26px;
+      color: #FF643D;
+      padding-right: 10px;
+    }
+  }
+  .item:first-child{
+    padding-top: 0;
+  }
+  .item:last-child{
+    border-bottom: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alreadyPlatform{
+  background: #ffffff;
+  padding: 30px 30px 16px 70px;
+  .platformImg{
+    height: 162px;
+    width: 162px;
+    margin-right: 60px
+  }
+  .talentInfoWarp{
+    line-height: 50px;
+  }
+  .talentInfo{
+    font-size: 24px;
+    color: #333333;
+    text:first-child{
+      font-weight: bold;
+    }
+    .talentLevel{
+      font-size: 12px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 26px;
+      padding-left: 46px;
+      box-sizing: border-box;
+      @include baseBg(74px, 26px, '#{$STATIC_ICON_URL}/icon/talent_level.png');
+    }
+  }
+}
+.certificationBtn{
+  background: #ffffff;
+  padding-bottom: 26px;
+  text-align: end;
+  margin-bottom: 20px;
+  button {
+    display: inline-block;
+    margin-right: 30px;
+    &:after{
+      border: none;
+    }
+    color: #ffffff;
+    background: #FF6B30;
+    font-size: 24px;
+    width: 200px;
+    border-radius: 30px;
+  }
+  .active{
+    background: rgba(255, 107, 48, 0.6);
+  }
+}
+.noAuthList{
+  .at-grid__flex{
+    margin-top: 20px;
+  }
+  .at-grid-item__content-inner{
+    background: #ffffff;
+    margin: 0 20px;
+    border-radius:10px;
+  }
+  .content-inner__img{
+    height: 160px;
+    width: 160px;
+  }
+  .content-inner__text{
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+  }
+}

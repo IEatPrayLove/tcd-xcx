@@ -1,0 +1,16 @@
+{
+  "extends": ["taro", "airbnb"],
+  "plugins": ["react"],
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "semi": [2, "never"], // 禁用分号
+    "comma-dangle": [2, "never"], // 禁用拖尾逗号
+    "linebreak-style": 0,
+    "react/prop-types":0,
+    "react/react-in-jsx-scope":0,
+    "no-unused-expressions":[2, {"allowShortCircuit":true}], // 允许使用逻辑短路求值
+    "arrow-parens":[2, "as-needed"]
+  },
+    "parser": "babel-eslint"
+  }

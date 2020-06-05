@@ -1,0 +1,91 @@
+.incomeBox {
+  line-height: 1;
+  .incomeHeader {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F8FA;
+    .incomeType {
+      font-size: 24px;
+      color: rgba(51, 51, 51, .8);
+      padding: 0 25px;
+      height:60px;
+      line-height: 62px;
+      border: 1px solid #dcdcdc;
+      border-radius: 30px;
+    }
+    .incomeInfo {
+      display: flex;
+      padding-top: 20px;
+      .incomeInfoItem {
+        font-size: 24px;
+        color: #666;
+        text {
+          color: #FF643D;
+        }
+      }
+    }
+    .typeMask {
+      background-color: rgba(0, 0, 0, .25);
+      position: fixed;
+      top: 102px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .typeList {
+        background-color: #fff;
+        padding: 30px 30px;
+        font-size: 26px;
+        .typeItem {
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+  .incomeList {
+    padding: 40px 30px;
+    .incomeListItem {
+      display: flex;
+      margin-bottom: 40px;
+      .incomeItemHeader {
+        width: 66px;
+        image {
+          width: 100%;
+          height: 66px;
+          border-radius: 50%;
+        }
+      }
+      .incomeItemBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        flex-grow: 1;
+        position: relative;
+        padding-bottom: 40px;
+        border-bottom: 2px solid #dcdcdc;
+        .incomeItemTitle {
+          font-size: 26px;
+          color: #333;
+          margin-bottom: 20px;
+        }
+        .incomeItemTime {
+          font-size: 22px;
+          color: #999;
+        }
+        .incomeItemMoney {
+          position: absolute;
+          right: 0;
+          top: 15px;
+          font-size: 34px;
+          color: #FF643D;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.marR {
+  margin-right: 30px;
+}

@@ -1,0 +1,108 @@
+page{
+  background: #F6F6F6;
+}
+.headerSteps{
+  background: #ffffff;
+  height: 190px;
+  .stepDes{
+    padding-top: 14px;
+    color: #333333;
+    font-size: 30px;
+  }
+  .line{
+    display: inline-block;
+    border-top: 2px solid #B5B5B5;
+    width: 70px;
+    margin: 0 14px 40px;
+  }
+}
+.certification{
+  background: #ffffff;
+  padding: 30px 28px 0;
+  margin-top: 18px;
+  .title{
+    font-size: 32px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .description{
+    font-size: 24px;
+    color: #999999;
+  }
+  .uploadImg{
+    width:690px;
+    height:340px;
+    border:4px dashed #BFBFBF;
+    margin: 40px 0 30px;
+    .uploadDes{
+      font-size: 24px;
+      color: #999999;
+    }
+    image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .example{
+    width: 100%;
+    height: 340px;
+    margin-top: 20px ;
+  }
+}
+
+.inputCertificates{
+  margin-top: 40px;
+  background: #ffffff;
+  .title{
+    font-weight: bold;
+    font-size: 32px;
+    color: #333333;
+    padding: 30px;
+    border-bottom: 2px solid #eeeeee;
+    text{
+      font-size: 22px;
+      color: #999999
+    }
+  }
+  .inputItem{
+    padding: 30px;
+    border-bottom: 2px solid #EEEEEE;
+    .label{
+      font-size: 24px;
+      color: #222222;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    input {
+      padding-left: 50px;
+    }
+    .placeholderStyle{
+      font-size: 22px;
+      color: #999999;
+    }
+  }
+  .divider{
+    height: 30px;
+    width: 100%;
+    background: #F6F6F6;
+  }
+}
+.submitBtn{
+  background: #ffffff;
+  padding: 36px 60px;
+  color: #ffffff;
+  button{
+    background: #FF643D;
+    border-radius: 50px;
+    color: #ffffff;
+    &:after{
+      border: none;
+    }
+    &[disabled]{
+      background:rgba(255,100,61,0.6);
+    }
+  }
+  .active{
+    background:rgba(255,100,61,0.6)
+  }
+}

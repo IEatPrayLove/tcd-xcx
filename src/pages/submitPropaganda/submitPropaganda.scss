@@ -1,0 +1,90 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+.title{
+  font-size: 30px;
+  color: #333333;
+  font-weight: bold;
+  margin: 35px 30px 0;
+}
+.description{
+  margin: 35px 30px;
+  width: auto;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.placeholderDes{
+  font-size: 26px;
+  color: #999999;
+}
+.uploadImg{
+  .at-image-picker__choose-btn{
+    border-color: transparent;
+    background: #EEEEEE;
+  }
+  .at-image-picker__flex-box{
+    padding: 10px 20px;
+  }
+}
+.submitBtn{
+  border: none;
+  &:after{
+    border: none;
+  }
+  height: 100px;
+  line-height: 100px;
+  font-size: 26px;
+  color: #FDFCFC;
+  background: #F7660F;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.modalContainer{
+  text-align: center;
+  text:first-child{
+    color: #F7660F;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  text:last-child{
+    font-size: 22px;
+    color: #666666;
+  }
+}
+.example{
+  padding: 0 30px 30px;
+  .step{
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 26px;
+    color: #333333;
+    width: 50px;
+    height: 45px;
+    background: url(#{$STATIC_ICON_URL}/icon/step.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .msg{
+    font-size: 26px;
+    color: #333333;
+  }
+  image{
+    width: 264px;
+    height: 468px;
+    border-radius: 10px;
+  }
+}
+.exampleTitle{
+  font-weight: bold;
+  font-size: 30px;
+  color: #333333;
+  padding: 80px 30px 30px;
+}
+.interval{
+  width: 48px;
+}
+.reverse{
+  flex-direction: row-reverse;
+}
+.exampleWarp{
+  padding-bottom: 120px;
+}

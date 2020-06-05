@@ -1,0 +1,189 @@
+page {
+  background: #F5F5F5;
+}
+
+.header {
+  @include baseBg(100%, 416px, '#{$STATIC_IMG_URL}/partner_center.png');
+  box-sizing   : border-box;
+  margin-bottom: 64px;
+}
+
+.userInfo {
+  margin: 22px 40px 0;
+}
+
+.avatarImg {
+  height       : 118px;
+  width        : 118px;
+  border-radius: 50%;
+  border       : 10px solid #FF9763;
+  margin-right : 24px;
+}
+
+.nickName {
+  font-size: 30px;
+  color    : #ffffff;
+}
+
+.partner {
+  width        : 190px;
+  height       : 60px;
+  background   : rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  margin-top   : 10px;
+
+  .title {
+    color    : #ffffff;
+    font-size: 26px;
+    padding  : 0 10px;
+  }
+}
+
+.record {
+  padding: 40px 50px 40px;
+
+  .item {
+    text:first-child {
+      font-size: 40px;
+      color    : #FFFFFF;
+    }
+
+    text:last-child {
+      font-size: 22px;
+      color    : rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .balance-detail {
+    color           : #fff;
+    margin-top      : 30px;
+    width           : 140px;
+    height          : 52px;
+    line-height     : 52px;
+    border-radius   : 28px;
+    font-size       : 24px;
+    text-align      : center;
+    background-color: rgba(255, 255, 255, .2);
+
+  }
+
+  .tixian {
+    color     : rgba(253, 101, 65, 1);
+    background: rgba(255, 255, 255, 1);
+    opacity   : 0.8;
+  }
+}
+
+.distributorItem {
+  width        : 340px;
+  height       : 140px;
+  box-sizing   : border-box;
+  padding      : 0 30px 0 20px;
+  border-radius: 10px;
+  background   : #ffffff;
+
+  .title {
+    font-size: 28px;
+    color    : #666666;
+  }
+
+  .msg {
+    font-size: 20px;
+    color    : #999999;
+  }
+}
+
+.distributorItem:first-child {
+  margin-right: 10px;
+}
+
+.distributorList {
+  .at-list {
+    &:after {
+      border-color: transparent;
+    }
+  }
+
+  .at-list__item {
+    &:after {
+      border-color: #eeeeee;
+    }
+  }
+
+  .item-content__info-title {
+    font-size: 30px;
+    color    : #666666;
+  }
+
+  .item-extra__icon-arrow {
+    color    : #999999;
+    font-size: 38px;
+  }
+}
+
+.distributorAd {
+  position: relative;
+  @include baseBg(690px, 150px, '#{$STATIC_IMG_URL}/distributor_level/ad_banner.png');
+  display: block;
+  margin : 0 auto 15px;
+
+  text {
+    position   : absolute;
+    right      : 100px;
+    bottom     : 14px;
+    font-size  : 38px;
+    font-weight: bold;
+    color      : #ffffff;
+
+    &:after {
+      content     : '元';
+      font-size   : 20px;
+      font-weight : initial;
+      padding-left: 12px;
+    }
+  }
+}
+
+.tutorialWarp {
+  padding      : 40px;
+  background   : #ffffff;
+  border-radius: 10px;
+  width        : 500px;
+  box-sizing   : border-box;
+  margin       : 0 auto;
+
+  view {
+    height       : 118px;
+    background   : #F59F2E;
+    border-radius: 10px;
+    font-size    : 28px;
+    color        : #ffffff;
+    line-height  : 118px;
+    text-align   : center;
+    margin       : 20px auto 0;
+  }
+}
+
+.tutorial {
+  position  : fixed;
+  left      : 0;
+  right     : 0;
+  top       : 0;
+  bottom    : 0;
+  z-index   : 999;
+  height    : 100%;
+  width     : 100%;
+  background: #ffffff;
+
+  .tutorialImg {
+    height: 100%;
+    width : 100%;
+  }
+
+  .tutorialOperate {
+    position : absolute;
+    bottom   : 62px;
+    left     : 50%;
+    transform: translate(-50%, 0);
+  }
+}

@@ -1,0 +1,36 @@
+.icon {
+  background: url(#{$STATIC_IMG_URL}/icon/icon_pay_success.png);
+  background-size: 100% 100%;
+  display: block;
+  height: 125px;
+  width: 146px;
+  margin: 180px auto 50px;
+}
+.title {
+  font-size: 36px;
+  color: #FF643D;
+  font-weight: bold;
+  text-align: center;
+}
+.btnSection {
+  margin-top: 190px;
+  view {
+    width:280px;
+    height:80px;
+    border-radius:40px;
+    font-size:28px;
+    text-align:center;
+    line-height:80px;
+    box-sizing: border-box;
+  }
+  view:first-child {
+    background: #FFFFFF;
+    color: #FF643D;
+    border:1px solid #FF643D;
+    margin-right: 20px;
+  }
+  view:last-child {
+    background: #FF643D;
+    color: #FFFFFF;
+  }
+}

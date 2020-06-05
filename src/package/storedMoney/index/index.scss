@@ -1,0 +1,175 @@
+page {
+  height: 100%;
+}
+.container {
+  position: relative;
+  background: #F2F2F2;
+  // border-top: 1px solid #FF643D;
+  height: 100%;
+  box-sizing: border-box;
+  .headerBg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 200px;
+    // background: #FF643D;
+    border-radius: 0 0 40px 40px;
+  }
+}
+.storedCardSection {
+  margin-top: 20px;
+  height: 355px;
+}
+.storedCardItem {
+  position: relative;
+  color: #643019;
+  font-size: 24px;
+  padding: 0 30px;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  .item {
+    border-radius:10px;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .avatar {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    image {
+      height: 60px;
+      width: 60px;
+      margin-right: 18px;
+    }
+    .grade {
+      margin-top: 8px;
+      padding: 0 8px;
+      border-radius: 14px;
+      font-size: 20px;
+      line-height: 26px;
+      height: 26px;
+      border:1px solid rgba(100,48,25,1);
+    }
+  }
+  .balanceTitle {
+    font-size: 24px;
+    text-align: center;
+  }
+  .balance {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.underSection {
+  margin: 0 30px;
+}
+.moreCards {
+  line-height: 1;
+  font-size: 24px;
+  color: #FF643D;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.rechargeBtn {
+  &:after {
+    border: none;
+  }
+  background: #FF643D;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 88px;
+  height: 88px;
+  margin: 22px 0 40px;
+  border-radius:44px;
+}
+.progress {
+  margin: 0 20px;
+}
+.growUpProgress {
+  padding: 40px 20px 40px;
+  border-radius:10px;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+  .item {
+    position: relative;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    .grade {
+      position: absolute;
+      font-size: 20px;
+      top: 16px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      white-space: nowrap;
+    }
+  }
+  .line:first-child {
+    display: none;
+  }
+  .line:last-child {
+    display: none;
+  }
+  .line {
+    height: 3px;
+  }
+  .unreachedLine {
+    background: #643019;
+  }
+  .reachedLine {
+    background: #E9CBAB;
+  }
+  .unreachedTitle {
+    color: #643019;
+  }
+  .reachedTitle {
+    color: #E9CBAB;
+  }
+  .growUp {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text:first-child {
+      color: #5C5C5C;
+    }
+    text:last-child {
+      color: #FF643D;
+      font-weight: bold;
+    }
+  }
+}
+.integralSection {
+  padding: 28px 20px;
+  border-radius:10px;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+  text:first-child {
+    font-size: 28px;
+    color: #5C5C5C;
+  }
+  .value {
+    color: #FF643D;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.rightsSection {
+  line-height: 1;
+  padding: 28px 20px;
+  border-radius:10px;
+  background: #FFFFFF;
+  text:first-child {
+    font-size: 28px;
+    color: #5C5C5C;
+  }
+  .rights {
+    margin-top: 40px;
+  }
+  .rightsName {
+    font-size: 22px;
+    color: #5C5C5C;
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,95 @@
+@import '../../styles/base.scss';
+.cardListMask{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: fixed;
+  z-index: 1001;
+  bottom: 0;
+  left: 0;
+  .cardListBox{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+  }
+  .cardHeader{
+    height: 80px;
+    // display: flex;
+    background-color: #FFF3E3;
+    .cardButton{
+      
+      height: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+    }
+    .cardCancel{
+      margin-left: 31px;
+      color: #666666;
+      
+    }
+    .cardSure{
+      margin-right: 31px;
+      color: #FF643D;
+    
+    }
+    .cardTitle{
+      font-weight: 666;
+      color: #333333;
+    }
+  }
+  .cardContent{
+    height: 355px;
+    .storedCardSection {
+      margin-top: 20px;
+      // height: 355px;
+      margin-bottom: 20px;
+    }
+    .storedCardItem {
+      position: relative;
+      color: #643019;
+      font-size: 24px;
+      padding: 0 80px;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      .item {
+        border-radius:10px;
+        padding: 30px;
+        box-sizing: border-box;
+        height: 100%;
+        background: linear-gradient(to bottom, #E2B064 100%,#F7D39E 100%);
+      
+      }
+      .avatar {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        image {
+          height: 60px;
+          width: 60px;
+          margin-right: 18px;
+        }
+        .grade {
+          margin-top: 8px;
+          padding: 0 8px;
+          border-radius: 14px;
+          font-size: 20px;
+          line-height: 26px;
+          height: 26px;
+          border:1px solid rgba(100,48,25,1);
+        }
+      }
+      .balanceTitle {
+        font-size: 24px;
+        text-align: center;
+      }
+      .balance {
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}

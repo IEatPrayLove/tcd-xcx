@@ -1,0 +1,99 @@
+.rightsBox {
+  font-weight:400;
+  line-height: 1;
+  position: relative;
+  .rightsHeader {
+    height: 265px;
+    background-color: #3D3A3D;
+    display: flex;
+    overflow: scroll;
+    padding: 55px 55px 30px;
+    box-sizing: border-box;
+
+  }
+  .rightsHeaderItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    image {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+    }
+    .rightsHeaderName {
+      font-size: 26px;
+      //width: 100%;
+      color: #fff;
+      //position: absolute;
+      //top: 115px;
+      //left: 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .rightHeaderAngle {
+      width: 41px;
+      height: 23px;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  .rightsBody {
+    position: absolute;
+    top: 235px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+    background-color: #F7F8FA;
+    padding: 30px 0;
+    .rightsBanner {
+      padding: 0 65px 35px;
+      image {
+        width: 623px;
+        height: 318px;
+      }
+    }
+    .rightsLevel {
+      background-color: #fff;
+      padding: 50px 0;
+      margin-bottom: 20px;
+    }
+    .rightsLevelTitle {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1D1D1D;
+      text-align: center;
+    }
+    .rightsUse {
+      background-color: #fff;
+      padding: 50px 0;
+      .rightsUseBody {
+        padding: 0 30px;
+        .rightsUseWord {
+          font-size: 26px;
+          color: #666;
+          line-height: 38px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+.descContainer {
+  position: relative;
+  height: 226px;
+  background: #3D3A3D;
+}
+.arrow{
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #ffffff;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

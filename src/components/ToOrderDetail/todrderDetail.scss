@@ -1,0 +1,41 @@
+@import '../../styles/base.scss';
+.tagVBox{
+    width: 260px;
+    height: 80px;
+    display: flex;
+   
+    opacity:0.86;
+
+    .tagImg{
+        box-sizing: border-box;
+        width: 50px;
+        height: 80px;
+        padding: 7.5px;
+        background-color: #FCB251;
+        border-radius:50px 00px 0px 50px;
+        display: flex;
+        flex-flow: column;
+        justify-content:center;
+    }
+    .tagtxt{
+        width: 140px;
+        font-size: 24px;
+        background-color: #FCB251;
+        display: flex;
+        flex-flow: column;
+        justify-content:center;
+        :nth-child(1){
+            font-weight: 800;
+        }
+
+    }
+    .tagIcon{
+        width: 70px;
+        background-color: #FCB251;
+        border-radius:  00px 50px 50px 0;
+        display: flex;
+        flex-flow: column;
+        justify-content:center;
+    }
+    
+}

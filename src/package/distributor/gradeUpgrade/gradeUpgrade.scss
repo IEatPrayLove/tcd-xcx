@@ -1,0 +1,392 @@
+.level-grade-header {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: url("#{$STATIC_IMG_URL}/distributor_level/upgrade_bg.png") no-repeat center;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.level-name-wrap {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.upgrade-level-icon {
+  width: 80px;
+  height: 80px;
+  margin: 46px auto 0;
+}
+
+.level-current-name {
+  color: #BA9660;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.new-level-progress{
+  margin-top: 60px;
+  .item{
+    position: relative;
+    &:after,
+    &:before{
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #6B6D7B;
+    }
+  }
+  .item:first-child{
+    &:before{
+      background: transparent;
+    }
+  }
+  .item:last-child{
+    &:after{
+      background: transparent;
+    }
+  }
+  .circle{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #6B6D7B;
+  }
+  .name{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    color: #6B6D7B;
+    white-space: nowrap;
+  }
+}
+.level-item-active{
+  .circle,
+  &:after,
+  &:before{
+    background: #D9B784;
+  }
+  .name{
+    color: #D9B784;
+  }
+}
+
+.upgrade-level-wrap{
+  height: 156px;
+  background: #D9B784;
+  padding: 16px 30px;
+  box-sizing: border-box;
+}
+
+.level-upgrade-item {
+  width: 86px;
+  align-items: center;
+}
+
+.upgrade-level-img{
+  height: 54px;
+  width: 54px;
+  border-radius: 10px;
+}
+
+.upgrade-level-name{
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.level-icon-wrap{
+  font-size: 0;
+  margin-bottom: 14px;
+}
+.current-level .level-icon-wrap {
+  width: 86px;
+  height: 86px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.upgrade-condition-wrap {
+  padding: 20px 40px 110px;
+  background: #F7F7F7;
+}
+
+.upgrade-title-wrap {
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 24px;
+  width: 6px;
+  border-radius: 6px;
+  background: #D9B784;
+}
+
+.upgrade-condition-title {
+  font-size: 24px;
+  color: #13110F;
+  margin: 0 12px;
+}
+
+
+.upgrade-condition-subtitle {
+  font-size: 24px;
+  color: #999999;
+}
+
+.upgrade-function-title {
+  position: relative;
+  font-size: 26px;
+  color: #13110F;
+  text-indent: 26px;
+}
+
+.upgrade-function-wrap {
+  margin: 20px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 20px 0px rgba(240, 240, 240, 0.4);
+  border-radius: 20px;
+  padding: 20px 40px;
+}
+
+.upgrade-function-item-wrap {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.upgrade-function-item {
+  font-size: 24px;
+  color: #666666;
+  padding-top: 100px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 88px 88px;
+}
+
+.upgrade-function-item.icon1 {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_share_goods.png");
+}
+
+.upgrade-function-item.icon2 {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_share_workbench.png");
+}
+
+.upgrade-function-item.icon4 {
+  background-image: url("#{$STATIC_IMG_URL}/distributor_level/icon_recruit.png");
+}
+.level-rights-wrap{
+  margin-top: 20px;
+  padding: 26px;
+  box-shadow:0px 10px 10px 0px rgba(240,240,240,0.4);
+  border-radius:10px;
+  background: #ffffff;
+}
+.upgrade-rights-item {
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.upgrade-rights-item:last-child {
+  margin-bottom: 0;
+}
+
+.rights-right {
+  flex: 1;
+}
+
+.upgrade-rights-title {
+  font-size: 26px;
+  color: #333333;
+}
+
+.upgrade-rights-content {
+  padding-left: 34px;
+  margin-top: 8px;
+  font-size: 22px;
+  color: #666666;
+  line-height: 40px;
+}
+
+.nodata {
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+}
+.buy-upgrade-btn {
+  width: 480px;
+  height: 90px;
+  background: url("#{$STATIC_IMG_URL}/distributor_level/buy_upgrade_btn.png") no-repeat center;
+  background-size: cover;
+  margin: 0 auto 20px;
+}
+
+.buy-upgrade-title {
+  color: #D84028;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.condition-item {
+  position: relative;
+  height: 120px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 10px 0px rgba(240, 240, 240, 0.4);
+  border-radius: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.condition-title-wrap {
+  width: 252px;
+}
+
+.condition-title {
+  color: #999999;
+  font-size: 24px;
+}
+
+.condition-num {
+  color: #D9B784;
+  font-size: 26px;
+  margin: 0 8px;
+}
+
+.condition-unit {
+  font-size: 24px;
+  color: #D9B784;
+}
+
+.condition-progress {
+  position: relative;
+  width: 200px;
+  height: 8px;
+  background: #D7D7D7;
+  border-radius: 8px;
+  margin-left: -1px;
+}
+
+
+.condition-progressing {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 8px;
+  border-radius: 8px 0 0 8px;
+  background: #D9B784;
+}
+
+.condition-tip {
+  position: absolute;
+  left: 50%;
+  height: 28px;
+  background: #D9B784;
+  font-size: 24px;
+  padding: 0px 4px;
+  color: #FFFFFF;
+  top: -44px;
+  line-height: 24px;
+  border-radius: 0 6px 6px 0;
+  z-index: 1;
+  min-width: 80px;
+  text-align: center;
+  margin-left: -1px;
+}
+
+.condition-value {
+  font-size: 24px;
+  color: #666666;
+  width: 144px;
+  text-align: right;
+}
+
+.line-progressing{
+  position: absolute;
+  bottom: 0;
+  top: -20px;
+  right: -2px;
+  border-left: 1px solid #D9B784;
+}
+
+.goods-item {
+  position: relative;
+  box-sizing: border-box;
+  /*height: 185px;*/
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 10px 0px rgba(240, 240, 240, 0.4);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.goods-active {
+  border: 1px solid #FF623D;
+  background: #FAF1EF;
+}
+
+.goods-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.goods-right {
+  flex: 1;
+  height: 130px;
+}
+
+.goods-desc {
+  font-size: 24px;
+  color: #333333;
+}
+
+.goods-price {
+  color: #FF623D;
+}
+
+.goods-rmb {
+  font-size: 24px;
+}
+
+.goods-money {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.buy-checked-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 54px;
+  height: 54px;
+  background: url("#{$STATIC_IMG_URL}/distributor_level/upgrade_buy_checked.png") no-repeat center;
+  background-size: cover;
+}
+
+.go-weapp-buy {
+  height: 90px;
+  line-height: 90px;
+  background: #D9B784;
+  width: 100%;
+  text-align: center;
+  color: #F9F9F9;
+  position: fixed;
+  bottom: 0;
+}
+
+.weapp-text {
+  font-size: 26px;
+}
+
+.weapp-pay-money {
+  font-size: 26px;
+  margin-left: 10px;
+}

@@ -1,0 +1,204 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+page {
+  height: 100%;
+}
+.brandCouponBox {
+  position: relative;
+}
+
+.brandCouponHeader {
+  height: 260px;
+  image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.brandCouponBody {
+  position: absolute;
+  top: 185px;
+  left: 0;
+  width: 100%;
+  padding: 35px 30px 140px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 40px 40px 0 0;
+  font-weight: 400;
+  .brandCouponBodyTCK {
+    padding: 12px 15px;
+    border-radius: 8px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .brandCouponBodyLeft {
+      display: flex;
+      Image {
+        width: 42px;
+        height: 47px;
+      }
+      .brandCouponBodyWord {
+        font-size: 24px;
+        color: #DBC194;
+        margin-left: 10px;
+        line-height: 47px;
+      }
+    }
+    .brandCouponBodyRight {
+      display: flex;
+      align-items: center;
+      .brandCouponBodyLine {
+        width: 2px;
+        height: 24px;
+        background-color: #FFCE92;
+        margin-right: 20px;
+      }
+      .brandCouponBodyBtn {
+        font-size: 24px;
+        color: #fff;
+        margin-right: 5px;
+      }
+    }
+  }
+  .brandCouponList {
+    margin-top: 45px;
+    line-height: 1;
+    font-weight: 400;
+    .brandCouponItem {
+      border-radius: 10px;
+      border: 2px solid transparent;
+      box-shadow: 0 0 30px 5px rgba(153, 153, 153, 0.1);
+      display: flex;
+      margin-bottom: 20px;
+      position: relative;
+      image {
+        width: 160px;
+        height: 160px;
+        border-radius: 10px 0 0 10px;
+      }
+      .brandCouponItemCheck {
+        position: absolute;
+        right: 22px;
+        top: 22px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+      }
+      .brandCouponItemInfo {
+        border-radius: 0 10px 10px 0;
+        padding-left: 40px;
+        .brandCouponItemWord {
+          font-size: 28px;
+          color: #333;
+        }
+        .brandCouponItemPrice {
+          text-decoration:line-through;
+          font-size: 22px;
+          color: #666;
+          margin-top: 25px;
+        }
+        .brandCouponItemPriceBox {
+          display: flex;
+          color: #FF643D;
+          margin-top: 10px;
+          .brandCouponItemUnit {
+            font-size: 30px;
+          }
+          .brandCouponItemPriceNum {
+            font-size: 32px;
+            font-weight: bold;
+          }
+          .brandCouponItemTip {
+            @include baseBg(100px, 24px, '#{$STATIC_ICON_URL}/icon/arrow.png');
+            font-size: 16px;
+            color: #DBC194;
+            text-align: center;
+            line-height: 24px;
+            padding-left: 22px;
+            box-sizing: border-box;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.brandCouponFooter {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  .brandCouponFooterHome {
+    width: 150px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #fff;
+    text-align: center;
+    image {
+      width: 40px;
+      height: 40px;
+      margin-top: 20px;
+    }
+  }
+  .brandCouponFooterBtn {
+    width: 525px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #FF643D;
+  }
+  .disabled{
+    background: #C7C7C7;
+  }
+}
+
+.cashOutModal {
+  padding: 95px 0 0;
+  .modalContent {
+    color: #666;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modalBtnGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    border-top: 1px solid #e5e5e5;
+    .modalBtn {
+      width: 50%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      font-size: 28px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    .modalBtnCancel {
+      color: #333;
+      border-right: 1px solid #e5e5e5;
+    }
+    .modalBtnConfirm {
+      color: #FF643D;
+    }
+  }
+}
+.active{
+  border:2px solid #FCB251 !important;
+}
+.sellOut{
+  padding-right: 22px;
+  text-align: right;
+  font-size: 22px;
+  color: #666666;
+}

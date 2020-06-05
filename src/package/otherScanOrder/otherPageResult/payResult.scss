@@ -1,0 +1,75 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+.pay-result-wrap {
+  padding-top: 180px;
+    height: 100vh;
+    box-sizing: border-box;
+    .header {
+        text-align: center;
+        .circle {
+            width: 146px;
+            height: 125px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(#{$STATIC_ICON_URL}/icon/icon_pay_success.png);
+            background-size: cover;
+        }
+        .title {
+            font-size: 36px;
+            color: #FF643D;
+          margin-top: 50px;
+          font-weight: bold;
+        }
+        .price {
+            font-size: 30px;
+            color: #333333;
+        }
+    }
+    .footer {
+      margin-top: 100px;
+        .btn {
+          width: 300px;
+          height: 90px;
+          margin-left: 20px;
+          line-height: 90px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 45px;
+            background: #ffffff;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:after {
+                border: 0;
+            }
+            &.continue {
+                border: 1px solid #FF643D;
+                color: #FF6336;
+              margin-right: 10px;
+            }
+            &.detail {
+                color: #FFFFFF;
+                background: #FF6336;
+            }
+        }
+    }
+}
+.cardWarp{
+  background: #ffffff;
+  padding: 14px 20px 10px;
+  width: 700px;
+  margin-top: 200px;
+}
+.nielloCard{
+  background: #313131;
+  border-radius: 10px;
+  padding: 10px;
+  text{
+    color: #F5D3A5;
+    font-size: 24px;
+    text-align: start;
+  }
+  .btn{
+    font-size: 24px;
+    color: #F5D3A5;
+  }
+}

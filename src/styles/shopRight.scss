@@ -1,0 +1,428 @@
+/*门店列表项右边样式*/
+@mixin item-right($right-bb) {
+  .right {
+    margin-left: 20px;
+    @if ($right-bb) {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .title {
+      display: inline-block;
+      font-size: 30px;
+      color: #333333;
+    }
+    .sub-title {
+      font-size: 24px;
+      color: #666666;
+    }
+    .close-tag {
+      width: 130px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background: rgba(153, 153, 153, 1);
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 20px;
+      margin-top: 4px;
+    }
+    .rate-wrap {
+      margin-top: 15px;
+    }
+    .order-count {
+      font-size: 24px;
+      color: #999999;
+      margin-left: 20px;
+    }
+    .dis-wrap {
+      font-size: 24px;
+      color: #999999;
+    }
+  }
+}
+
+/*商品列表*/
+@mixin dish-item {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px 0 rgba(172, 172, 172, 0.23);
+  border-radius: 8px;
+  height: 240px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .dish-logo {
+    width: 280px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .right {
+    padding: 20px;
+    .title {
+      font-size: 30px;
+      color: #333333;
+      white-space: pre-wrap;
+    }
+    .description {
+      margin: 10px 0 20px;
+      font-size: 24px;
+      color: #999999;
+    }
+    .rmb {
+      color: #FF623D;
+      font-size: 22px;
+    }
+    .money {
+      font-size: 40px;
+      color: #FF623D;
+      font-weight: bold;
+    }
+    .old-price {
+      font-size: 26px;
+      color: #999999;
+      text-decoration-line: line-through;
+    }
+    .sale {
+      font-size: 20px;
+      color: #999999;
+    }
+
+  }
+}
+
+@mixin item-right($right-bb) {
+  .right {
+    margin-left: 20px;
+    @if ($right-bb) {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .title {
+      display: inline-block;
+      font-size: 30px;
+      color: #333333;
+    }
+    .sub-title {
+      font-size: 24px;
+      color: #666666;
+    }
+    .close-tag {
+      width: 130px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background: rgba(153, 153, 153, 1);
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 20px;
+      margin-top: 4px;
+    }
+    .rate-wrap {
+      margin-top: 15px;
+    }
+    .order-count {
+      font-size: 24px;
+      color: #999999;
+      margin-left: 20px;
+    }
+    .dis-wrap {
+      font-size: 24px;
+      color: #999999;
+    }
+  }
+}
+
+/*商品列表*/
+@mixin dish-item {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px 0 rgba(172, 172, 172, 0.23);
+  border-radius: 8px;
+  height: 240px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .dish-logo {
+    width: 280px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .right {
+    padding: 20px;
+    .title {
+      font-size: 26px;
+      color: #333333;
+      white-space: pre-wrap;
+    }
+    .description {
+      margin: 10px 0 20px;
+      font-size: 22px;
+      color: #999999;
+    }
+    .rmb {
+      color: #FF623D;
+      font-size: 22px;
+    }
+    .money {
+      font-size: 40px;
+      color: #FF623D;
+      font-weight: bold;
+    }
+    .old-price {
+      font-size: 26px;
+      color: #999999;
+      text-decoration-line: line-through;
+    }
+    .sale {
+      font-size: 20px;
+      color: #999999;
+    }
+
+  }
+}
+
+/*商品列表*/
+@mixin dish-item-new {
+  position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px 0 rgba(172, 172, 172, 0.23);
+  border-radius: 8px;
+  //height: 240px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .logo-wrap {
+    position: relative;
+    height: 280px;
+    .active-time {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 20px;
+      color: #FFFFFF;
+      border-radius: 10px 0 0 0;
+      height: 40px;
+      .title {
+        height: 40px;
+        line-height: 34px;
+        padding: 4px 6px;
+        border-radius: 10px 0 10px 0;
+        box-sizing: border-box;
+      }
+      .time {
+        height: 40px;
+        line-height: 40px;
+        padding: 4px 6px;
+      }
+      &.active {
+        background: #FF623D;
+        .title {
+          background: #FBAB48;
+        }
+      }
+      &.gray {
+        background: #999999;
+        .title {
+          background: #B9B9B9;
+        }
+      }
+    }
+  }
+  .dish-logo {
+    width: 100%;
+    height: 280px;;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .right {
+    padding: 15px;
+    .title {
+      //position: relative;
+      font-size: 30px;
+      color: #333333;
+      white-space: pre-wrap;
+    }
+    .description {
+      margin: 6px 0 15px;
+      font-size: 26px;
+      color: #999999;
+    }
+    .rmb {
+      color: #FF623D;
+      font-size: 22px;
+    }
+    .money {
+      font-size: 40px;
+      color: #FF623D;
+      font-weight: bold;
+    }
+    .shareReward {
+      padding-left: 5px;
+      font-size: 30px;
+      color: #FF623D;
+      font-weight: bold;
+    }
+    .old-price {
+      font-size: 26px;
+      color: #999999;
+      text-decoration-line: line-through;
+    }
+    .sale {
+      font-size: 20px;
+      color: #999999;
+    }
+
+  }
+
+  .goods-tag-wrap {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    .tags-wrap {
+      display: flex;
+      flex-direction: row;
+      margin-right: 15px;
+    }
+    .sec-kill-tag {
+      width: 149px;
+      height: 42px;
+      line-height: 42px;
+      text-align: center;
+      background: linear-gradient(90deg, rgba(253, 142, 68, 1), rgba(255, 98, 61, 1));
+      border-radius: 0px 0px 12px 12px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+    .goods-tag {
+      position: relative;
+      width: 72px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 22px;
+      color: #FFFFFF;
+      &:before {
+        position: absolute;
+        content: "";
+        top: 40px;
+        left: 0;
+        right: 0;
+        border-left: 36px solid transparent;
+        border-right: 36px solid transparent;
+        z-index: 99;
+      }
+      &.tagColor0 {
+        background: #ff623d;
+        &:before {
+          border-top: 16px solid #ff623d;
+        }
+      }
+      &.tagColor1 {
+        background: #18d29f;
+        &:before {
+          border-top: 16px solid #18d29f;
+        }
+      }
+      &.tagColor2 {
+        background: #fbab48;
+        &:before {
+          border-top: 16px solid #fbab48;
+        }
+      }
+      &.tagColor3 {
+        background: #71b4ff;
+        &:before {
+          border-top: 16px solid #71b4ff;
+        }
+      }
+      &.tagColor4 {
+        background: #fb649d;
+        &:before {
+          border-top: 16px solid #fb649d;
+        }
+      }
+      &.tagColor5 {
+        background: #ffd569;
+        &:before {
+          border-top: 16px solid #ffd569;
+        }
+      }
+    }
+  }
+
+  .goods-type-tag {
+    //position: absolute;
+    /* display: inline-block;
+     margin-right: 10px;
+     font-size: 20px;
+     color: #FFFFFF;
+     padding: 0 4px;
+     border-radius:4px;
+     vertical-align: top;
+     margin-top: 8px;
+     line-height:24px;*/
+    display: inline-block;
+    margin-right: 4Px;
+    font-size: 9Px;
+    color: #FFFFFF;
+    padding: 0 2Px;
+    border-radius: 1Px;
+    vertical-align: top;
+    margin-top: 3Px;
+    line-height: 15Px;
+    &.pink {
+      background: #FB649D;
+    }
+  }
+
+  .goods-sale-state {
+    position: absolute;
+    right: -44px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 76px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+    transform: rotate(45deg);
+    top: 20px;
+    &.red {
+      border-bottom: 50px solid #FF623D;
+    }
+    &.green {
+      border-bottom: 50px solid #17D29F;
+    }
+    &.yellow {
+      border-bottom: 50px solid #FCB251;
+    }
+    &.gray {
+      border-bottom: 50px solid #999999;
+    }
+  }
+
+  .location-wrap {
+    .location {
+      display: inline-block;
+      width: 22px;
+      height: 24px;
+      //background: url("../images/icons/icon_location_small.png") no-repeat center;
+      //background-size: cover;
+      margin-right: 4px;
+    }
+    .line {
+      display: inline-block;
+      border-left: 1px solid #999999;
+      height: 20px;
+      margin: 0 15px;
+    }
+  }
+}

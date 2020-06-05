@@ -1,0 +1,2 @@
+project.config.json merge=ours
+src/config/baseUrl.js merge=ours

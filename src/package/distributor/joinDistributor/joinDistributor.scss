@@ -1,0 +1,172 @@
+.join-wrap {
+    height: 100vh;
+    background: #E64238;
+    .join-inwrap {
+        overflow-y: auto;
+    }
+    .banner {
+        width: 100%;
+    }
+    .content-wrap {
+        padding: 0 20px;
+        .buy-title {
+            color: #FFFFFF;
+            font-size: 30px;
+            text-align: center;
+            margin-top: -40px;
+            margin-bottom: 20px;
+        }
+        .buy-tcd{
+          color: #FFFFFF;
+          font-size: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .goods-list {
+            margin-bottom: 20px;
+        }
+      .goods-item {
+        position: relative;
+        padding: 20px 16px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        &.hover {
+          background: #FAE2DE;
+        }
+        &.active {
+          background: #FAE2DE;
+          .checked {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 40px;
+            color: #E64238;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .goods-logo {
+          width: 130px;
+          height: 130px;
+          border-radius: 8px;
+          margin-right: 20px;
+        }
+        .right {
+          .text {
+            font-size: 26px;
+            color: #333333;
+            white-space: pre-wrap;
+          }
+          .money {
+            color: #FF623D;
+            font-size: 22px;
+            .rmb {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+        .function-title {
+            position: relative;
+            color: #FFFFFF;
+            font-size: 26px;
+            text-indent: 20px;
+            margin-bottom: 20px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 4px;
+                bottom: 4px;
+                width: 6px;
+                background: #FFFFFF;
+                border-radius: 4px;
+            }
+        }
+        .function-wrap {
+            background: #FFFFFF;
+            padding: 20px 60px;
+            border-radius: 10px;
+            margin: 20px 0 30px 0;
+            .function-item {
+                box-sizing: border-box;
+                min-width: 88px;
+                min-height: 88px;
+                padding-top: 86px;
+                .text {
+                    color: #666666;
+                    font-size: 22px;
+                    //margin-top: 20px;
+                }
+                &.icons {
+                    background-position: center top;
+                    background-size: 88px 88px;
+                    background-repeat: no-repeat;
+                    &.icon1 {
+                        background-image: url("#{$STATIC_IMG_URL}/distributor/function_icon1.png");
+                    }
+                    &.icon2 {
+                        background-image: url("#{$STATIC_IMG_URL}/distributor/function_icon2.png");
+                    }
+                    &.icon3 {
+                        background-image: url("#{$STATIC_IMG_URL}/distributor/function_icon3.png");
+                    }
+                }
+            }
+        }
+        .level-wrap {
+            padding: 20px;
+            border-radius: 10px;
+            background: #ffffff;
+            margin-bottom: 40px;
+            .level-item {
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                .level-icon {
+                    width: 23px;
+                    height: 20px;
+                    margin-right: 20px;
+                    margin-top: 6px;
+                }
+                .title {
+                    color: #333333;
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                    height: 26px;
+                    line-height: 26px;
+                }
+                .desc {
+                    font-size: 22px;
+                    color: #666666;
+                    line-height: 34px;
+                    white-space: pre-wrap;
+                }
+            }
+        }
+    }
+
+    .footer-wexin-pay {
+        height: 90px;
+        padding: 0 20px;
+        margin: 0;
+        background: #FCB251;
+        font-size: 26px;
+        color: #FFFFFF;
+        border-radius: 0;
+        &.hover {
+            background: rgba(252, 178, 81, 0.5);
+        }
+        .money {
+            font-size: 34px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+        &:after {
+            border: 0;
+        }
+    }
+}

@@ -1,0 +1,179 @@
+page {
+    min-height: 100%;
+    background-color: #F7F7F7;
+    line-height: 1;
+    font-weight: 400;
+    color: #333;
+}
+.detailBox {
+  padding-bottom: 100px;
+    .detailHeader {
+        height: 140px;
+        color: #fff;
+        padding: 25px 50px;
+        box-sizing: border-box;
+        image.onPayImg {
+            display: block;
+            width: 38px;
+            height: 36px;
+            margin-right: 10px;
+        }
+        .noPayWord {
+            font-size: 36px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .orderType {
+            font-size: 28px;
+        }
+    }
+    .whiteBox {
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 0 20px;
+        margin: 20px 30px 0;
+    }
+    .tableInfo {
+        margin-top: -40px;
+        .infoItem {
+            padding: 30px 0;
+            font-size: 26px;
+            color: #666;
+            .tableNum {
+              font-weight: bold;
+            }
+            .otherWord {
+              width: 450px;
+              text-align: right;
+            }
+        }
+    }
+    .orderHistory {
+        padding: 30px 20px;
+        .orderOnce {
+          .onceTitle {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 30px 0;
+          }
+          .dishTitle {
+            font-size: 24px;
+            color: #FBAB48;
+            padding-left: 10px;
+            border-left: 3px solid #FBAB48;
+          }
+          .dishList {
+            padding: 30px 0;
+            .dishItem {
+              margin-bottom: 40px;
+              .dishLeft {
+                width: 440px;
+              }
+              .dishImg {
+                display: block;
+                width: 70px;
+                height: 70px;
+                border-radius: 4px;
+              }
+              .dishInfo {
+                margin-left: 20px;
+                .dishName {
+                  font-size: 26px;
+                  width: 350px;
+                }
+                .dishSku {
+                  font-size: 22px;
+                  color: #BEBEBE;
+                }
+              }
+              .dishNum {
+                color: #666;
+                font-size: 20px;
+                width: 70px;
+              }
+              .dishPrcie {
+                font-size: 22px;
+                width: 120px;
+                text-align: right;
+                text {
+                  &:first-child {
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .totalMoney {
+          font-size: 22px;
+          color: #999999;
+          padding: 30px 0;
+          border-top: 2px dashed #CCCCCC;
+          .priceUnit {
+            color: #FF623D;
+          }
+          .priceMoney {
+            color: #FF623D;
+            font-size: 40px;
+            font-weight: bold;
+          }
+          .marL {
+            margin-left: 15px;
+          }
+          .tableFeeTitle {
+            font-size: 26px;
+            color: #999;
+          }
+          .tableFee {
+            font-size: 28px;
+          }
+        }
+    }
+    .orderDetail {
+        font-size: 24px;
+        .detailItem {
+          padding: 25px 0;
+          position: relative;
+          .copy {
+            padding: 8px 15px;
+            font-size: 20px;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            position: absolute;
+            right: 2px;
+            top: 22px;
+          }
+          .detailTitle {
+            color: #999;
+            margin-right: 35px;
+          }
+          .detailWord {
+            color: #666;
+          }
+        }
+    }
+    .orderFooter {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 96px;
+        line-height: 96px;
+        background-color: #333;
+        box-shadow: 0 6px 12px 0 rgba(153, 153, 153, 0.53);
+        box-sizing: border-box;
+        font-size: 22px;
+        color: #fff;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        .footerPrice {
+            width: 50%;
+        }
+        .submitBtn {
+            width: 50%;
+            height: 96px;
+            background-color: #FF643D;
+        }
+    }
+}

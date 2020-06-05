@@ -1,0 +1,76 @@
+.recordBox {
+  line-height: 1;
+  padding: 0 30px;
+  .recordTitle {
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+    padding-top: 75px;
+    .recordStatus {
+      float: right;
+      font-size: 28px;
+      font-weight: normal;
+      color: #6997FF;
+      line-height: 40px;
+    }
+    .colorBlue {
+      color: #6997FF;
+    }
+    .colorRed {
+      color: #FF643D;
+    }
+    .colorGreen {
+      color: #00C703;
+    }
+  }
+  .recordWord {
+    font-size: 28px;
+    color: #666;
+  }
+  .recordSubmit {
+    width: 270px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 45px;
+    margin: 115px auto 0;
+    text-align: center;
+    color: #fff;
+    background-color: #FF643D;
+  }
+  .recordSuccess {
+    margin-top: 60px;
+    padding-top: 110px;
+    border-top: 2px solid #e5e5e5;
+    text-align: center;
+    .rewordLink {
+      font-size: 28px;
+      color: #FF643D;
+      letter-spacing: 2px;
+    }
+    .recordSuccessBtn {
+      width: 270px;
+      height: 90px;
+      line-height: 90px;
+      border-radius: 45px;
+      border: 2px solid #FF643D;
+      color: #FF643D;
+      margin: 55px auto 0;
+    }
+  }
+}
+
+.marTXL {
+  margin-top: 115px;
+}
+
+.marTL {
+  margin-top: 60px;
+}
+
+.marTM {
+  margin-top: 50px;
+}
+
+.marB {
+  margin-bottom: 30px;
+}

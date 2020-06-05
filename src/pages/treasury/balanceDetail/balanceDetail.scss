@@ -1,0 +1,22 @@
+.balanceDetail {
+  padding: 0 60px;
+  .balanceMoney {
+    font-size: 60px;
+    color: #FF643D;
+    text-align: center;
+    margin: 130px 0 150px;
+    font-weight: bold;
+  }
+  .balanceInfo {
+    font-size: 26px;
+    .infoRow {
+      margin-bottom: 60px;
+      .infoTitle {
+        color: #999999;
+      }
+      .infoContent {
+        margin-left: 35px;
+      }
+    }
+  }
+}

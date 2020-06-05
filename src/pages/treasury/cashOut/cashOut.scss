@@ -1,0 +1,130 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+}
+.cashOutBox {
+  .cashOutPayWay {
+    padding: 45px 60px;
+    display: flex;
+    font-size: 26px;
+    color: #666;
+    image {
+      width: 35px;
+      height: 31px;
+      margin-right: 8px;
+      padding-top: 5px;
+    }
+    text {
+      color: #333;
+    }
+  }
+  .cashOutBody {
+    background-color: #fff;
+    padding: 50px 60px;
+    border-radius: 40px 40px 0 0;
+    .cashOutTitle {
+      font-size: 26px;
+      color: #666;
+    }
+    .cashOutInput {
+      display: flex;
+      line-height: 1;
+      border-bottom: 1px solid #dcdcdc;
+      padding: 55px 0 40px;
+      text {
+        font-size: 60px;
+        color: #333;
+        font-weight: bold;
+      }
+      input {
+        padding: 0 20px;
+        font-size: 60px;
+        font-weight: bold;
+        color: #333;
+        height: 65px;
+        line-height: 1;
+      }
+    }
+    .cashOutInfo {
+      display: flex;
+      font-size: 30px;
+      color: #666;
+      margin-top: 45px;
+      .cashOutAll {
+        color: #0C7BED;
+        padding-left: 30px;
+      }
+    }
+    .cashOutBtn {
+      margin-top: 125px;
+      height: 88px;
+      line-height: 88px;
+      background-color: #FF643D;
+      border-radius: 88px;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
+.cashOutInputPlaceholder{ /* WebKit browsers */
+  color: #666;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.cashOutModal {
+  padding: 60px 0 0;
+}
+
+.modalTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.modalMoney {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 60px;
+  color: #333;
+  font-weight: bold;
+  .modalMoneyUnit {
+    font-size: 40px;
+    color: #F59F2E;
+    font-weight:bold;
+    vertical-align: text-top;
+    margin-right: 10px;
+  }
+}
+
+.modalBtnGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  border-top: 1px solid #e5e5e5;
+  .modalBtn {
+    width: 50%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 28px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  .modalBtnCancel {
+    color: #333;
+    border-right: 1px solid #e5e5e5;
+  }
+  .modalBtnConfirm {
+    color: #FF643D;
+  }
+}
+.hint{
+  text-align: center;
+  margin-top: 50px;
+}

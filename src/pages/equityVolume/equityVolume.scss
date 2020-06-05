@@ -1,0 +1,56 @@
+.headerTabs{
+  .at-tabs__item{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .at-tabs__item-underline{
+    height: 4px;
+  }
+}
+.listWarp{
+  border-top: 1px solid transparent;
+  background: #F2F2F2;
+  padding: 0 30px;
+}
+.volumeItem{
+  margin-top: 20px;
+  height: 205px;
+  background: #ffffff;
+  border-radius:10px;
+  .volumeLogo{
+    width: 234px;
+    height: 100%;
+  }
+  .volumeInfo{
+    padding: 20px 22px 20px 10px;
+    .name{
+      font-size: 30px;
+      color: #333333;
+      font-weight: bold;
+    }
+    .price{
+      &:before{
+        content: '价格：';
+        font-size: 24px;
+        color: #999999;
+      }
+      font-size: 26px;
+      color: #F15D14;
+      font-weight: bold;
+    }
+    .confirm{
+      width:138px;
+      height:44px;
+      border:2px solid rgba(245,159,46,1);
+      border-radius:22px;
+      color: #F59F2E;
+      font-size: 22px;
+      line-height: 44px;
+      text-align: center;
+    }
+    .time{
+      font-size: 22px;
+      color: #999999;
+    }
+  }
+}

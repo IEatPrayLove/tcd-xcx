@@ -1,0 +1,254 @@
+.search-page {
+    height: 100vh;
+    line-height: 1;
+    font-weight: 400;
+}
+
+/*搜索输入框*/
+.search-header {
+    padding: 30px 25px;
+    background: #F7F7F7;
+    .input-wrap {
+        height: 70px;
+        line-height: 70px;
+        border-radius: 35px;
+        background: #ffffff;
+        padding: 0 30px;
+            .at-input input{
+                line-height: 70px;
+            }
+            .at-input__container {
+                position: relative;
+            }
+        .iput {
+            color: #333333;
+            font-size: 28px;
+            padding: 0;
+            width: 100%;
+            line-height: 70px;
+            .at-input__icon {
+                padding: 0;
+                position: absolute;
+                right: 10px;
+                top: -13px;
+                z-index: 999;
+            }
+            .at-icon-close-circle {
+                font-size: 30px !important;
+            }
+        }
+        .line {
+            display: inline-block;
+            /* width: 2px;
+             height: 30px;
+             background-color: #E7E7E7;*/
+            color: #e7e7e7;
+            margin-right: 30px;
+            margin-left: 20px;
+        }
+        .search-btn {
+            border: 0 !important;
+            background: #ffffff;
+            line-height: normal;
+            padding: 0;
+            &.search-hover {
+                background: #F1F1F1;
+            }
+        }
+    }
+}
+
+.search-container {
+    box-sizing: border-box;
+}
+
+/*搜索历史*/
+.history-wrap {
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    .history-title {
+        font-size: 30px;
+        color: #999999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        image {
+            width: 32px;
+            height: 34px;
+        }
+    }
+    .key-list {
+        margin-top: 30px;
+        .tag-item {
+            display: inline-block;
+            background-color: #ECECEC;
+            font-size: 26px;
+            color: #666;
+            margin-right: 30px;
+            margin-bottom: 25px;
+            padding: 27px 28px;
+            border-radius: 6px;
+            line-height: 1;
+        }
+    }
+    .clear-btn {
+        margin-bottom: 50px;
+        width: 480px;
+        height: 80px;
+        line-height: 80px;
+        border: 1px solid rgba(210, 210, 210, 1);
+        border-radius: 40px;
+        font-size: 26px;
+        color: #999999;
+        background-color: #ffffff;
+        &.clear-btn-hover {
+            background-color: #F4F4F4;
+        }
+        .img {
+            width: 32px;
+            height: 30px;
+            margin-left: 6px;
+        }
+    }
+}
+
+/*搜索结果展示*/
+.result-wrap {
+    height: 100%;
+    .item {
+        padding: 35px 30px;
+        border-bottom: 16px solid #F7F7F7;
+        &:last-child{
+            border-bottom:none;
+        }
+        .img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .right {
+            margin-left: 30px;
+            font-size: 24px;
+            .gap {
+                margin-top: 20px;
+            }
+            .name-wrap {
+                .name {
+                    font-size: 30px;
+                    color: #333333;
+                    font-weight: bold;
+                }
+                .label {
+                    font-size: 18px;
+                    padding: 6px 8px;
+                    border-radius: 4px;
+                    margin-left: 10px;
+                }
+                .yellow {
+                    background-color: #FFF3E3;
+                    color: #FBAB48
+                }
+                .red {
+                    background-color: #FFDDD5;
+                    color: #FF623D;
+                }
+                .green {
+                    background:rgba(24,210,159,0.2);
+                    color: #18D29F;
+                }
+            }
+            .delivery {
+                font-size: 20px;
+                color: #666666;
+                margin-top: 15px;
+                .earn {
+                    font-size: 20px;
+                    color: #FF623D;
+                    margin-right: 18px;
+                    text:first-child {
+                        border-radius: 4px 0 0 4px;
+                        color: #ffffff;
+                        padding: 10px 6px;
+                        background-color: #FF623D;
+                    }
+                    text:last-child {
+                        padding: 10px 6px;
+                        border-radius: 0 4px 4px 0;
+                        border: 1px solid #FF623D;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            .merchantDiscount {
+                line-height: 1;
+                margin: 20px 0 18px;
+                text {
+                    font-size: 18px;
+                    padding: 7px;
+                    border-radius:4px;
+                }
+                .bg {
+                    background-color: #FF623D;
+                    color: #ffffff;
+                }
+                .bd {
+                    border: 1px solid #FF623D;
+                    box-sizing: border-box;
+                    color: #FF623D;
+                    margin-left: 10px;
+                }
+              .last{
+                    margin-right: 28px;
+                }
+                .discount {
+                    font-size: 20px;
+                    color: #666666;
+                }
+            }
+            .dish-item {
+                .dish-img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 4px;
+                }
+                .right {
+                    margin-left: 20px;
+                    .dish-name {
+                        font-size: 26px;
+                        color: #333333;
+                        font-weight: bold;
+                    }
+                    .retain {
+                        margin-top: 15px;
+                        color: #A0A0A0;
+                        font-size:20px;
+                    }
+                    .dish-price {
+                        color: #FF6C64;
+                        display: flex;
+                        align-items: flex-end;
+                        .now-price {
+                            font-size: 40px;
+                            margin-right: 20px;
+                            margin-left: 8px;
+                            font-weight: bold;
+                        }
+                        .old-price {
+                            font-size: 26px;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
+            .more-dish{
+                display: inline-block;
+                margin-top: 40px;
+                color: #666;
+                font-size: 24px;
+            }
+        }
+    }
+
+}

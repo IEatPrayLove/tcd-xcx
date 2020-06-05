@@ -1,0 +1,36 @@
+.page{
+  padding: 0 60px;
+  line-height: 60px;
+}
+.title {
+  font-size: 26px;
+  color: #999999;
+  text-align: center;
+  padding-top: 60px;
+}
+.earnings {
+  color: #333333;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 130px;
+}
+.item{
+  font-size: 26px;
+  text:first-child{
+    display: inline-block;
+    text-align: right;
+    min-width: 110px;
+    color: #999999;
+    padding-right: 35px;
+  }
+  text:last-child{
+    color: #333333;
+  }
+  .finish{
+    color: #6997FF !important;
+  }
+  .underway{
+    color: #FCB251 !important;
+  }
+}

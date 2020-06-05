@@ -1,0 +1,497 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+page {
+  width: 100%;
+  height: 100%;
+}
+.legendsRankBox {
+  position: relative;
+}
+
+@mixin fontGradient(){
+  background:linear-gradient(262deg,rgba(179,149,98,1) 0%, rgba(229,206,163,1) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.pageHeader{
+  background: url(#{$STATIC_IMG_URL}/legendsUserCenter.bg.png) no-repeat;
+  background-size: 100% auto;
+  padding-top: 1px;
+  padding-bottom: 160px;
+}
+.userSwiper{
+  margin: 40px 30px 0;
+  height: 45px;
+  border-radius: 24px;
+  background: #ffffff;
+  .userItem{
+    .userImg{
+      height: 38px;
+      width: 38px;
+      margin-right: 8px;
+    }
+    .userInfo{
+      max-width: 250px;
+      font-size: 20px;
+      color: #666666;
+    }
+  }
+  .userItem:first-child{
+    margin-right: 50px;
+  }
+}
+.userCenter{
+  margin: 70px 70px 0;
+  .avatar{
+    height: 110px;
+    width: 110px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .userMsg{
+    text:first-child{
+      max-width: 240px;
+      font-size: 38px;
+      color: #ffffff;
+    }
+    text:last-child{
+      font-size: 26px;
+      color: #ffffff;
+    }
+  }
+  .legendsCard{
+    margin: 14px 0;
+  }
+  .legendsCard,
+  .cardDate{
+    font-size: 24px;
+    color: #E5CEA3;
+  }
+  .legendsRight,
+  .renewalFee{
+    width:85px;
+    height:34px;
+    background:linear-gradient(262deg,rgba(179,149,98,1),rgba(229,206,163,1));
+    border-radius:17px;
+    font-size: 24px;
+    color: #1B1B1D;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 24px;
+  }
+}
+.sharePartner{
+  margin-top: 140px;
+  .title{
+    font-size:60px;
+    font-weight:bold;
+    @include fontGradient()
+  }
+  .rule{
+    margin: 10px 0 20px;
+    text{
+      font-size: 40px;
+      @include fontGradient()
+    }
+    .ruleBtn{
+      width:100px;
+      height:38px;
+      background:linear-gradient(262deg,rgba(179,149,98,1),rgba(229,206,163,1));
+      border-radius:19px;
+      color:#1B1B1D;
+      font-size: 28px;
+      text-align: center;
+      line-height: 38px;
+      margin-left: 12px;
+    }
+  }
+}
+.shareIncome{
+  width:582px;
+  height:146px;
+  border-radius:20px;
+  background:linear-gradient(262deg,rgba(225,200,157,1),rgba(227,212,185,1));
+  .handle{
+    text:first-child{
+      color: #313030;
+      font-size: 54px;
+      font-weight: bold;
+      &:after{
+        content: '人';
+        font-size: 26px;
+        color:#313030;
+      }
+    }
+    text:last-child{
+      font-size: 24px;
+      color: #313030;
+    }
+  }
+  .bounty{
+    text:first-child{
+      font-size: 54px;
+      color: #FF633D;
+      font-weight: bold;
+      &:after{
+        content: '元';
+        font-size: 26px;
+        color: #FF633D;
+      }
+    }
+    text:last-child{
+      font-size: 24px;
+      color: #313030;
+    }
+  }
+  .record{
+    background: #ffffff;
+    font-size: 26px;
+    color: #4B4B4B;
+    border-radius:0 20px 20px 0;
+  }
+}
+.prompt{
+  font-size: 22px;
+  @include fontGradient();
+  padding: 24px 0;
+}
+.earnBounty{
+  width:288px;
+  height:80px;
+  background:rgba(255,99,61,1);
+  border-radius:40px;
+  border: none;
+  font-size: 30px;
+  color:#FFFFFF;
+  line-height: 80px;
+}
+
+.legendsRank {
+  position: absolute;
+  top: 965px;
+  left: 0;
+  width: 100%;
+  background-color: #EDDFC6;
+  border-radius:70px 70px 0 0;
+  overflow: hidden;
+  padding-bottom: 50px;
+  .legendsRankNav {
+    display: flex;
+    .legendsRankNavItem {
+      color: #484848;
+      font-size: 30px;
+      height: 115px;
+      line-height: 115px;
+      width: 50%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .rankBg {
+      background-color: rgba(255, 255, 255, .57);
+    }
+  }
+  .legendsRankMoney {
+    font-size: 87px;
+    color: #FF633D;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+    line-height: 1;
+    text {
+      font-size: 48px;
+      font-weight:400;
+      margin-left: 10px;
+    }
+  }
+  .legendsRankMoneyTip {
+    font-size: 26px;
+    font-weight: 400;
+    color: #FF633D;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .legendsRankRules {
+    font-size: 26px;
+    color: #484848;
+    text-align: center;
+    margin-top: 65px;
+    line-height: 55px;
+  }
+  .legendsRankEndTime {
+    height: 67px;
+    line-height: 67px;
+    text-align: center;
+    color: #fff;
+    background-color: #FF633D;
+    margin-top: 55px;
+    font-size: 26px;
+  }
+  .legendsRankUserList {
+    padding: 40px 30px 50px;
+    .legendsRankUserItem {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      position: relative;
+      .legendsRankUserInfo {
+        display: flex;
+        image {
+          width: 107px;
+          height: 107px;
+          border-radius: 50%;
+        }
+        .legendsRankUserName {
+          max-width: 360px;
+          font-size: 36px;
+          color: #484848;
+          font-weight: bold;
+          margin-left: 20px;
+          padding-top: 27px;
+        }
+        .legendsRankUserNo {
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          background-color: #FF633D;
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      .legendsRankUserMoney {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 24px;
+        font-weight:400;
+        color: #484848;
+        .colorRed {
+          color: #FF633D;
+        }
+      }
+    }
+  }
+  .legendsRankLastTitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 90px;
+  }
+  .mar-t {
+    margin-top: 40px;
+  }
+  .legendsRankMyInfo {
+    text-align: center;
+    margin-top: 35px;
+    .legendsRankMyNo {
+      font-size: 35px;
+      font-weight: 400;
+      color: #484848;
+      line-height: 53px;
+      text {
+        color: #FF633D;
+        font-weight: bold;
+      }
+    }
+  }
+  .endTimeFont {
+    font-size: 24px;
+    margin-top: 65px;
+  }
+}
+
+.previousSettlementMask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  .previousSettlementBox {
+    padding: 60px 0 50px;
+    text-align: center;
+    background-color: #fff;
+    margin: 250px 65px 0;
+    border-radius: 15px;
+    font-weight: 400;
+    .previousSettlementTitle {
+      font-size: 36px;
+      color: #494949;
+    }
+    .previousSettlementMoney {
+      font-size: 96px;
+      font-weight: bold;
+      color: #FF633D;
+      line-height: 1;
+      margin-top: 30px;
+    }
+    .previousSettlementRank {
+      font-size: 28px;
+      color: #494949;
+      margin-top: 30px;
+    }
+    .previousSettlementBtn {
+      width: 288px;
+      height: 80px;
+      line-height: 80px;
+      background-color: #FF633D;
+      border-radius: 40px;
+      color: #fff;
+      font-size: 29px;
+      margin: 25px auto;
+    }
+    .previousSettlementTip {
+      font-size: 24px;
+      color: #494949;
+    }
+  }
+  .bottomShare{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    padding: 30px 20px;
+    .shareBtn{
+      line-height: initial;
+      height: 140px;
+      font-size: 26px;
+      color: #3F3F3F;
+      background: #ffffff;
+      margin: 0;
+      &:after{
+        border: none;
+      }
+    }
+    .savePicBtn{
+      height: 140px;
+      font-size: 26px;
+      color: #3F3F3F;
+      margin-left: 60px;
+    }
+  }
+}
+
+.generatepPostersBox {
+  width: 459px;
+  height: 916px;
+  margin: 45px auto 0;
+
+  .shareImage {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ruleModalMask {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  line-height: 1;
+  font-weight: 400;
+  .ruleModalBox {
+    margin: 150px 30px 0;
+    background: url(#{$STATIC_ICON_URL}/icon/rules_bg2.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    .ruleModalTitle {
+      font-size: 28px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      padding: 23px 0 55px;
+    }
+    .ruleModalContent {
+      padding: 0 30px 35px;
+      .ruleRow {
+        display: flex;
+        justify-content: space-between;
+        .ruleRowCircle {
+          width: 29px;
+          height: 26px;
+          background: url(#{$STATIC_ICON_URL}/icon/rule_circle3.png) no-repeat;
+          background-size: 100% 100%;
+          margin-top: 8px;
+        }
+        .ruleRowCircle2 {
+          width: 29px;
+          height: 26px;
+          background: url(#{$STATIC_ICON_URL}/icon/rule_circle2.png) no-repeat;
+          background-size: 100% 100%;
+          margin-top: 8px;
+        }
+        .ruleRowWord {
+          width: 94%;
+          font-size: 24px;
+          color: #666;
+          line-height: 40px;
+        }
+        .ruleRowWordQuestion {
+          width: 94%;
+          font-size: 24px;
+          color: #333;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .ruleModalClose {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.marBS {
+  margin-bottom: 25px;
+}
+.marB {
+  margin-bottom: 40px;
+}
+.noOrder{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFFFFF;
+  z-index: 1000;
+  .weight{
+    margin: 80px 0 440px;
+    text:first-child{
+      font-size: 36px;
+      color: #333333;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    text:last-child{
+      font-size: 26px;
+      color: #666666;
+    }
+  }
+  .refresh{
+    font-size: 26px;
+    color: #999999;
+  }
+}
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+}
+.promptRank {
+  font-size: 22px;
+  text-align: center;
+}

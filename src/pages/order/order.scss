@@ -1,0 +1,51 @@
+@mixin tab-wrap($height:80px,$bsize:1px,$borderColor:#E5E5E5) {
+  position: relative;
+  height: $height;
+  box-sizing: border-box;
+  border-bottom: $bsize solid $borderColor;
+  box-shadow:0px 5px 15px 0px rgba(172,172,172,0.15);
+  .tab-item {
+    position: relative;
+    height: 100%;
+    line-height: $height;
+    font-size: 30px;
+    color: #666666;
+    text-align: center;
+    &:after {
+      content: " ";
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 6px;
+      width: 50px;
+      background: transparent;
+      border-radius: 0 0 6px 6px;
+      z-index: 99;
+    }
+    &.active {
+      color: #FF643D;
+      /*border-bottom: 6px solid #FCB251;*/
+      &:after {
+        background: #FF643D;
+      }
+    }
+  }
+}
+
+.order-wrap {
+    min-height: 100vh;
+    background: #F7F7F7;
+    .order-tab {
+        background: #ffffff;
+        @include tab-wrap(100px, 0px, #F7F7F7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index:1000;
+    }
+}
+
+

@@ -1,0 +1,255 @@
+page {
+  height: 100%;
+}
+.container {
+  position: relative;
+  background: #F2F2F2;
+  padding-bottom: 100px;
+  min-height: 100%;
+  box-sizing: border-box;
+  .headerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: #FF643D;
+    border-radius: 0 0 40px 40px;
+  }
+}
+.rechargeHead {
+  height: 200px;
+  border-radius: 0 0 40px 40px;
+  position: relative;
+}
+.balanceSection {
+  position: absolute;
+  width: 690px;
+  top: 30px;
+  left: 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px 1px rgba(235, 235, 235, 0.35);
+  border-radius:10px;
+  margin: 0 30px;
+  padding: 30px;
+  font-size: 24px;
+  color: #643019;
+  text-align: center;
+  .cardName {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+  .balance {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 70px;
+  }
+}
+.title {
+  font-size: 28px;
+  color: #5C5C5C;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 28px;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 26px;
+    width: 4px;
+    background: #5C5C5C;
+    margin-right: 10px;
+  }
+}
+.rechargeMerchant {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #5C5C5C;
+  margin: 165px 30px 45px;
+  .changeBtn {
+    color: #FF643D;
+    border-radius: 29px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #FFECE3;
+  }
+}
+.rechargeSection {
+  margin: 0 30px;
+  .rechargeItem {
+    padding: 40px 30px 36px;
+    border-radius:10px;
+    background: #ffffff;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    .label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      font-size: 24px;
+      line-height: 40px;
+      padding: 0 34px;
+      color: #FFFFFF;
+      border-radius: 0 10px 0 10px;
+      background: #FF643D;
+    }
+  }
+  .active {
+    border-color: #FF643D;
+  }
+  .amount {
+    font-size: 24px;
+    color: #FF643D;
+    margin-top: 20px;
+  }
+  .full {
+    font-size: 28px;
+    color: #5C5C5C;
+    text {
+      font-size: 34px;
+      color: #FF643D;
+      font-weight: bold;
+    }
+  }
+  .give {
+    font-size: 24px;
+    color: #5C5C5C;
+    text {
+      color: #FF643D;
+      margin-right: 5px;
+    }
+    .colorBlack {
+      color: #5C5C5C;
+    }
+  }
+}
+.inputSection {
+  line-height: 1;
+  background: url(#{$STATIC_IMG_URL}/storedMoney/input_bg.png);
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+  padding: 46px 30px 30px;
+  box-sizing: border-box;
+  .input {
+    width:400px;
+    height:60px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(147,147,147,1);
+    border-radius:44px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  .btn {
+    &:after{
+      border: none;
+    }
+    margin: 0;
+    width:215px;
+    height:60px;
+    background:rgba(255,100,61,1);
+    border-radius:44px;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+.rechargeBtn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 88px;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 88px;
+  text-align: center;
+  background: #FF643D;
+}
+.payBox {
+  .payTitle {
+    font-size: 30px;
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #DFDFDF;
+    .closeButton {
+      position: absolute;
+      right: 30px;
+      top: 33px;
+    }
+  }
+  .payMoney {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+    text {
+      font-size: 28px;
+    }
+  }
+}
+.pay-btn {
+  width: 100%;
+  height: 96px;
+  line-height: 96px;
+  text-align: center;
+  background-color: #FF643D;
+  font-size: 32px;
+  color: #F9F9F9;
+  border-radius: 0;
+}
+.pay-position {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.noRulesRecharge {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 70px 40px 85px;
+  .noRulesTitle {
+    font-size: 24px;
+    color: #666;
+  }
+  .inputRecharge {
+    padding-bottom: 17px;
+    border-bottom: 2px solid #DFDFDF;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    text {
+      font-size: 30px;
+      margin-right: 30px;
+      display: block;
+      height: 40px;
+    }
+    input {
+      height: 60px;
+    }
+    .rechargePlace {
+      font-size: 45px;
+      font-weight: normal;
+    }
+  }
+}
+.noRuleBtn {
+  margin-top: 60px;
+  width: 100%;
+  height: 88px;
+  line-height: 88px;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: #FF643D;
+  border: none;
+}
+.rechargeGift {
+  font-size: 22px;
+  color: #666;
+}

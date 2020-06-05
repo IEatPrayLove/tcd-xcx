@@ -1,0 +1,25 @@
+@import "../../styles/base.scss";
+.userSwiper{
+  margin: 30px 40px 0;
+  height: 52px;
+  border-radius: 26px;
+  background:rgba(27,27,27,0.3);
+  width: 340px;
+  .group{
+    box-sizing: border-box;
+  }
+  .userImg{
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .userInfo{
+    font-size: 22px;
+    color: #FFFFFF;
+  }
+}
+.placeholder {
+  margin: 30px 40px 0;
+  height: 52px;
+}

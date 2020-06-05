@@ -1,0 +1,318 @@
+
+page{
+  max-height: 1000px;
+  background: #F2F2F2;
+  padding: 0 30px;
+  width: auto;
+  border-bottom: 1px solid transparent;
+}
+.mineHeader{
+  position: relative;
+  // background:#FF643D;
+  border-radius:0 0 40px 40px;
+  box-sizing: border-box;
+  padding: 40px 30px 0;
+  margin: 0 -30px 60px;
+  .userImg{
+    height: 105px;
+    width: 105px;
+    margin-right: 14px;
+    border-radius: 50% 50%;
+  }
+  .userInfo{
+    .notSignIn{
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 36px;
+      color: #F7F7F7;
+    }
+    .userName{
+      padding-right: 60px;
+      margin-bottom: 10px;
+      view:first-child{
+        font-size: 36px;
+        color: #f7f7f7;
+        font-weight: bold;
+      }
+      .userLevel{
+        font-size: 22px;
+        color: #986952;
+        background:linear-gradient(124deg,rgba(241,222,182,1) 0%,rgba(236,211,155,1) 100%);
+        border-radius:8px;
+        padding: 4px 8px;
+        margin-left: 18px;
+      }
+    }
+    .userTalent{
+      font-size: 30px;
+      color: #f7f7f7;
+      .talentItem{
+        width: 100px;
+        height: 30px;
+        background:rgba(238,238,238,0.5);
+        border-radius:15px;
+        margin-right: 10px;
+        image{
+          border-radius: 50%;
+        }
+      }
+      .omit{
+        height: 30px;
+        line-height: 30px;
+        width: 60px;
+        text-align: center;
+        background:rgba(238,238,238,0.5);
+        border-radius:15px;
+      }
+      image{
+        height: 30px;
+        width: 30px;
+        margin-right: 10px
+      }
+      .level{
+        font-weight: bold;
+        font-size: 18px;
+        color: #FDFAF8;
+      }
+    }
+  }
+}
+.legendsCard{
+  padding: 22px 26px;
+  background:linear-gradient(124deg,rgba(247,237,215,1) 0%,rgba(233,206,147,1) 100%);
+  border-radius:15px 15px 0 0;
+  margin-top: 35px;
+  .header{
+    margin-bottom: 12px;
+    .name{
+      font-size: 36px;
+      font-weight: bold;
+      color: #986952;
+      text {
+        font-size: 24px;
+        color: #986952;
+        padding-left: 10px;
+        font-weight: initial;
+      }
+    }
+    .cardSn{
+      padding: 2px 20px;
+      height:36px;
+      line-height: 36px;
+      border:1px solid rgba(152,105,82,1);
+      border-radius:18px;
+      font-size: 24px;
+      color: #986952;
+    }
+  }
+  .legendsPower{
+    margin-top: 30px;
+    padding-left: 20px;
+    .powerItem{
+      .info{
+        margin-top: 6px;
+        text-align: center;
+        max-width: 80px;
+        font-size: 20px;
+        background:linear-gradient(262deg,rgba(152,105,82,1) 0%, rgba(106,68,49,1) 100%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+      }
+    }
+  }
+}
+.mineBtn{
+  font-size: 0;
+  margin: 28px 0;
+  button{
+    display: inline-block;
+    height: 88px;
+    line-height: 88px;
+    font-size: 28px;
+    color: #FEFDFC;
+    width: 49%;
+    margin: 0;
+    &:after{
+      border: none
+    }
+    &[disabled]{
+      color: #ffffff;
+    }
+  }
+  button:first-child{
+    background: #FF6600;
+    &[disabled]{
+      background: rgba(255, 102, 0, 0.6);
+    }
+  }
+  button:last-child{
+    background: #F59F2E;
+    &[disabled]{
+      background: rgba(245, 159, 46, 0.6);
+    }
+  }
+}
+.userNav{
+  background: #ffffff;
+  height: 174px;
+  border-radius:10px;
+  margin-top: 75px;
+  .navItem{
+    image{
+      width: 78px;
+      height: 66px;
+    }
+    .title{
+      padding-top: 14px;
+      font-size: 24px;
+      color: #5C5C5C;
+    }
+  }
+}
+.mineAd{
+  margin: 20px 0;
+  height: 110px;
+  image{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.userManage{
+  border-radius:10px;
+  margin-top: 20px;
+  .at-list{
+    &:after{
+      border-color: transparent;
+    }
+  }
+  .at-list__item{
+    &:after{
+      border-color: #eeeeee;
+    }
+  }
+  .item-extra__icon-arrow{
+    font-size: 36px;
+    color: #999999;
+  }
+  .item-content__info-title{
+    color: #333333;
+    font-size: 26px;
+  }
+  .item-thumb{
+    height: 44px;
+    width: 44px
+  }
+}
+.nowCertification{
+  width:140px;
+  height:32px;
+  background:rgba(255,255,255,0.3);
+  border-radius:15px;
+  font-size: 22px;
+  color: #FDFDFD;
+}
+.levelPower{
+  margin-right: -30px;
+  width:186px;
+  height:50px;
+  font-size: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #986952;
+  background:linear-gradient(124deg,rgba(241,222,182,1) 0%,rgba(236,211,155,1) 100%);
+  border-radius:26px 0 0 26px;
+}
+.moveArea{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 266px;
+  width: auto;
+  height: auto;
+}
+.block{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  background: #F2F2F2;
+}
+.mineAd{
+  height: 140px;
+}
+.accounts {
+  margin-top: 20px;
+  line-height: 1;
+  background:rgba(255,230,224,1);
+  border-radius:4px;
+  padding: 20px;
+  font-size: 22px;
+  color: #FF643D;
+  .attention {
+    border: 1px solid #FF643D;
+    border-radius: 16px;
+    padding: 6px 12px;
+    text-align: center;
+  }
+}
+.accountsModal {
+  .at-modal__content {
+    text-align: center;
+    min-height: 0;
+  }
+}
+.cardSection {
+  position: relative;
+  top: 60px;
+  margin-top: -30px;
+  .memberCard {
+    background: url(#{$STATIC_IMG_URL}/storedMoney/member_bg.png);
+    color: #F8CE70;
+    margin-left: -15px;
+  }
+  .storedMoney {
+    background: url(#{$STATIC_IMG_URL}/storedMoney/stored_bg.png);
+    color: #643019;
+    margin-right: -15px;
+  }
+  .memberCard,
+  .storedMoney {
+    font-size: 28px;
+    font-weight: bold;
+    background-size: 100% 100%;
+    height: 210px;
+    padding: 30px 34px 44px;
+    box-sizing: border-box;
+  }
+  .notStored {
+    background-image: url(#{$STATIC_IMG_URL}/storedMoney/member2_bg.png);
+    height: 180px;
+    margin: 0;
+  }
+  .cardNumber {
+    text-align: center;
+  }
+  .balance {
+    text-align: center;
+    &:before{
+      content: '余额：';
+      font-size: 20px;
+      font-weight: initial;
+    }
+  }
+  .deadline {
+    font-weight: initial;
+    font-size: 18px;
+  }
+}
+.raidersModal {
+  height: 100%;
+  .at-modal__container {
+    width: 600px;
+    border-radius: 8px;
+    overflow: visible;
+  }
+}

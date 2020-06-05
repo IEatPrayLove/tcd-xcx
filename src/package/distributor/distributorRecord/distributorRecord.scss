@@ -1,0 +1,124 @@
+.pageHeader{
+  background: #F7F8FA;
+  padding: 20px 30px;
+}
+.grandTotal{
+  margin-bottom: 20px;
+  .order,
+  .earnings{
+    width:340px;
+    height:130px;
+    background:#ffffff;
+    border-radius:8px;
+    padding: 20px;
+    box-sizing: border-box;
+    .title{
+      margin-bottom: 10px;
+      &:before{
+        content: '';
+        display: block;
+        width:4px;
+        height:22px;
+        border-radius:2px;
+        margin-right: 10px;
+      }
+      text{
+        font-size: 24px;
+        color: #999999;
+      }
+    }
+    .total{
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .earnings{
+    .title:before{
+      background:#FF643D;
+    }
+    .total{
+      color: #FF643D
+    }
+  }
+  .order{
+    .title:before{
+      background:#6997FF;
+    }
+    .total{
+      color: #6997FF
+    }
+  }
+}
+.chooseType{
+  height:60px;
+  background:#FFFFFF;
+  border:1px solid #DCDCDC;
+  border-radius:30px;
+  padding: 0 20px;
+  line-height: 60px;
+  text-align: center;
+  .type{
+    font-size: 24px;
+    color: #333333;
+  }
+}
+.curTotal{
+  font-size: 24px;
+  color: #666666
+}
+.arrow{
+  transition: all 500ms ease 0s;
+  margin-left: 10px;
+}
+.chooseActive{
+  transform: rotate(180deg);
+}
+
+.recordItem{
+  padding: 30px 30px 0;
+  image{
+    height: 66px;
+    width: 66px;
+    margin-right: 20px;
+  }
+  .name{
+    font-size: 28px;
+    color: #333333;
+    padding-right: 70px;
+  }
+  .state{
+    font-size: 26px;
+  }
+  .finish{
+    color: #FCB251;
+  }
+  .distribution{
+    font-size: 22px;
+    color: #999999;
+  }
+  .date{
+    font-size: 22px;
+    color: #999999;
+  }
+  .earnings{
+    text:first-child{
+      font-size: 22px;
+      color: #999999;
+    }
+    text:nth-of-type(2) {
+      font-size: 22px;
+      color: #FF6C64;
+      padding: 0 6px;
+    }
+    text:last-child{
+      font-size: 38px;
+      font-weight: bold;
+      color: #FF6C64;
+    }
+  }
+  .line{
+    height:1px;
+    background:rgba(220,220,220,1);
+    margin-top: 10px;
+  }
+}
