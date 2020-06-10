@@ -191,7 +191,7 @@ class Login extends Component {
           root.bindWeAppUserAccount(res, resCode.code)
         }
       }, () => {
-        
+
       })
     } else {
       Taro.atMessage({
@@ -274,6 +274,16 @@ class Login extends Component {
           onGetUserInfo={this.getUserInfo}
         >
           微信登录
+        </Button>
+        <Button
+          className={`login-btn out-gray  ${loading && 'out-green'}`}
+          hoverClass="hover"
+          loading={loading}
+          disabled={loading}
+          open-type="getUserInfo"
+          onGetUserInfo={this.getUserInfo}
+        >
+          暂不登录
         </Button>
         <AtCurtain
           isOpened={signUp}

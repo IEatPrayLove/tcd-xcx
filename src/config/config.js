@@ -321,16 +321,25 @@ export const PARTNER_RIGHTS_SIXTEEN = 16 // 全部物流商品免邮
 export const DISTRIBUTOR_ORDER_TYPE = [
   {
     label: '全部类型',
-    value: ''
+    value: '',
+    active: false,
   },
-  { label: '分销门店', value: 5 },
+  {
+    // label: '分销门店',
+    label: '奖金池瓜分',
+    value: 5,
+    active: false,
+  },
   {
     label: '分享商品',
-    value: 2
+    value: 2,
+    active: false,
   },
   {
-    label: '邀请团队',
-    value: 3
+    // label: '邀请团队',
+    label: '招募团队收益',
+    value: 3,
+    active: false,
   }
 ]
 

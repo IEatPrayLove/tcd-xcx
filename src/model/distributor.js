@@ -3,7 +3,7 @@ import {
   getPartnerSetConfig, getShopDishesByIds, getPartnerRankInfo,
   getQrcodeSharePoster, getGoodsConfig, getTeamMemberList,
   getTeamInfo, getDistributorOrder, getDistributorAmount,
-  getDistributeMerchant
+  getDistributeMerchant, getDistributorCommodity, getDistributorMerchant
 } from '../utils/api'
 
 import {
@@ -42,6 +42,16 @@ export default {
           payload: res.data
         })
       }
+    },
+    // 获取分销商品
+    *getDistributorCommodityAction({ callback, payload }, { call, put }) {
+      const res = yield call(getDistributorCommodity, payload);
+      isFunction(callback) && callback(res)
+    },
+    // 分销门店
+    *getDistributorMerchantAction({ callback, payload }, { call, put }) {
+      const res = yield call(getDistributorMerchant, payload)
+      isFunction(callback) && callback(res)
     },
 
     /**
@@ -109,7 +119,7 @@ export default {
       isFunction(callback) && callback(res)
     },
     * getDistributeMerchant({ callback, payload }, { call }) {
-       const res = yield call(getDistributeMerchant, payload)
+      const res = yield call(getDistributeMerchant, payload)
       isFunction(callback) && callback(res)
     }
   },

@@ -20,7 +20,8 @@ const SIZE = 8
 @connect(({ loading: { effects } }) => ({ effects }))
 export default class DistributorRecord extends PureComponent {
   config = {
-    navigationBarTitleText: '分享记录',
+    // navigationBarTitleText: '分享记录',
+    navigationBarTitleText: '收益记录',
     navigationBarBackgroundColor: '#ffffff',
     navigationBarTextStyle: 'black'
   }
@@ -29,10 +30,11 @@ export default class DistributorRecord extends PureComponent {
     super()
     this.userDetail = getUserDetail()
     this.state = {
-      chooseActive: false,
       pattern: '',
       totalInfo: {},
       recordInfo: {},
+      catModalVisible: false,
+      tabs: DISTRIBUTOR_ORDER_TYPE,
       pagination: {
         page: 0,
         size: SIZE,
@@ -109,7 +111,36 @@ export default class DistributorRecord extends PureComponent {
       }
     })
   }
-
+  closeCatModal() {
+    this.setState({
+      catModalVisible: !this.state.catModalVisible,
+    })
+  }
+  // 分类确认弹窗
+  confirmBtn = () => {
+    const { pagination } = this.state
+    this.loadMerchantList({
+      ...pagination,
+      curPage: 0,
+      merchantList: []
+    })
+    this.setState({
+      catModalVisible: false
+    })
+  }
+  listCatHandel(value) {
+    const { tabs } = this.state;
+    const chooseactive = tabs.filter((item, index) => {
+      item.active = false;
+      if (item.value == value.value) {
+        item.active = !item.active;
+      }
+      return tabs;
+    })
+    this.setState({
+      tabs: chooseactive
+    })
+  }
   onReachBottom() {
     const {
       pagination,
@@ -147,9 +178,10 @@ export default class DistributorRecord extends PureComponent {
       chooseActive, pattern,
       totalInfo: { countOrder = 0, totalAmount = 0 },
       recordInfo: { count = 0, list, totolProfit = 0 },
-      pagination: { loadMore, page }
+      pagination: { loadMore, page }, catModalVisible, tabs
     } = this.state
-    const { effects = {} } = this.props
+    const { effects = {} } = this.props;
+
     return (
       <Block>
         {
@@ -173,7 +205,7 @@ export default class DistributorRecord extends PureComponent {
             </View>
           </View>
           <View className="flex-row flex-sb flex-ac">
-            <Picker
+            {/* <Picker
               mode="selector"
               range={DISTRIBUTOR_ORDER_TYPE}
               range-key="label"
@@ -197,7 +229,49 @@ export default class DistributorRecord extends PureComponent {
                   <IconFont value="imgArrowDownGray" h={12} w={18} />
                 </View>
               </View>
-            </Picker>
+            </Picker> */}
+            <View
+              className="category flex-row flex-ac flex-je"
+              onClick={() => {
+                this.setState({
+                  catModalVisible: !catModalVisible
+                })
+              }}
+            >
+              <Text>全部</Text>
+              <IconFont value="imgArrowBottom" h={11} w={16} ml={16} />
+            </View>
+            {/* 分类弹窗 */}
+            {catModalVisible && (
+              <View
+                className="catModal"
+                onClick={this.closeCatModal}
+                onTouchMove={e => e.stopPropagation()}
+              >
+                <View className="container" onClick={e => e.stopPropagation()}>
+                  <View className="catItem flex-row flex-wrap">
+                    {/* <Text className={merchantType === ALL && 'active'} onClick={() => this.listCatHandel(ALL)}>全部</Text>
+                  <Text className={merchantType === TAKE_OUT && 'active'} onClick={() => this.listCatHandel(TAKE_OUT)}>分享商品</Text>
+                  <Text className={merchantType === SCANNING && 'active'} onClick={() => this.listCatHandel(SCANNING)}>招募团队收益</Text>
+                  <Text className={merchantType === FAVOURABLE && 'active'} onClick={() => this.listCatHandel(FAVOURABLE)}>招募团队</Text> */}
+                    {tabs.map((item, index) => {
+                      return (
+                        <Text className={item.active ? "active" : ''} onClick={() => this.listCatHandel(item)}>{item.label}</Text>
+                      )
+                    })}
+                  </View>
+                  {/* <Text onClick={() => this.listCatHandel(TAKE_OUT)}>分享商品</Text>
+                    <Text onClick={() => this.listCatHandel(SCANNING)}>招募团队收益</Text>
+                    <Text onClick={() => this.listCatHandel(FAVOURABLE)}>招募团队</Text> */}
+
+                  <View className="operateBtn flex-row">
+                    <Text onClick={this.closeCatModal}>取消</Text>
+                    <Text onClick={this.confirmBtn}>确认</Text>
+                  </View>
+                </View>
+              </View>
+            )
+            }
             <Text className="curTotal" space="emsp">
               {`分享订单数：${count} 实际收益：￥${totolProfit}`}
             </Text>
@@ -244,7 +318,7 @@ export default class DistributorRecord extends PureComponent {
                 <View className="flex-col flex1">
                   <View className="flex-row flex-ac flex-sb">
                     <Text className="name ellipsis">{name || '--'}</Text>
-                    <Text className="state flex-sk finish">{ refunsFlag ? '已退款' : balance ? '已完成' : '进行中'}</Text>
+                    <Text className="state flex-sk finish">{refunsFlag ? '已退款' : balance ? '已完成' : '进行中'}</Text>
                   </View>
                   <Text className="distribution">{`分享者：${distributorTeam} ${distributorName ? `(${distributorName})` : ''}`}</Text>
                   <View className="flex-row flex-ac flex-sb">

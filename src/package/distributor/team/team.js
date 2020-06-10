@@ -14,7 +14,7 @@ import './team.scss'
 import { TaroCanvasDrawer } from '../../../components/taro-plugin-canvas'
 
 import IconFont from '../../../components/IconFont/IconFont'
-import {APP_ID, MYSELF_URL, STATIC_IMG_URL, SERVER_IMG} from '../../../config/baseUrl'
+import { APP_ID, MYSELF_URL, STATIC_IMG_URL, SERVER_IMG } from '../../../config/baseUrl'
 
 @connect(({ distributor: { distributorInfo } }) => ({
   distributorInfo
@@ -22,8 +22,8 @@ import {APP_ID, MYSELF_URL, STATIC_IMG_URL, SERVER_IMG} from '../../../config/ba
 export default class Team extends PureComponent {
   config = {
     navigationBarTitleText: '我的团队',
-    navigationBarTextStyle: 'black',
-    navigationBarBackgroundColor: '#ffffff'
+    navigationBarTextStyle: 'white',
+    navigationBarBackgroundColor: '#FF643D'
   }
 
   constructor() {
@@ -67,7 +67,7 @@ export default class Team extends PureComponent {
     this.getTeamInfo()
   }
 
-  getTeamInfo=() => {
+  getTeamInfo = () => {
     const { dispatch } = this.props
     dispatch({
       type: 'distributor/getTeamInfo',
@@ -186,88 +186,127 @@ export default class Team extends PureComponent {
     // console.log(distributorInfo)
     return (
       <Block>
-        <View className="header flex-col flex-ac flex-jc">
-          <Text>已从团队获得收益</Text>
-          <Text>{teamInfo.profitTeam ? parseFloat(teamInfo.profitTeam).toFixed(2) : '0.00'}</Text>
+        <View className="top-header">
+          <Text>团队总人数</Text>
+          <Text className="people-num">55</Text>
+          <Text>招募成员</Text>
         </View>
-        {
-          oneLevelDistributorDTO && (
-            <Block>
-              <View className="title flex-row flex-ac">
-                <Text>分享人</Text>
-              </View>
-              <View className="recommend flex-row flex-ac">
-                <Image className="firstTeam" src={getServerPic(oneLevelDistributorDTO.islandUserDTO.headPic)} />
-                <Text>{oneLevelDistributorDTO.islandUserDTO.nickName}</Text>
-              </View>
-            </Block>
-          )
-        }
-        <View className="title flex-row flex-ac">
-          <Text>我的团队</Text>
-        </View>
-        <View className="team flex-row flex-ac flex-jc">
-          <View
-            className="member flex-col flex-ac"
-            onClick={() => { navToPage(`/package/distributor/teamMembers/teamMembers?team=one&parentId=${teamInfo.id}`) }}
-          >
-            <Image className="firstTeam" src={`${STATIC_IMG_URL}/icon/firstTeam.png`} />
-            <Text className="grade">一级成员</Text>
-            <Text>
-              {teamInfo.oneSubordinate}
-人
-            </Text>
+        <Block>
+          <View className="title">
+            <Text>邀请人</Text>
           </View>
-          <View className="verticalLine" />
-          <View
-            className="member flex-col flex-ac"
-            onClick={() => { navToPage(`/package/distributor/teamMembers/teamMembers?team=two&parentId=${teamInfo.id}`) }}
-          >
-            <Image className="firstTeam" src={`${STATIC_IMG_URL}/icon/secondTeam.png`} />
-            <Text className="grade">二级成员</Text>
-            <Text>
-              {teamInfo.twoSubordinate}
-人
-            </Text>
+          <View className="recommend flex-row flex-ac">
+            <Image
+              className="firstTeam"
+              src={`${STATIC_IMG_URL}/contact.png`}
+            />
+            <Text>小芝芝</Text>
+          </View>
+        </Block>
+        <View className="title">
+          <Text>我的团队成员</Text>
+        </View>
+        <View>
+          <View className="recommend flex-row flex-ac">
+            <Image
+              className="firstTeam"
+              src={`${STATIC_IMG_URL}/contact.png`}
+            />
+            <Text>小芝芝</Text>
+          </View>
+          <View className="recommend flex-row flex-ac">
+            <View className="color pl">加入时间</View>
+            <Text className="color ml">2020-19-23  10:23 </Text>
+          </View>
+          <View className="recommend flex-row flex-ac">
+            <View className="color pl">累计分享单量</View>
+            <View className="color" style={{marginLeft:'150px'}}>我获得的收益</View>
           </View>
         </View>
-        <Button className="shareBtn" onClick={this.makeQrCode}>
-          邀请伙伴
-        </Button>
-
-        {/* 海报生成 */}
-        {
-          canvasStatus && (
-            <View
-              className="posterModal"
-              onClick={this.closePosterModal}
-            >
-              {
-                shareImage && (
-                  <View className="container flex-col flex-ac">
-                    <Image
-                      className="posterImage"
-                      src={shareImage}
-                      mode="aspectFit"
-                      lazyLoad
-                      showMenuByLongpress
-                      onClick={e => {
-                        e.stopPropagation()
-                      }}
-                    />
-                    <IconFont value="imgClose" h={50} w={50} />
-                  </View>
-                )
-              }
-              <TaroCanvasDrawer
-                config={config} // 绘制配置
-                onCreateSuccess={this.onCreateSuccess} // 绘制成功回调
-                onCreateFail={this.onCreateFail} // 绘制失败回调
-              />
-            </View>
-          )
-        }
       </Block>
+      //         <Block>
+      //           <View className="header flex-col flex-ac flex-jc">
+      //             <Text>已从团队获得收益</Text>
+      //             <Text>{teamInfo.profitTeam ? parseFloat(teamInfo.profitTeam).toFixed(2) : '0.00'}</Text>
+      //           </View>
+      //           {
+      //             oneLevelDistributorDTO && (
+      //               <Block>
+      //                 <View className="title flex-row flex-ac">
+      //                   <Text>分享人</Text>
+      //                 </View>
+      //                 <View className="recommend flex-row flex-ac">
+      //                   <Image className="firstTeam" src={getServerPic(oneLevelDistributorDTO.islandUserDTO.headPic)} />
+      //                   <Text>{oneLevelDistributorDTO.islandUserDTO.nickName}</Text>
+      //                 </View>
+      //               </Block>
+      //             )
+      //           }
+      //           <View className="title flex-row flex-ac">
+      //             <Text>我的团队</Text>
+      //           </View>
+      //           <View className="team flex-row flex-ac flex-jc">
+      //             <View
+      //               className="member flex-col flex-ac"
+      //               onClick={() => { navToPage(`/package/distributor/teamMembers/teamMembers?team=one&parentId=${teamInfo.id}`) }}
+      //             >
+      //               <Image className="firstTeam" src={`${STATIC_IMG_URL}/icon/firstTeam.png`} />
+      //               <Text className="grade">一级成员</Text>
+      //               <Text>
+      //                 {teamInfo.oneSubordinate}
+      // 人
+      //             </Text>
+      //             </View>
+      //             <View className="verticalLine" />
+      //             <View
+      //               className="member flex-col flex-ac"
+      //               onClick={() => { navToPage(`/package/distributor/teamMembers/teamMembers?team=two&parentId=${teamInfo.id}`) }}
+      //             >
+      //               <Image className="firstTeam" src={`${STATIC_IMG_URL}/icon/secondTeam.png`} />
+      //               <Text className="grade">二级成员</Text>
+      //               <Text>
+      //                 {teamInfo.twoSubordinate}
+      // 人
+      //             </Text>
+      //             </View>
+      //           </View>
+      //           <Button className="shareBtn" onClick={this.makeQrCode}>
+      //             邀请伙伴
+      //         </Button>
+
+      //           {/* 海报生成 */}
+      //           {
+      //             canvasStatus && (
+      //               <View
+      //                 className="posterModal"
+      //                 onClick={this.closePosterModal}
+      //               >
+      //                 {
+      //                   shareImage && (
+      //                     <View className="container flex-col flex-ac">
+      //                       <Image
+      //                         className="posterImage"
+      //                         src={shareImage}
+      //                         mode="aspectFit"
+      //                         lazyLoad
+      //                         showMenuByLongpress
+      //                         onClick={e => {
+      //                           e.stopPropagation()
+      //                         }}
+      //                       />
+      //                       <IconFont value="imgClose" h={50} w={50} />
+      //                     </View>
+      //                   )
+      //                 }
+      //                 <TaroCanvasDrawer
+      //                   config={config} // 绘制配置
+      //                   onCreateSuccess={this.onCreateSuccess} // 绘制成功回调
+      //                   onCreateFail={this.onCreateFail} // 绘制失败回调
+      //                 />
+      //               </View>
+      //             )
+      //           }
+      //         </Block>
     )
   }
 }

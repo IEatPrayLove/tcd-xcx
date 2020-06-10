@@ -182,6 +182,7 @@ export default class ProductShare extends PureComponent {
 
   // 平台海报生成
   makeTcdPoster = poster => {
+    console.log('ping')
     if (!poster) {
       showToast('海报图片有误！')
       return
@@ -217,6 +218,7 @@ export default class ProductShare extends PureComponent {
 
   // 门店海报分享
   makeMerchantPoster = (posterUrl, append) => {
+    console.log('men')
     Taro.showLoading({
       title: '绘制中...',
       mask: true
@@ -248,6 +250,7 @@ export default class ProductShare extends PureComponent {
 
   // 商品海报分享
   makeProductPoster = shareInfo => {
+    console.log('shang')
     const { code } = getUserDistributor()
     const { nickName, headPic } = getUserDetail()
     const {
@@ -326,8 +329,9 @@ export default class ProductShare extends PureComponent {
       config, platFormSettings, pagination: { loadMore, page },
       platFormSettings: { appLogo }, makePoster, merchantList,
       distributorCat,
-      platformDistribution: { partnerRecruitmentPoster, imageSlogan, totalProfit }
+      platformDistribution: { partnerRecruitmentPoster, imageSlogan, totalProfit },
     } = this.state
+    console.log(platFormSettings,'platFormSettings')
     const {
       effects = {}
     } = this.props

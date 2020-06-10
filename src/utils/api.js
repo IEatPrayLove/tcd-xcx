@@ -660,6 +660,15 @@ export function getDistributorProduct(params) {
   return $get(`${config.API_MERCHANT}/tcd-distributor-merchant-shops-check-success-list?platformId=${config.PLATFORM_ID}&page=${params.page}&size=${params.size}`)
 }
 
+// 获取分销门店
+export function getDistributorMerchant(params) {
+  return $get(`${config.API_MERCHANT}/get-brand-by-platform-id?platformId=${config.PLATFORM_ID}`)
+}
+// 获取分销商品
+export function getDistributorCommodity(params) {
+  return $get(`${config.API_PLATFORM}/platform-distributor/dish-info-show-tcd-merchant-back?platformId=${config.PLATFORM_ID}&page=${params.page}&size=${params.size}&checkState=1`)
+}
+
 // 屏蔽
 export function shieldCard() {
   return $get(`${config.API_ISLAND}/test-sland-basic-infos`)
@@ -942,7 +951,7 @@ export async function getStoredCardForPhone({ enterpriseGuid, phone, platformId 
 }
 
 // 支付-获取后配置的用户支付信息
-export async function getUserPayInfoSetting({platformId }) {
+export async function getUserPayInfoSetting({ platformId }) {
   return $get(`${config.API_PLATFORM}/plat-form-users/${platformId}`);
 }
 
@@ -1019,124 +1028,124 @@ export async function getOpenID(params) {
   1022 - end
 */
 //获取token
-export async function getToken(params){
-  return $post(`${config.API_GETTOKEN}areaGuid=${params.areaGuid}&brandGuid=${params.brandGuid}&diningTableGuid=${params.diningTableGuid}&enterpriseGuid=${params.enterpriseGuid}&storeGuid=${params.storeGuid}&wxUserInfoDTO.openId=${params.openid}&wxUserInfoDTO.headImgUrl=${params.headImgUrl}&wxUserInfoDTO.nickname=${params.nickname}&wxUserInfoDTO.sex=${params.sex}`,)
+export async function getToken(params) {
+  return $post(`${config.API_GETTOKEN}areaGuid=${params.areaGuid}&brandGuid=${params.brandGuid}&diningTableGuid=${params.diningTableGuid}&enterpriseGuid=${params.enterpriseGuid}&storeGuid=${params.storeGuid}&wxUserInfoDTO.openId=${params.openid}&wxUserInfoDTO.headImgUrl=${params.headImgUrl}&wxUserInfoDTO.nickname=${params.nickname}&wxUserInfoDTO.sex=${params.sex}`)
 }
 
 //未登录，登录
-export async function otherLogin(params){
-  console.log('1023=>>>>',params)
-  return $post(`${config.API_OTHERPLATFORM}${config.API_LOGINOTHER}`,{data:params})
+export async function otherLogin(params) {
+  console.log('1023=>>>>', params)
+  return $post(`${config.API_OTHERPLATFORM}${config.API_LOGINOTHER}`, { data: params })
 }
 
 //获取就餐人数
-export async function getPersonNum(params){
-  return $get(`${config.API_UAA}areaGuid=${params.areaGuid}&brandGuid=${params.brandGuid}&diningTableGuid=${params.diningTableGuid}&enterpriseGuid=${params.enterpriseGuid}&storeGuid=${params.storeGuid}&wxUserInfoDTO.openId=${params.openId}` ) 
+export async function getPersonNum(params) {
+  return $get(`${config.API_UAA}areaGuid=${params.areaGuid}&brandGuid=${params.brandGuid}&diningTableGuid=${params.diningTableGuid}&enterpriseGuid=${params.enterpriseGuid}&storeGuid=${params.storeGuid}&wxUserInfoDTO.openId=${params.openId}`)
 }
 
 //获取用户信息 get方法
-export async function getConsumerInfo(params){
+export async function getConsumerInfo(params) {
   // console.log(`${config.API_OTHERPLATFORM}${config.API_OTHERCUMSUMER}`);
 
-  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERCUMSUMER}`,{data:params})
+  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERCUMSUMER}`, { data: params })
 }
 
 //获取用户信息,post方法
-export async function getConsumerInfoPost(params){
-  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERCUMSUMERPOST}`,{data:params})
+export async function getConsumerInfoPost(params) {
+  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERCUMSUMERPOST}`, { data: params })
 }
 
 //获取商铺商品信息
-export async function getOtherPlatformGoods(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERGOODS}`,{data:params})
+export async function getOtherPlatformGoods(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERGOODS}`, { data: params })
 }
 
 //添加商品如购物车
-export async function otherplatFormJoinCart(params){
-  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERCART}`,{data:params})
+export async function otherplatFormJoinCart(params) {
+  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERCART}`, { data: params })
 }
 
 
 //获取购物车信息
-export async function otherplatFormCartContent(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERCARTCONTENT}`,{data:params})
+export async function otherplatFormCartContent(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERCARTCONTENT}`, { data: params })
 }
 
 //清空购物车
-export async function otherClearCartContent(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_CLEARCARTCONTENT}`,{data:params})
+export async function otherClearCartContent(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_CLEARCARTCONTENT}`, { data: params })
 }
 
 //提交购物车
-export async function otherSubmitCart (params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_SUBMITCART}`,{data:params})
+export async function otherSubmitCart(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_SUBMITCART}`, { data: params })
 }
 
 
 //获取当前订单信息
-export async function getOtherPreOrderDetail(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_GETORDERDETAIL}`,{data:params})
+export async function getOtherPreOrderDetail(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_GETORDERDETAIL}`, { data: params })
 }
 
 //获取订单
-export async function getOtherOrders(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_GETORDERS}`,{data:params})
+export async function getOtherOrders(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_GETORDERS}`, { data: params })
 }
 
 //提交订单
-export async function sunmitOrder(params){
-  return $post(`${config.API_OTHERPLATFORM}${config.API_SUBMITORDER}`,{data:params})
+export async function sunmitOrder(params) {
+  return $post(`${config.API_OTHERPLATFORM}${config.API_SUBMITORDER}`, { data: params })
 }
 
 //获取当前未结算内的所有订单数据
-export async function getAllCurrentOrder(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERBYID}/${params.otherdata.orderGuid}`,{data:params})
+export async function getAllCurrentOrder(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERBYID}/${params.otherdata.orderGuid}`, { data: params })
 }
 
 //聚合支付的微信支付之预下单
-export async function preSubOrderB(params){    
-  return $post(`${config.API_JUHEWECHAT}?platformId=${params.platAndUser.platformId}&weappuserId=${params.platAndUser.weappuserId}&orderSource=${params.platAndUser.orderSource}`,{data:params.bodyData})
+export async function preSubOrderB(params) {
+  return $post(`${config.API_JUHEWECHAT}?platformId=${params.platAndUser.platformId}&weappuserId=${params.platAndUser.weappuserId}&orderSource=${params.platAndUser.orderSource}`, { data: params.bodyData })
 }
 
 //订单支付(微信)otherPay_wechatAction
-export async function otherPay_wechat(params){
-  return $get(`${config.API_JUHEWECHATPAY}?platformId=${params.platformId}&weappuserId=${params.weappuserId}&orderSource=1&orderGUID=${params.orderGUID}`,{data:params})
+export async function otherPay_wechat(params) {
+  return $get(`${config.API_JUHEWECHATPAY}?platformId=${params.platformId}&weappuserId=${params.weappuserId}&orderSource=1&orderGUID=${params.orderGUID}`, { data: params })
 }
 
 
 //订单支付(会员)
-export async function otherPay_member(params){
+export async function otherPay_member(params) {
   //API_OTHERMEMBERPAY
-  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERPAYMBERPAY}`,{data:params})
+  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERPAYMBERPAY}`, { data: params })
 }
 //获取会员卡
-export async function getMemberCardList(params){
-  return $post(`${config.API_OTHERPLATFORM}${config.API_GETMEMBERCARDLIST}`,{data:params})
+export async function getMemberCardList(params) {
+  return $post(`${config.API_OTHERPLATFORM}${config.API_GETMEMBERCARDLIST}`, { data: params })
 }
 
 //切换会员卡
-export async function switchCard(params){
-  return $post(`${config.API_OTHERPLATFORM}${config.API_SWITCHCARD}`,{data:params})
+export async function switchCard(params) {
+  return $post(`${config.API_OTHERPLATFORM}${config.API_SWITCHCARD}`, { data: params })
 }
 
 //根据订单guid获取订单信息，订单未支付时不包含结算信息
-export async function otherOrderbyGuid(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERBYID}/${params.otherdata.orderGuid}`,{data:params})
+export async function otherOrderbyGuid(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERBYID}/${params.otherdata.orderGuid}`, { data: params })
 }
 
 //API_OTHERORDERSETTLEMENT   根据订单guid获取订单信息，包含结算信息
-export async function otherOrderSet(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERSETTLEMENT}/${params.otherdata.orderGuid}?orderGuid=${params.otherdata.orderGuid}&date=${params.otherdata.date}`, {data:params})
+export async function otherOrderSet(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERSETTLEMENT}/${params.otherdata.orderGuid}?orderGuid=${params.otherdata.orderGuid}&date=${params.otherdata.date}`, { data: params })
 }
 
 //进入买单订单状态检查
-export async function otherOrderCheck(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERSTATUS}/${params.otherdata.orderGuid}`,{data:params})
+export async function otherOrderCheck(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_OTHERORDERSTATUS}/${params.otherdata.orderGuid}`, { data: params })
 }
 
 //查询会员信息
-export async function otherMemberMes(params){
-  return $get(`${config.API_OTHERPLATFORM}${config.API_MEMBERMESS}`,{data:params})
+export async function otherMemberMes(params) {
+  return $get(`${config.API_OTHERPLATFORM}${config.API_MEMBERMESS}`, { data: params })
 }
 
 // 体现支付方式
@@ -1169,33 +1178,33 @@ export async function getSendInfo(params) {
   return $get(`${config.API_MERCHANT}/platform-merchant-get-shippinginfo-show-c?platformId=${params.platformId}&merchantId=${params.merchantId}`)
 }
 
-export async function prePay(params){
+export async function prePay(params) {
   return $get(`${config.API_OTHERPLATFORM}${config.API_PREPAY}`, { data: params })
 }
 
 //会员支付
-export async function memberPay(params){
+export async function memberPay(params) {
   return $post(`${config.API_OTHERPLATFORM}${config.API_MEMBERPAY}`, { data: params })
 }
 
 
 //getMemberCard
-export async function getMemberCard(params){
+export async function getMemberCard(params) {
   return $get(`${config.API_OTHERPLATFORM}${config.API_PAYWAY}`, { data: params })
 }
 
 //API_ORDERDEFREY  支付，通知对面
-export async function orderDefrey(params){
-  return $post(`${config.API_OTHERPLATFORM}${config.API_ORDERDEFREY}`,{data:params})
+export async function orderDefrey(params) {
+  return $post(`${config.API_OTHERPLATFORM}${config.API_ORDERDEFREY}`, { data: params })
 }
 
 //API_OTHERPAYWECHT
-export async function otherWechat(params){
-  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERPAYWECHT}`,{data:params})
+export async function otherWechat(params) {
+  return $post(`${config.API_OTHERPLATFORM}${config.API_OTHERPAYWECHT}`, { data: params })
 }
 
 //扫码点餐弹窗
-export async function popWindow(params){
-  console.log("1206=>>>>>>>>>>>>",params)
+export async function popWindow(params) {
+  console.log("1206=>>>>>>>>>>>>", params)
   return $get(`${config.API_MERCHANT}/qr-code-orders/${params.merchantId}`)
 }

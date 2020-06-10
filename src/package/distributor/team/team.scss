@@ -1,114 +1,181 @@
-page{
+page {
   background: #F5F5F5;
 }
-.header{
+
+.top-header {
+  @include baseBg(100%, 300px, '#{$STATIC_IMG_URL}/distributor/team-bg.png');
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  font-size     : 25px;
+  font-family   : Microsoft YaHei;
+  font-weight   : 400;
+  color         : rgba(255, 255, 255, 1);
+  line-height   : 100px;
+
+  .people-num {
+    font-size  : 73px;
+    font-family: Arial;
+    font-weight: bold;
+  }
+
+  text:last-child {
+    display         : block;
+    text-align      : center;
+    line-height     : 62px;
+    background-color: #fff;
+    @include baseBg(152px, 61px, '#{$STATIC_IMG_URL}/distributor/team-btn.png')
+  }
+}
+
+.title {
+  @extend .title;
+}
+
+.recommend {
+  @extend .recommend;
+}
+
+
+.header {
   @include baseBg(100%, 257px, '#{$STATIC_IMG_URL}/distributor_team_bg.png');
   display: flex;
-  text:first-child{
-    font-size: 26px;
-    color: rgba(255,255,255,0.8);
+
+  text:first-child {
+    font-size     : 26px;
+    color         : rgba(255, 255, 255, 0.8);
     padding-bottom: 10px;
   }
-  text:last-child{
-    font-size: 72px;
+
+  text:last-child {
+    font-size  : 72px;
     font-weight: bold;
-    color: #ffffff;
-    &:before{
-      content: '￥';
+    color      : #ffffff;
+
+    &:before {
+      content  : '￥';
       font-size: 24px;
     }
   }
 }
-.title{
-  font-size: 26px;
-  color: #999999;
-  padding: 40px 0 20px 60px;
+
+.title {
+  font-size : 26px;
+  color     : #999999;
+  padding   : 40px 0 20px 60px;
   background: #ffffff;
-  &:before{
-    content: '';
-    display: inline-block;
-    height: 25px;
-    width: 4px;
-    background: #FCB251;
+
+  &:before {
+    content     : '';
+    display     : inline-block;
+    height      : 25px;
+    width       : 4px;
+    background  : #FCB251;
     margin-right: 10px;
   }
 }
-.recommend{
-  background: #ffffff;
-  padding: 0 0 30px 60px;
+
+.recommend {
+  background   : #ffffff;
+  padding      : 0 0 30px 60px;
   margin-bottom: 20px;
-  image{
-    width:42px;
-    height:42px;
-    border-radius:50%;
+
+  image {
+    width        : 42px;
+    height       : 42px;
+    border-radius: 50%;
   }
-  text{
+
+  text {
     font-size: 30px;
-    color: #333333
+    color    : #333333
+  }
+
+  .color {
+    font-size  : 22px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color      : rgba(153, 153, 153, 1);
+  }
+  .ml{
+    margin-left: 20px;
+  }
+  .pl{
+    padding-left: 42px;
   }
 }
-.team{
-  background: #ffffff;
+
+.team {
+  background    : #ffffff;
   padding-bottom: 22px;
 }
-.verticalLine{
-  height: 124px;
-  width: 1px;
+
+.verticalLine {
+  height    : 124px;
+  width     : 1px;
   background: #E5E5E5;
-  margin: 0 134px;
+  margin    : 0 134px;
 }
-.member{
-  .grade{
+
+.member {
+  .grade {
     font-size: 22px;
-    color: #999999;
+    color    : #999999;
   }
-  text:last-child{
+
+  text:last-child {
     font-size: 30px;
-    color: #333333;
+    color    : #333333;
   }
-  .firstTeam{
+
+  .firstTeam {
     height: 105px;
-    width:105px;
+    width : 105px;
   }
 }
-.shareBtn{
+
+.shareBtn {
   border: none;
-  &:after{
+
+  &:after {
     border: none;
   }
-  width: 500px;
-  height: 84px;
-  background:linear-gradient(90deg,rgba(254,154,88,1),rgba(252,178,81,1));
-  box-shadow:0 6px 6px 0 rgba(252, 81, 178, 0.35);
+
+  width        : 500px;
+  height       : 84px;
+  background   :linear-gradient(90deg, rgba(254, 154, 88, 1), rgba(252, 178, 81, 1));
+  box-shadow   :0 6px 6px 0 rgba(252, 81, 178, 0.35);
   border-radius:42px;
-  text-align: center;
-  line-height: 84px;
-  color: #ffffff;
-  font-size: 28px;
-  margin-top: 100px;
+  text-align   : center;
+  line-height  : 84px;
+  color        : #ffffff;
+  font-size    : 28px;
+  margin-top   : 100px;
 }
 
-.posterModal{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:rgba(27,27,27,0.5);
-  z-index: 999;
-  .posterImage{
-    height: 100%;
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
+.posterModal {
+  position  : fixed;
+  top       : 0;
+  left      : 0;
+  right     : 0;
+  bottom    : 0;
+  background: rgba(27, 27, 27, 0.5);
+  z-index   : 999;
+
+  .posterImage {
+    height       : 100%;
+    width        : 100%;
+    padding      : 30px;
+    box-sizing   : border-box;
     border-radius: 10px;
   }
-  .container{
+
+  .container {
     height: 96%;
-    width: 100%;
+    width : 100%;
   }
 }
 
-.posterClose{
+.posterClose {
   margin-top: 100px;
 }
