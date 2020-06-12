@@ -45,15 +45,15 @@ export default class DistributorIndex extends PureComponent {
       tutorialView: [],
       tutorialStep: 0,
       bonusPool: 0,
-      currentTab: 1,
+      currentTab: 0,
       tabTitle: [
         {
           title: '综合排序',
-          active: false,
+          active: true,
         },
         {
           title: '佣金最高',
-          active: true,
+          active: false,
         },
         {
           title: '热享门店',
@@ -88,11 +88,24 @@ export default class DistributorIndex extends PureComponent {
     })
   }
   onPageScroll(e) {
-    // if (e.scrollTop >= 500) {
-    //   this.setState({
-    //     fixed: true
-    //   })
-    // }
+    const that = this;
+    const query = wx.createSelectorQuery()
+    query.select('.mark').boundingClientRect()
+    query.selectViewport().scrollOffset()
+    query.exec(function (res) {
+      console.log(res[0].top, res[1].scrollTop)
+      res[0].top       // #the-id节点的上边界坐标
+      res[1].scrollTop // 显示区域的竖直滚动位置
+      if (res[1].scrollTop > 500) {
+        that.setState({
+          fixed: true
+        })
+      } else {
+        that.setState({
+          fixed: false
+        })
+      }
+    })
   }
   clickItem(item) {
     const { tabTitle } = this.state;
@@ -451,7 +464,8 @@ export default class DistributorIndex extends PureComponent {
       }, bonusPool, tabTitle, platformDistribution, bonus, makePoster, distributorCat, productList, platFormSettings: { appLogo },
       merchantList,
     } = this.state
-    const { distributionReward = 0 } = islandUserDTO
+    const { distributionReward = 0 } = islandUserDTO;
+    const { amount } = this.userDetail;
     return (
       <Block>
         <View className="header">
@@ -501,12 +515,12 @@ export default class DistributorIndex extends PureComponent {
             </View>
             <View className="flex-row flex-sb flex-item">
               <View className="balance">
-                <Text className="current-text">756.52</Text>
+                <Text className="current-text">{amount}</Text>
               </View>
               <View>
                 <View onClick={this.toJoin.bind(this)} className="balance-detail">余额明细</View>
                 <View onClick={() => {
-                  navToPage('')
+                  navToPage(`/pages/treasury/cashOut/cashOut?amount=${amount}`)
                 }} className="balance-detail tixian">提现</View>
               </View>
             </View>
@@ -522,7 +536,7 @@ export default class DistributorIndex extends PureComponent {
                 <Text className="msg">分享越多累计收益越多</Text>
               </View>
             </View>
-            <View
+            {/* <View
               className="distributorItem flex-row flex-ac flex-sb"
               onClick={() => { navToPage('/package/distributor/productShare/productShare') }}
             >
@@ -531,7 +545,7 @@ export default class DistributorIndex extends PureComponent {
                 <Text className="title">分享悬赏</Text>
                 <Text className="msg">分享素材助你快捷赚钱</Text>
               </View>
-            </View>
+            </View> */}
             <View
               className="distributorItem flex-row flex-ac flex-sb"
               onClick={() => { navToPage('/package/distributor/team/team') }}
@@ -630,8 +644,11 @@ export default class DistributorIndex extends PureComponent {
         </View>
         {/* 推广赚钱 */}
         {/* 门店分享 */}
-        <ScrollView>
-          <View className={`extension ${this.state.fixed ? 'fixed' : ''}`}>
+        <ScrollView
+          className="scroll"
+          scrollY={true}
+        >
+          <View className={`mark extension ${this.state.fixed ? 'fixed' : ''}`}>
             <View className="flex-row">
               <View onClick={this.handleClick.bind(this, 0, 'MERCHANT')}>
                 <View className={`tab-title ${currentTab === 0 ? 'active' : ''}`}>门店分享</View>
@@ -727,7 +744,7 @@ export default class DistributorIndex extends PureComponent {
                         } = ele
                         console.log(ele, "MERCHANT")
                         // const merchantMod = MERCHANT_MODEL.filter(({ value }) => productTypeAnd(outerOrderMod, value))
-                          // .reduce((acc, cur) => (acc.findIndex(o => o.label === cur.label) === -1 ? [...acc, cur] : acc), [])
+                        // .reduce((acc, cur) => (acc.findIndex(o => o.label === cur.label) === -1 ? [...acc, cur] : acc), [])
                         const maxRatio = distributorMerchantDetail.reduce((acc, { ratio }) => (acc > ratio ? acc : ratio))
                         return (
                           <View className="productContainer" key={id}>

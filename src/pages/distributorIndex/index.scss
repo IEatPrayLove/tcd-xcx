@@ -106,10 +106,14 @@ page {
   align-items: center;
 }
 
-// .fixed {
-//   position: fixed;
-//   top: 500px;
-//   left: 0;
+// .scroll {
+//   position: relative;
+
+//   .fixed {
+//     position: absolute;
+//     top     : 500;
+//     left    : 0;
+//   }
 // }
 
 .extension {
